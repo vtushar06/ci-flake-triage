@@ -26,6 +26,7 @@ def chat(prompt, timeout=120):
                 "model": MODEL,
                 "messages": [{"role": "user", "content": prompt}],
                 "temperature": 0,
+                "response_format": {"type": "json_object"},
             }
         ).encode(),
         headers={"Content-Type": "application/json"}
@@ -54,3 +55,14 @@ def parse_verdict(text, causes):
     return {k: d[k] for k in ("cause", "confidence", "deciding_line")} | (
         {"note": d["note"]} if "note" in d else {}
     )
+
+
+def verify_deciding_line(verdict, evidence):
+    """The strongest anti-noise check available: the model must quote the
+    line that decided it, and that line must actually be in the evidence.
+    A hallucinated quote downgrades the verdict to unknown."""
+    line = (verdict.get("deciding_line") or "").strip()
+    if verdict["cause"] != "unknown" and line and line not in (evidence or ""):
+        return {"cause": "unknown", "confidence": "low", "deciding_line": "",
+                "note": "deciding_line not found in evidence"}
+    return verdict

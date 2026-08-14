@@ -35,7 +35,8 @@ def analyze(limit=None, min_count=1, log=print):
         if limit and done >= limit:
             break
         text = model.chat(build_prompt(f["context"]))
-        f["model"] = model.parse_verdict(text or "", causes())
+        v = model.parse_verdict(text or "", causes())
+        f["model"] = model.verify_deciding_line(v, f["context"])
         f["model"]["model"] = model.MODEL
         done += 1
         if done % 10 == 0:
