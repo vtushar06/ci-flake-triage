@@ -8,6 +8,11 @@ job on the same commit.
 Pick exactly one cause from this list:
 {causes}
 
+Reading discipline (adapted from fedora-copr/logdetective, Apache-2.0):
+- exit codes, "Bad exit status" and command failure wrappers are consequences, not causes.
+  focus on the specific error that triggered them.
+- lines are chronological. the first significant error is usually closest to the cause.
+
 Rules:
 - answer with JSON only: {"cause": "...", "confidence": "high|medium|low", "deciding_line": "..."}
 - deciding_line must be copied verbatim from the evidence; it is the line that decided your answer
