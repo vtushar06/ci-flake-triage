@@ -1,0 +1,11 @@
+{
+  "_comment": "the fixed label set the model may answer with. add a cause here, give it one line of meaning, and rerun eval - no code change needed.",
+  "causes": {
+    "race": "timing or ordering between processes; the operation raced another test or its own teardown",
+    "infra": "the machine, not the test: runner arch, mirrors, VM bring-up, storage of the runner",
+    "network-timeout": "a network operation timed out or was refused where the passing run succeeded",
+    "designed": "fails on purpose until a human acts, like a required-label gate",
+    "test-bug": "the test's own logic is wrong, like a wrong wait or a timestamp captured too late",
+    "unknown": "not enough evidence - say this rather than guessing"
+  }
+}
