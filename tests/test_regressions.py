@@ -45,3 +45,16 @@ class TestRegressions(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestFamilies(unittest.TestCase):
+    def test_similar_sigs_grouped_but_never_merged(self):
+        from flaketriage.report import _families
+        sigs = ["not ok |N| podman mount - basic test",
+                "not ok |N| podman stop - basic test",
+                "not ok |N| something else entirely different here"]
+        fams = _families(sigs)
+        self.assertEqual(len(fams), 1)
+        self.assertEqual(len(fams[0]), 2)
+        # and the third signature is untouched
+        self.assertNotIn(sigs[2], fams[0])

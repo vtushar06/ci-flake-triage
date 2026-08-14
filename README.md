@@ -61,6 +61,15 @@ and is now pinned by the disambiguation logic.
 needs-check, and posts what survives. That gate is a design decision, not a missing feature - on
 this data, 6 of 16 automated matches were wrong.
 
+## borrowed, with credit
+
+Two ideas here come from kubernetes/test-infra's triage tool: part of the masking set in
+normalise(), and the similarity grouping behind the "possible families" section of the report.
+Their version merges similar failure text into one cluster; measured on this corpus, that joins
+genuinely different tests (mount + stop, --since + --until), so here similar signatures are only
+suggested as a family and never merged - the counts stay separate and a human decides. The
+occurrence-ledger reporting style planned next comes from cockpit-project/bots.
+
 ## the three rules that came from being wrong
 
 Everything opinionated in this pipeline exists because the naive version produced a wrong answer

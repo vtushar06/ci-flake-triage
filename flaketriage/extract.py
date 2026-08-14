@@ -34,10 +34,18 @@ INFRA_LINES = [
 
 
 def normalise(s):
+    # the mask set below borrows from kubernetes/test-infra triage, which
+    # runs the same idea at much larger scale - mask what varies per run,
+    # keep what identifies the failure
     s = re.sub(r"\s+in \d+ms$", "", s)
     s = re.sub(r"^not ok \d+ ", "not ok ", s)
     s = re.sub(r"\|\d+\|", "|N|", s)
     s = re.sub(r"\[\d+\]", "[N]", s)
+    s = re.sub(r"\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b", "<UUID>", s)
+    s = re.sub(r"\b0x[0-9a-f]+\b", "<PTR>", s)
+    s = re.sub(r"\bgoroutine \d+\b", "goroutine <N>", s)
+    s = re.sub(r"\b\d{2}:\d{2}:\d{2}(?:\.\d+)?\b", "<TIME>", s)
+    s = re.sub(r"\b\d+(?:\.\d+)?(?:ms|us|ns)\b", "<DUR>", s)
     s = re.sub(r"\b[0-9a-f]{12,64}\b", "<HASH>", s)
     s = re.sub(r"make: \*\*\* \[[^\]]*\]", "make: *** [TARGET]", s)
     s = re.sub(r"\b\d+\.\d+\.\d+\.\d+\b", "<IP>", s)

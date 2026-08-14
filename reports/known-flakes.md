@@ -1,6 +1,6 @@
 # known flakes - podman-container-tools/podman
 
-Generated 2026-08-13 from the rerun history. 1307 completed runs (2026-06-01 to 2026-08-13), 359 re-run by hand, 550 confirmed flakes - 415 of them in 162 signatures, the rest with no marker or no log.
+Generated 2026-08-14 from the rerun history. 1307 completed runs (2026-06-01 to 2026-08-13), 359 re-run by hand, 550 confirmed flakes - 415 of them in 162 signatures, the rest with no marker or no log.
 
 A confirmed flake failed on one attempt and passed on a later attempt of the same run, so the commit never changed. Issue matches below are candidates, not verdicts - in the study this tool grew out of, 6 of 16 name-based matches moved once the logs were opened (docs/verification.md). Anything marked needs-check requires a human before it is used.
 
@@ -168,6 +168,25 @@ A confirmed flake failed on one attempt and passed on a later attempt of the sam
 | 1 | `not ok \|N\| TCP translated port range forwarding, IPv4, tap` | 2026-06-01 |  |
 | 1 | `not ok \|N\| quadlet kube - start error` | 2026-06-01 | #21560 needs-check |
 
+possible families - similar signatures that MAY share one cause. Kept separate above on purpose: similar names can be different failures, so merging is a human call.
+- 6 flakes across 2: `not ok \|N\| podman mount - basic test`; `not ok \|N\| podman stop - basic test`
+- 7 flakes across 2: `not ok [N] podman network reload`; `not ok [N] podman network create`
+- 10 flakes across 3: `not ok \|N\| TCP port range forwarding, IPv4, loopback`; `not ok \|N\| TCP port range forwarding, IPv6, loopback`; `not ok \|N\| TCP port range forwarding, IPv4, tap`
+- 9 flakes across 4: `not ok \|N\| TCP translated port range forwarding, IPv6, tap`; `not ok \|N\| TCP translated port range forwarding, IPv4, loopb`; `not ok \|N\| TCP translated port range forwarding, IPv6, loopb`; `not ok \|N\| TCP translated port range forwarding, IPv4, tap`
+- 4 flakes across 2: `not ok \|N\| TCP/IPv4 small transfer, tap`; `not ok \|N\| TCP/IPv6 small transfer, tap`
+- 5 flakes across 2: `[FAIL] podman machine start [It] machine start with --update`; `[FAIL] podman machine start [It] machine init --now with --u`
+- 3 flakes across 2: `not ok \|N\| podman logs - --since --follow journald`; `not ok \|N\| podman logs - --until --follow journald`
+- 3 flakes across 2: `[FAIL] podman machine init [It] machine init with volume`; `[FAIL] podman machine init [It] machine init with swap`
+- 4 flakes across 2: `[FAIL] podman machine init [It] machine init rootful with do`; `[FAIL] podman machine init [It] machine init rootless docker`
+- 3 flakes across 2: `not ok \|N\| Interface-bound TCP port forwarding, IPv6, loopba`; `not ok \|N\| Interface-bound TCP port forwarding, IPv4, loopba`
+- 4 flakes across 3: `not ok \|N\| TCP/IPv4 large transfer, tap`; `not ok \|N\| UDP/IPv6 large transfer, tap`; `not ok \|N\| TCP/IPv6 large transfer, tap`
+- 6 flakes across 5: `not ok \|N\| Translated TCP port forwarding, IPv4, tap`; `not ok \|N\| Translated TCP port forwarding, IPv6, tap`; `not ok \|N\| Single TCP port forwarding, IPv4, tap`; `not ok \|N\| Translated UDP port forwarding, IPv6, tap` ...
+- 3 flakes across 2: `[FAIL] Podman port [It] podman port -l nginx`; `[FAIL] Podman port [It] podman port -a nginx`
+- 2 flakes across 2: `not ok \|N\| podman cp file from container to container`; `not ok \|N\| podman cp file from container to host`
+- 2 flakes across 2: `[FAIL] run podman API test calls [It] client connect to mach`; `[FAIL] run podman API test calls [It] client connect to mach`
+- 2 flakes across 2: `not ok \|N\| Address-bound TCP port forwarding, IPv6, tap`; `not ok \|N\| Address-bound TCP port forwarding, IPv4, loopback`
+- 4 flakes across 4: `[FAIL] Podman build [It] podman build --build-context: local`; `[FAIL] Podman build [It] podman build --build-context: Image`; `[FAIL] Podman build [It] podman build --build-context: URL s`; `[FAIL] Podman build [It] podman build --build-context: Mixed`
+
 top signature occurrences:
 - https://github.com/podman-container-tools/podman/actions/runs/30463622001/job/91203565547
 - https://github.com/podman-container-tools/podman/actions/runs/29951636314/job/89032377003
@@ -181,6 +200,9 @@ top signature occurrences:
 | 29 | `make: *** [TARGET] Error 1` | 2026-06-02 to 2026-08-12 | #20332 needs-check |
 | 2 | `make: *** [TARGET] Error 56` | 2026-06-08 to 2026-07-07 | #20332 needs-check |
 | 1 | `make: *** [TARGET] Error 60` | 2026-08-11 | #20332 needs-check |
+
+possible families - similar signatures that MAY share one cause. Kept separate above on purpose: similar names can be different failures, so merging is a human call.
+- 32 flakes across 3: `make: *** [TARGET] Error 1`; `make: *** [TARGET] Error 56`; `make: *** [TARGET] Error 60`
 
 top signature occurrences:
 - https://github.com/podman-container-tools/podman/actions/runs/31594925821/job/94108049621

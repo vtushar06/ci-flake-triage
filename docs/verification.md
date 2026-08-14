@@ -23,9 +23,11 @@ match was checked by opening the actual job log and looking for the issue's own 
 step changed the answer often enough that it is the main finding in itself — see *What the checking
 changed* at the bottom.
 
-(For rough scale only: one published measurement of GitHub Actions re-run rates across Java
-projects sits around 3%. Different ecosystem, different definition, so read it as context, not a
-comparison.)
+(For rough scale only: the closest published GitHub Actions measurement reports 3.2% of builds
+rerun across 1,960 Java projects - but two thirds of those reruns were GitHub's first-contributor
+approval gate, not developer intent, so the developer-initiated rate there is nearer 1%. Industrial
+projects sit far higher: 31% of commits at Ubisoft had a manually rerun job. Different populations
+and definitions, so context, not comparison.)
 
 ---
 

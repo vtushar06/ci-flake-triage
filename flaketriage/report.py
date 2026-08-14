@@ -10,6 +10,7 @@ weekly.md      - the last 7 days only, small enough to read in a minute
 """
 import collections
 import datetime
+import difflib
 import os
 
 from .classify import classify_all
@@ -32,6 +33,30 @@ def _link(repo, f):
 
 def _today():
     return datetime.datetime.now(datetime.timezone.utc).date()
+
+
+def _families(sigs, ratio=0.90):
+    """Group similar signatures WITHOUT merging them - the k8s triage merge
+    idea, kept behind a human gate. Measured on this corpus, a blind merge
+    at 0.90 joins genuinely different tests (mount + stop, --since +
+    --until), so families are suggestions, never collapsed counts."""
+    out, used = [], set()
+    for i, a in enumerate(sigs):
+        if a in used:
+            continue
+        fam = [a]
+        for b in sigs[i + 1:]:
+            if b in used:
+                continue
+            if abs(len(a) - len(b)) > max(len(a), len(b)) * 0.10:
+                continue
+            if difflib.SequenceMatcher(None, a, b).ratio() >= ratio:
+                fam.append(b)
+                used.add(b)
+        if len(fam) > 1:
+            used.update(fam)
+            out.append(fam)
+    return out
 
 
 def _shown(sig, width):
@@ -98,6 +123,17 @@ def full_report(with_issues=True, log=print):
                 flag = " needs-check" if cand["needs_human"] else ""
                 c = f"#{cand['issue']}{flag}"
             L.append(f"| {len(v)} | `{_shown(sig, 90)}` | {win} | {c} |")
+        fams = _families([sig for sig, _ in rows if sig])
+        if fams:
+            L.append("")
+            L.append("possible families - similar signatures that MAY share one cause. "
+                     "Kept separate above on purpose: similar names can be different "
+                     "failures, so merging is a human call.")
+            for fam in fams:
+                total = sum(len(g[x]) for x in fam)
+                L.append(f"- {total} flakes across {len(fam)}: " +
+                         "; ".join(f"`{_shown(x, 60)}`" for x in fam[:4]) +
+                         (" ..." if len(fam) > 4 else ""))
         # occurrence links for the top signature of each bucket
         if rows and rows[0][0]:
             L.append("")
