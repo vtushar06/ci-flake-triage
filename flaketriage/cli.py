@@ -6,12 +6,15 @@
   python3 -m flaketriage propose            draft issue comments, never posts
   python3 -m flaketriage journal <job-id>   fetch the systemd journal artifact
   python3 -m flaketriage diff <job-id>      lines only in the failing attempt
+  python3 -m flaketriage analyze [--limit N]  model verdicts (needs a model endpoint)
+  python3 -m flaketriage eval               measure the model against hand labels
 
 scan is incremental - run it daily and it only touches new runs.
 """
 import sys
 
-from . import artifacts, attemptdiff, extract, ingest, propose, report
+from . import analyze as analyzecmd
+from . import artifacts, attemptdiff, evalcmd, extract, ingest, propose, report
 
 
 def main():
@@ -51,6 +54,13 @@ def main():
             return 1
         if attemptdiff.render(args[1]) is None:
             return 1
+    elif cmd == "analyze":
+        limit = None
+        if "--limit" in args and args.index("--limit") + 1 < len(args):
+            limit = int(args[args.index("--limit") + 1])
+        analyzecmd.analyze(limit=limit)
+    elif cmd == "eval":
+        evalcmd.run()
     else:
         print(__doc__)
         return 1
