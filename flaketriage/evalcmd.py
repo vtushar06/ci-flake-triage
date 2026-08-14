@@ -40,7 +40,15 @@ def run(log=print):
         pairs[(want, got)] += 1
         log(f"  {'ok ' if got == want else 'MISS'} want={want:16s} got={got:16s} {sig[:56]}")
     if total:
+        # abstention-aware, the SimpleQA shape: an honest unknown is neither
+        # right nor wrong, so report coverage and accuracy-given-attempted
+        # separately instead of letting unknowns pollute either number
+        attempted = sum(n for (w, g), n in pairs.items() if g != "unknown")
+        correct = sum(n for (w, g), n in pairs.items() if w == g and g != "unknown")
+        cov = attempted / total
+        aga = correct / attempted if attempted else 0.0
         log(f"\n{model.MODEL}: {agree}/{total} agree ({100*agree//total}%)")
+        log(f"  coverage {cov:.0%} (answered), accuracy-given-attempted {aga:.0%}")
         misses = [(w, g, n) for (w, g), n in pairs.items() if w != g]
         for w, g, n in sorted(misses, key=lambda x: -x[2]):
             log(f"  confused {w} -> {g} x{n}")
