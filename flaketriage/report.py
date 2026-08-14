@@ -123,6 +123,15 @@ def full_report(with_issues=True, log=print):
                 flag = " needs-check" if cand["needs_human"] else ""
                 c = f"#{cand['issue']}{flag}"
             L.append(f"| {len(v)} | `{_shown(sig, 90)}` | {win} | {c} |")
+        model_rows = [(sig, v) for sig, v in rows
+                      if sig and any(x.get("model") for x in v)]
+        if model_rows:
+            L.append("")
+            L.append("model-suggested causes (unverified - a person confirms before "
+                     "these are used anywhere):")
+            for sig, v in model_rows[:10]:
+                m = next(x["model"] for x in v if x.get("model"))
+                L.append(f"- `{_shown(sig, 70)}` -> {m['cause']} ({m['confidence']})")
         fams = _families([sig for sig, _ in rows if sig])
         if fams:
             L.append("")
