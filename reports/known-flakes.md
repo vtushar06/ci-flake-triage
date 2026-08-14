@@ -1,14 +1,14 @@
 # known flakes - podman-container-tools/podman
 
-Generated 2026-08-14 from the rerun history. 1307 completed runs (2026-06-01 to 2026-08-13), 359 re-run by hand, 550 confirmed flakes - 415 of them in 162 signatures, the rest with no marker or no log.
+Generated 2026-08-14 from the rerun history. 1363 completed runs (2026-06-01 to 2026-08-14), 383 re-run by hand, 594 confirmed flakes - 428 of them in 166 signatures, the rest with no marker or no log.
 
 A confirmed flake failed on one attempt and passed on a later attempt of the same run, so the commit never changed. Issue matches below are candidates, not verdicts - in the study this tool grew out of, 6 of 16 name-based matches moved once the logs were opened (docs/verification.md). Anything marked needs-check requires a human before it is used.
 
-## test failures (383 flakes, 159 signatures)
+## test failures (393 flakes, 163 signatures)
 
 | n | signature | window | issue candidate |
 |---|---|---|---|
-| 29 | `not ok \|N\| podman healthcheck` | 2026-06-02 to 2026-07-29 | #23871 needs-check |
+| 30 | `not ok \|N\| podman healthcheck` | 2026-06-02 to 2026-08-13 | #23871 needs-check |
 | 14 | `[FAIL] Podman prune [It] podman system prune --build clean up after terminated build` | 2026-06-02 to 2026-07-21 | #28868 needs-check |
 | 12 | `[FAIL] run cp commands [DeferCleanup (Each)] podman cp` | 2026-06-16 to 2026-07-22 |  |
 | 9 | `[FAIL] Podman rmi [It] podman image rm - concurrent with shared layers` | 2026-06-08 to 2026-08-12 |  |
@@ -18,10 +18,10 @@ A confirmed flake failed on one attempt and passed on a later attempt of the sam
 | 8 | `not ok \|N\| podman kube play --wait with siginterrupt` | 2026-06-04 to 2026-07-07 | #21560 needs-check |
 | 7 | `[FAIL] Podman run memory [It] podman run memory test on oomkilled container` | 2026-06-08 to 2026-07-28 |  |
 | 7 | `not ok \|N\| check Go template formatting` | 2026-06-04 to 2026-07-21 |  |
+| 7 | `[FAIL] run basic podman commands [It] Basic ops` | 2026-06-04 to 2026-08-13 | #26547 needs-check |
 | 6 | `[FAIL] podman machine init [It] machine init with cpus, disk size, memory, timezone` | 2026-06-02 to 2026-08-01 |  |
 | 6 | `not ok \|N\| podman run --timeout - basic test` | 2026-06-04 to 2026-07-22 | #26547 needs-check |
 | 6 | `[FAIL] Podman run [It] podman run with cgroups=split` | 2026-06-04 to 2026-07-20 |  |
-| 6 | `[FAIL] run basic podman commands [It] Basic ops` | 2026-06-04 to 2026-06-25 | #26547 needs-check |
 | 6 | `not ok \|N\| podman container rm doesn't affect stopping containers` | 2026-06-02 to 2026-06-19 |  |
 | 5 | `not ok \|N\| podman mount - basic test` | 2026-06-11 to 2026-07-14 | #24223 needs-check |
 | 5 | `not ok [N] podman run - default_host_ips from containers.conf` | 2026-06-11 to 2026-06-28 |  |
@@ -34,6 +34,7 @@ A confirmed flake failed on one attempt and passed on a later attempt of the sam
 | 4 | `not ok [N] podman checkpoint/restore - publish with default_host_ips` | 2026-06-07 to 2026-07-07 | #24571 needs-check |
 | 4 | `not ok [N] podman networking: port with --userns=keep-id for rootless or --uidmap=* for ro` | 2026-06-01 to 2026-07-03 |  |
 | 4 | `not ok \|N\| TCP port range forwarding, IPv6, loopback` | 2026-06-01 to 2026-06-24 |  |
+| 4 | `[FAIL] Podman build [It] podman build --build-context: URL source` | 2026-06-12 to 2026-08-12 |  |
 | 3 | `[FAIL] Podman run networking [It] podman run bridge multiple containers same network diffe` | 2026-08-10 to 2026-08-11 |  |
 | 3 | `[FAIL] podman machine start [It] start two machines in parallel` | 2026-07-08 to 2026-08-10 | #22551 needs-check |
 | 3 | `[FAIL] podman system reset [It] system reset completely removes container [Serial]` | 2026-06-10 to 2026-08-10 |  |
@@ -75,6 +76,7 @@ A confirmed flake failed on one attempt and passed on a later attempt of the sam
 | 2 | `[FAIL] podman machine set [It] no settings should change if no flags` | 2026-06-10 to 2026-06-21 |  |
 | 2 | `not ok \|N\| Translated TCP port forwarding, IPv4, tap` | 2026-06-17 to 2026-06-18 |  |
 | 2 | `not ok \|N\| TCP port range forwarding, IPv4, tap` | 2026-06-16 |  |
+| 2 | `[FAIL] podman machine proxy settings propagation [It] ssh to running machine and check pro` | 2026-06-15 to 2026-08-12 |  |
 | 2 | `not ok \|N\| podman play with image volume (automount annotation and OCI VolumeSource)` | 2026-06-02 to 2026-06-12 |  |
 | 2 | `[FAIL] Podman port [It] podman port -l nginx` | 2026-06-04 to 2026-06-11 | #19048 needs-check |
 | 2 | `not ok \|N\| quadlet - kube build from unavailable image with no tag` | 2026-06-03 to 2026-06-04 |  |
@@ -135,7 +137,6 @@ A confirmed flake failed on one attempt and passed on a later attempt of the sam
 | 1 | `[FAIL] podman machine ssh [It] ssh to running machine and check os-type` | 2026-06-17 |  |
 | 1 | `not ok \|N\| Translated TCP port forwarding, IPv4, loopback` | 2026-06-17 |  |
 | 1 | `[FAIL] Podman build [It] podman-remote send correct path to copier` | 2026-06-16 |  |
-| 1 | `[FAIL] podman machine proxy settings propagation [It] ssh to running machine and check pro` | 2026-06-15 |  |
 | 1 | `not ok \|N\| Use options from containers.conf` | 2026-06-15 |  |
 | 1 | `[FAIL] Podman build [It] podman build http proxy test` | 2026-06-15 |  |
 | 1 | `not ok \|N\| podman logs - --until --follow journald` | 2026-06-15 | #23682 needs-check |
@@ -143,7 +144,6 @@ A confirmed flake failed on one attempt and passed on a later attempt of the sam
 | 1 | `[FAIL] Podman build [It] podman build --build-context: local source` | 2026-06-13 |  |
 | 1 | `not ok \|N\| TCP/IPv6 large transfer, tap` | 2026-06-13 |  |
 | 1 | `[FAIL] Podman build [It] podman build --build-context: Image source` | 2026-06-12 |  |
-| 1 | `[FAIL] Podman build [It] podman build --build-context: URL source` | 2026-06-12 |  |
 | 1 | `[FAIL] Podman build [It] podman remote test container/docker file is not at root of contex` | 2026-06-12 |  |
 | 1 | `[FAIL] Podman build [It] podman build --build-context: Mixed source` | 2026-06-12 |  |
 | 1 | `not ok \|N\| podman cp file from container to host` | 2026-06-11 | #10927 needs-check |
@@ -167,11 +167,16 @@ A confirmed flake failed on one attempt and passed on a later attempt of the sam
 | 1 | `[FAIL] Podman commit [It] podman commit container with --squash` | 2026-06-01 | #24598 needs-check |
 | 1 | `not ok \|N\| TCP translated port range forwarding, IPv4, tap` | 2026-06-01 |  |
 | 1 | `not ok \|N\| quadlet kube - start error` | 2026-06-01 | #21560 needs-check |
+| 1 | `[FAIL] Podman pod stop [It] podman pod start/stop single pod via --pod-id-file` | 2026-08-13 |  |
+| 1 | `not ok \|N\| podman autoupdate local` | 2026-08-13 |  |
+| 1 | `[FAIL] Podman run with volumes [It] podman named volume copyup` | 2026-08-13 |  |
+| 1 | `not ok \|N\| podman run docker-archive` | 2026-08-12 | #17802 needs-check |
 
 possible families - similar signatures that MAY share one cause. Kept separate above on purpose: similar names can be different failures, so merging is a human call.
 - 6 flakes across 2: `not ok \|N\| podman mount - basic test`; `not ok \|N\| podman stop - basic test`
 - 7 flakes across 2: `not ok [N] podman network reload`; `not ok [N] podman network create`
 - 10 flakes across 3: `not ok \|N\| TCP port range forwarding, IPv4, loopback`; `not ok \|N\| TCP port range forwarding, IPv6, loopback`; `not ok \|N\| TCP port range forwarding, IPv4, tap`
+- 7 flakes across 4: `[FAIL] Podman build [It] podman build --build-context: URL s`; `[FAIL] Podman build [It] podman build --build-context: local`; `[FAIL] Podman build [It] podman build --build-context: Image`; `[FAIL] Podman build [It] podman build --build-context: Mixed`
 - 9 flakes across 4: `not ok \|N\| TCP translated port range forwarding, IPv6, tap`; `not ok \|N\| TCP translated port range forwarding, IPv4, loopb`; `not ok \|N\| TCP translated port range forwarding, IPv6, loopb`; `not ok \|N\| TCP translated port range forwarding, IPv4, tap`
 - 4 flakes across 2: `not ok \|N\| TCP/IPv4 small transfer, tap`; `not ok \|N\| TCP/IPv6 small transfer, tap`
 - 5 flakes across 2: `[FAIL] podman machine start [It] machine start with --update`; `[FAIL] podman machine start [It] machine init --now with --u`
@@ -185,7 +190,6 @@ possible families - similar signatures that MAY share one cause. Kept separate a
 - 2 flakes across 2: `not ok \|N\| podman cp file from container to container`; `not ok \|N\| podman cp file from container to host`
 - 2 flakes across 2: `[FAIL] run podman API test calls [It] client connect to mach`; `[FAIL] run podman API test calls [It] client connect to mach`
 - 2 flakes across 2: `not ok \|N\| Address-bound TCP port forwarding, IPv6, tap`; `not ok \|N\| Address-bound TCP port forwarding, IPv4, loopback`
-- 4 flakes across 4: `[FAIL] Podman build [It] podman build --build-context: local`; `[FAIL] Podman build [It] podman build --build-context: Image`; `[FAIL] Podman build [It] podman build --build-context: URL s`; `[FAIL] Podman build [It] podman build --build-context: Mixed`
 
 top signature occurrences:
 - https://github.com/podman-container-tools/podman/actions/runs/30463622001/job/91203565547
@@ -193,16 +197,16 @@ top signature occurrences:
 - https://github.com/podman-container-tools/podman/actions/runs/29844369873/job/88684738266
 - https://github.com/podman-container-tools/podman/actions/runs/29842451991/job/88677981054
 
-## designed failures - not real flakes (32 flakes, 3 signatures)
+## designed failures - not real flakes (35 flakes, 3 signatures)
 
 | n | signature | window | issue candidate |
 |---|---|---|---|
-| 29 | `make: *** [TARGET] Error 1` | 2026-06-02 to 2026-08-12 | #20332 needs-check |
+| 32 | `make: *** [TARGET] Error 1` | 2026-06-02 to 2026-08-13 | #20332 needs-check |
 | 2 | `make: *** [TARGET] Error 56` | 2026-06-08 to 2026-07-07 | #20332 needs-check |
 | 1 | `make: *** [TARGET] Error 60` | 2026-08-11 | #20332 needs-check |
 
 possible families - similar signatures that MAY share one cause. Kept separate above on purpose: similar names can be different failures, so merging is a human call.
-- 32 flakes across 3: `make: *** [TARGET] Error 1`; `make: *** [TARGET] Error 56`; `make: *** [TARGET] Error 60`
+- 35 flakes across 3: `make: *** [TARGET] Error 1`; `make: *** [TARGET] Error 56`; `make: *** [TARGET] Error 60`
 
 top signature occurrences:
 - https://github.com/podman-container-tools/podman/actions/runs/31594925821/job/94108049621
@@ -210,14 +214,14 @@ top signature occurrences:
 - https://github.com/podman-container-tools/podman/actions/runs/30463622001/job/90615769638
 - https://github.com/podman-container-tools/podman/actions/runs/30431783562/job/90632301368
 
-## unmatched - open these by hand (88 flakes)
+## unmatched - open these by hand (118 flakes)
 
 | n | signature | window | issue candidate |
 |---|---|---|---|
-| 88 | `(none)` | 2026-06-04 to 2026-08-11 |  |
+| 118 | `(none)` | 2026-06-04 to 2026-08-13 |  |
 
-## no retrievable log (47 flakes)
+## no retrievable log (48 flakes)
 
 | n | signature | window | issue candidate |
 |---|---|---|---|
-| 47 | `(none)` | 2026-06-17 to 2026-07-31 |  |
+| 48 | `(none)` | 2026-06-17 to 2026-08-12 |  |

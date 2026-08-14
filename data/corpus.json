@@ -3,7 +3,7 @@
  "workflow": "ci.yml",
  "runs": {
   "31619674781": {
-   "attempts": 1,
+   "attempts": 3,
    "created": "2026-08-12"
   },
   "31619594827": {
@@ -83,7 +83,7 @@
    "created": "2026-08-12"
   },
   "31581038263": {
-   "attempts": 1,
+   "attempts": 3,
    "created": "2026-08-12"
   },
   "31579738011": {
@@ -1167,7 +1167,7 @@
    "created": "2026-07-28"
   },
   "30366077024": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-07-28"
   },
   "30365872757": {
@@ -5195,7 +5195,7 @@
    "created": "2026-08-13"
   },
   "31724102185": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-08-13"
   },
   "31722628727": {
@@ -5203,7 +5203,7 @@
    "created": "2026-08-13"
   },
   "31720964063": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-08-13"
   },
   "31715520358": {
@@ -5211,7 +5211,7 @@
    "created": "2026-08-13"
   },
   "31714125771": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-08-13"
   },
   "31712340226": {
@@ -5219,7 +5219,7 @@
    "created": "2026-08-13"
   },
   "31709559909": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-08-13"
   },
   "31709326784": {
@@ -5227,8 +5227,232 @@
    "created": "2026-08-13"
   },
   "31707430834": {
+   "attempts": 2,
+   "created": "2026-08-13"
+  },
+  "31774669654": {
+   "attempts": 1,
+   "created": "2026-08-14"
+  },
+  "31770301280": {
+   "attempts": 1,
+   "created": "2026-08-14"
+  },
+  "31762368205": {
+   "attempts": 1,
+   "created": "2026-08-14"
+  },
+  "31762180270": {
+   "attempts": 1,
+   "created": "2026-08-14"
+  },
+  "31762145156": {
+   "attempts": 1,
+   "created": "2026-08-14"
+  },
+  "31761579357": {
+   "attempts": 1,
+   "created": "2026-08-14"
+  },
+  "31761490967": {
+   "attempts": 1,
+   "created": "2026-08-14"
+  },
+  "31758832312": {
+   "attempts": 1,
+   "created": "2026-08-14"
+  },
+  "31749574637": {
    "attempts": 1,
    "created": "2026-08-13"
+  },
+  "31747340647": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31743618507": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31743511300": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31739111797": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31737992705": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31737723898": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31736927193": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31736156163": {
+   "attempts": 2,
+   "created": "2026-08-13"
+  },
+  "31732896644": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31730666358": {
+   "attempts": 2,
+   "created": "2026-08-13"
+  },
+  "31728021211": {
+   "attempts": 3,
+   "created": "2026-08-13"
+  },
+  "31723951112": {
+   "attempts": 5,
+   "created": "2026-08-13"
+  },
+  "31707198451": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31707172259": {
+   "attempts": 2,
+   "created": "2026-08-13"
+  },
+  "31706103483": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31704295402": {
+   "attempts": 2,
+   "created": "2026-08-13"
+  },
+  "31699909791": {
+   "attempts": 2,
+   "created": "2026-08-13"
+  },
+  "31699426529": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31698948698": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31697961562": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31691439796": {
+   "attempts": 2,
+   "created": "2026-08-13"
+  },
+  "31688359875": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31687097967": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31679740179": {
+   "attempts": 2,
+   "created": "2026-08-13"
+  },
+  "31678584751": {
+   "attempts": 2,
+   "created": "2026-08-13"
+  },
+  "31673722979": {
+   "attempts": 3,
+   "created": "2026-08-13"
+  },
+  "31672236373": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31664137737": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31663773842": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31653858038": {
+   "attempts": 1,
+   "created": "2026-08-13"
+  },
+  "31651264031": {
+   "attempts": 1,
+   "created": "2026-08-12"
+  },
+  "31649669128": {
+   "attempts": 1,
+   "created": "2026-08-12"
+  },
+  "31641022105": {
+   "attempts": 2,
+   "created": "2026-08-12"
+  },
+  "31640205328": {
+   "attempts": 1,
+   "created": "2026-08-12"
+  },
+  "31635164657": {
+   "attempts": 5,
+   "created": "2026-08-12"
+  },
+  "31633952968": {
+   "attempts": 2,
+   "created": "2026-08-12"
+  },
+  "31633813683": {
+   "attempts": 1,
+   "created": "2026-08-12"
+  },
+  "31626313486": {
+   "attempts": 1,
+   "created": "2026-08-12"
+  },
+  "31625819486": {
+   "attempts": 1,
+   "created": "2026-08-12"
+  },
+  "31625727846": {
+   "attempts": 1,
+   "created": "2026-08-12"
+  },
+  "31625135910": {
+   "attempts": 1,
+   "created": "2026-08-12"
+  },
+  "31624996127": {
+   "attempts": 1,
+   "created": "2026-08-12"
+  },
+  "31622767331": {
+   "attempts": 2,
+   "created": "2026-08-12"
+  },
+  "31622689755": {
+   "attempts": 1,
+   "created": "2026-08-12"
+  },
+  "31621592805": {
+   "attempts": 1,
+   "created": "2026-08-12"
+  },
+  "31620875719": {
+   "attempts": 3,
+   "created": "2026-08-12"
+  },
+  "31620392411": {
+   "attempts": 1,
+   "created": "2026-08-12"
   }
  },
  "flakes": [
@@ -9631,6 +9855,371 @@
    "date": "2026-06-01",
    "raw": "not ok 376 |505| TCP translated port range forwarding, IPv6, loopback in 1340ms",
    "sig": "not ok |N| TCP translated port range forwarding, IPv6, loopback"
+  },
+  {
+   "run_id": "31730666358",
+   "job_id": 94554132184,
+   "job": "int local root debian-sid / lima",
+   "date": "2026-08-13",
+   "raw": "[FAIL] Podman pod stop [It] podman pod start/stop single pod via --pod-id-file",
+   "sig": "[FAIL] Podman pod stop [It] podman pod start/stop single pod via --pod-id-file",
+   "context": "[+0601s]   Podman events podman events --until future\t\t20.152580\n[+0601s]   \"unlinkat /tmp/podman-e2e-1255725978/subtest-2432710030/p/root/overlay/03901b4a2ea88eeaad62dbe59b072b28b6efa00491962b8741081c5df50c65e0/merged/var: read-only file system\"\n[+0601s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/13/26 18:56:52.168 (2.225s)\n[+0601s]   << Timeline\n[+0601s] ------------------------------\n[+0601s] \n[+0601s] Summarizing 1 Failure:\n[+0601s]   \n[FAIL] Podman pod stop [It] podman pod start/stop single pod via --pod-id-file\n[+0601s]   /var/tmp/podman-container-tools/podman/test/e2e/pod_stop_test.go:194\n[+0601s] \n[+0601s] Ran 2446 of 2559 Specs in 552.725 seconds\n[+0601s] FAIL! -- 2445 Passed | 1 Failed | 0 Pending | 113 Skipped\n[+0601s] \n[+0601s] \n[+0601s] Ginkgo ran 1 suite in 9m45.442497808s\n[+0601s] \n[+0601s] Test Suite Failed\n[+0601s] make[1]: *** [Makefile:710: ginkgo-run] Error 1\n[+0601s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0601s] make: *** [Makefile:718: ginkgo] Error 2"
+  },
+  {
+   "run_id": "31728021211",
+   "job_id": 94566503128,
+   "job": "sys local root fedora-rawhide / lima",
+   "date": "2026-08-13",
+   "raw": "not ok 225 |250| podman autoupdate local in 4783ms",
+   "sig": "not ok |N| podman autoupdate local",
+   "context": "[+0852s] ok 218 |220| podman healthcheck --health-max-log-size values in 442ms\n[+0852s] ok 219 |220| podman healthcheck --health-log-destination file in 1811ms\n[+0852s] ok 220 |220| podman healthcheck --health-log-destination journal in 2983ms\n[+0852s] ok 221 |220| podman healthcheck - stop container when healthcheck runs in 3417ms\n[+0852s] ok 222 |220| podman healthcheck --ignore-result in 3130ms\n[+0852s] ok 223 |220| podman healthcheck - start errors in 1898ms\n[+0852s] ok 224 |250| podman generate - systemd - basic in 7189ms\n[+0852s] \nnot ok 225 |250| podman autoupdate local in 4783ms\n[+0852s] # tags: ci:parallel\n[+0852s] # (from function `bail-now' in file test/system/helpers.bash, line 230,\n[+0852s] #  from function `die' in file test/system/helpers.bash, line 958,\n[+0852s] #  from function `run_podman' in file test/system/helpers.bash, line 599,\n[+0852s] #  in test file test/system/250-systemd.bats, line 156)\n[+0852s] #   `run_podman commit --change \"CMD=/bin/bash\" $cname $image_copy' failed\n[+0852s] #\n[+0852s] # [19:42:24.253577272] # /var/tmp/podman-container-tools/podman/bin/podman  tag quay.io/libpod/testimage:20241011 base-t225-oo5veh8e\n[+0852s] #\n[+0852s] # [19:42:24.414033270] # /var/tmp/podman-container-tools/podman/bin/podman  create --name c-t225-oo5veh8e --label io.containers.autoupdate=local --entrypoint [\"top\"] base-t225-oo5veh8e\n[+0852s] # [19:42:24.721293430] 360e6d04125f7b6a108267868b6ad4f939692da3aced52654d2a5feca6ab8d45\n[+0852s] #"
+  },
+  {
+   "run_id": "31723951112",
+   "job_id": 94531471286,
+   "job": "windows machine wsl",
+   "date": "2026-08-13",
+   "raw": "[FAIL] run basic podman commands [It] Basic ops",
+   "sig": "[FAIL] run basic podman commands [It] Basic ops",
+   "context": "  podman machine rm Remove machine\t\t80.842458 seconds\n  podman machine list list machine from all providers\t\t88.164913 seconds\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - D:/a/podman/podman/pkg/machine/e2e/machine_test.go:92 @ 08/13/26 17:58:12.228 (1ms)\n[SynchronizedAfterSuite] PASSED [0.001 seconds]\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] run basic podman commands [It] Basic ops\n  D:/a/podman/podman/pkg/machine/e2e/basic_test.go:32\n\nRan 62 of 78 Specs in 2136.655 seconds\nFAIL! -- 61 Passed | 1 Failed | 0 Pending | 16 Skipped\n--- FAIL: TestMachine (2136.66s)\nFAIL\n\nGinkgo ran 1 suite in 36m8.2603176s\n\nTest Suite Failed\n\u001b[31;1mException: \u001b[0mD:\\a\\podman\\podman\\hack\\ci\\win-lib.ps1:79\u001b[0m\n\u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m"
+  },
+  {
+   "run_id": "31714125771",
+   "job_id": 94494366085,
+   "job": "Validate source code changes",
+   "date": "2026-08-13",
+   "raw": "make: *** [Makefile:301: golangci-lint] Error 1",
+   "sig": "make: *** [TARGET] Error 1",
+   "context": "\tContext(\"when marshaling and unmarshaling\", func() {\n\t^\n##[error]pkg/domain/entities/reports/prune_test.go:67:4: undefined: It (typecheck)\n\t\t\tIt(\"should handle \"+tt.name, func() {\n\t\t\t^\n6 issues:\n* typecheck: 6\n\nmake: *** [Makefile:301: golangci-lint] Error 1\n##[error]Process completed with exit code 2.\nPost job cleanup.\nSkipping cache saving\nPost job cleanup.\n[command]/usr/bin/git version\ngit version 2.54.0\nTemporarily overriding HOME='/home/ubuntu/_work/_temp/a61a6940-c8b8-42b8-900e-3b11c404daa4' before making global git config changes\nAdding repository directory to the temporary git global config as a safe directory\n[command]/usr/bin/git config --global --add safe.directory /home/ubuntu/_work/podman/podman\nRemoving SSH command configuration\n[command]/usr/bin/git config --local --name-only --get-regexp core\\.sshCommand\n[command]/usr/bin/git submodule foreach --recursive sh -c \"git config --local --name-only --get-regexp 'core\\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+  },
+  {
+   "run_id": "31709559909",
+   "job_id": 94479022625,
+   "job": "Validate source code changes",
+   "date": "2026-08-13",
+   "raw": "make: *** [Makefile:1023: .install.shfmt] Error 1",
+   "sig": "make: *** [TARGET] Error 1",
+   "context": "GOBIN=/home/ubuntu/_work/podman/podman/bin go install mvdan.cc/sh/v3/cmd/shfmt@v3.13.1\ngo: downloading mvdan.cc/sh/v3 v3.13.1\ngo: downloading github.com/google/renameio/v2 v2.0.2\ngo: downloading github.com/rogpeppe/go-internal v1.14.1\ngo: downloading mvdan.cc/editorconfig v0.3.0\ngo: downloading golang.org/x/term v0.41.0\n##[error]../../../go/pkg/mod/mvdan.cc/sh/v3@v3.13.1/cmd/shfmt/main.go:22:2: golang.org/x/term@v0.41.0: verifying module: golang.org/x/term@v0.41.0: reading https://sum.golang.org/tile/8/1/779: stream error: stream ID 59; INTERNAL_ERROR; received from peer\n\nmake: *** [Makefile:1023: .install.shfmt] Error 1\n##[error]Process completed with exit code 2.\nPost job cleanup.\nSkipping cache saving\nPost job cleanup.\n[command]/usr/bin/git version\ngit version 2.54.0\nTemporarily overriding HOME='/home/ubuntu/_work/_temp/edeaeac0-a04c-40a7-b7ee-c7d203e00adb' before making global git config changes\nAdding repository directory to the temporary git global config as a safe directory\n[command]/usr/bin/git config --global --add safe.directory /home/ubuntu/_work/podman/podman\nRemoving SSH command configuration\n[command]/usr/bin/git config --local --name-only --get-regexp core\\.sshCommand\n[command]/usr/bin/git submodule foreach --recursive sh -c \"git config --local --name-only --get-regexp 'core\\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+  },
+  {
+   "run_id": "31707172259",
+   "job_id": 94475153937,
+   "job": "sys remote root fedora-current / lima",
+   "date": "2026-08-13",
+   "raw": "not ok 209 |220| podman healthcheck in 3818ms",
+   "sig": "not ok |N| podman healthcheck",
+   "context": "ok 202 |200| pod exit policies in 10056ms\nok 203 |200| pod exit policies - play kube in 3885ms\nok 204 |200| pod resource limits in 942ms # skip resource limits only implemented on non-remote\nok 205 |200| podman pod create on failure in 1179ms\nok 206 |200| podman pod create restart tests in 2888ms\nok 207 |200| podman pod ps --filter in 11266ms\nok 208 |200| podman pod cleans cgroup and keeps limits in 896ms # skip [remote] we cannot check cgroup settings\n\nnot ok 209 |220| podman healthcheck in 3818ms\n# tags: ci:parallel\n# (from function `bail-now' in file test/system/helpers.bash, line 230,\n#  from function `assert' in file test/system/helpers.bash, line 1113,\n#  in test file test/system/220-healthcheck.bats, line 110)\n#   `assert \"$output\" =~ \"StartLimitIntervalUSec=0\" \"The hc service has the right interval set\"' failed\n#\n# [14:21:41.322341349] # /var/tmp/podman/bin/podman-remote --url=unix:///tmp/bats-run-8DNMJB/suite/remotesystem.podman.Jg0asM.sock run -d --name c-h-t209-vkxhvvm2 --health-cmd /home/podman/healthcheck --health-interval 1s --health-retries 3 --health-on-failure=kill --health-startup-cmd /home/podman/healthcheck --health-startup-interval 1s quay.io/libpod/testimage:20241011 /home/podman/pause\n# [14:21:41.971905065] 39b0806882eb6de23f89ae925800d92abb76abf20cfac7d1a274691d6750e10f\n#\n# [14:21:41.992198366] # /var/tmp/podman/bin/podman-remote --url=unix:///tmp/bats-run-8DNMJB/suite/remotesystem.podman.Jg0asM.sock inspect c-h-t209-vkxhvvm2 --format {{.Config.HealthcheckOnFailureAction}}\n# [14:21:42.046105532] kill\n#"
+  },
+  {
+   "run_id": "31679740179",
+   "job_id": 94385285864,
+   "job": "int local root debian-sid / lima",
+   "date": "2026-08-13",
+   "raw": "[FAIL] Podman run with volumes [It] podman named volume copyup",
+   "sig": "[FAIL] Podman run with volumes [It] podman named volume copyup",
+   "context": "[+0591s]   Podman events podman events --until future\t\t20.248106\n[+0591s]   \"unlinkat /tmp/podman-e2e-2661644280/subtest-1965945455/p/root/overlay/03901b4a2ea88eeaad62dbe59b072b28b6efa00491962b8741081c5df50c65e0/merged/var: read-only file system\"\n[+0591s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/13/26 08:24:27.165 (2.14s)\n[+0591s]   << Timeline\n[+0591s] ------------------------------\n[+0591s] \n[+0591s] Summarizing 1 Failure:\n[+0591s]   \n[FAIL] Podman run with volumes [It] podman named volume copyup\n[+0591s]   /var/tmp/podman-container-tools/podman/test/e2e/run_volume_test.go:439\n[+0591s] \n[+0591s] Ran 2448 of 2561 Specs in 544.602 seconds\n[+0591s] FAIL! -- 2447 Passed | 1 Failed | 0 Pending | 113 Skipped\n[+0591s] \n[+0591s] \n[+0591s] Ginkgo ran 1 suite in 9m36.607504651s\n[+0591s] \n[+0591s] Test Suite Failed\n[+0591s] make[1]: *** [Makefile:697: ginkgo-run] Error 1\n[+0591s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0591s] make: *** [Makefile:705: ginkgo] Error 2"
+  },
+  {
+   "run_id": "31673722979",
+   "job_id": 94410956845,
+   "job": "build fedora-current / lima",
+   "date": "2026-08-13",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94243516957,
+   "job": "windows installer wsl",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259258667,
+   "job": "machine linux amd64",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94423262642,
+   "job": "macos machine applehv",
+   "date": "2026-08-12",
+   "raw": "[FAIL] podman machine proxy settings propagation [It] ssh to running machine and check proxy settings",
+   "sig": "[FAIL] podman machine proxy settings propagation [It] ssh to running machine and check proxy settings",
+   "context": "  podman machine proxy settings propagation ssh to running machine and check proxy settings\t\t608.045167 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - /Users/MacM1-1-worker/ci/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/13/26 11:17:39.773 (1ms)\n[SynchronizedAfterSuite] PASSED [0.001 seconds]\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] podman machine proxy settings propagation [It] ssh to running machine and check proxy settings\n  /Users/MacM1-1-worker/ci/podman/podman/pkg/machine/e2e/config_test.go:59\n\nRan 79 of 84 Specs in 1778.576 seconds\nFAIL! -- 78 Passed | 1 Failed | 0 Pending | 5 Skipped\n--- FAIL: TestMachine (1778.58s)\nFAIL\nmake[1]: *** [ginkgo-run] Error 1\nmake: *** [localmachine] Error 2\n\nGinkgo ran 1 suite in 29m40.029846042s\n\nTest Suite Failed"
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259259401,
+   "job": "bindings  root fedora-current / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259259445,
+   "job": "unit  root fedora-current / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259259471,
+   "job": "compose_v2  root fedora-current / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259259513,
+   "job": "apiv2  rootless fedora-current / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259259537,
+   "job": "apiv2  root fedora-current / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259259643,
+   "job": "sys local rootless debian-sid / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259259703,
+   "job": "int local rootless fedora-prior / lima",
+   "date": "2026-08-12",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259259784,
+   "job": "int local root fedora-current / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259259804,
+   "job": "int local root fedora-prior / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259259849,
+   "job": "int local rootless fedora-current / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259259917,
+   "job": "int local root fedora-rawhide / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259259934,
+   "job": "sys local root fedora-rawhide / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259259942,
+   "job": "sys local rootless fedora-prior / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259260086,
+   "job": "int remote rootless fedora-current / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259260188,
+   "job": "int remote root fedora-prior / lima",
+   "date": "2026-08-12",
+   "raw": "[FAIL] Podman build [It] podman build --build-context: URL source",
+   "sig": "[FAIL] Podman build [It] podman build --build-context: URL source",
+   "context": "  Podman events podman events --until future\t\t20.159883\n  Podman build podman build --build-context: URL source\t\t94.274543\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman/test/e2e/common_test.go:237 @ 08/12/26 21:11:05.191 (3.908s)\n  << Timeline\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] Podman build [It] podman build --build-context: URL source\n  /var/tmp/podman/test/utils/utils.go:330\n\nRan 2283 of 2530 Specs in 605.804 seconds\nFAIL! -- 2282 Passed | 1 Failed | 0 Pending | 247 Skipped\n\n\nGinkgo ran 1 suite in 11m20.234987104s\n\nTest Suite Failed\nmake[1]: *** [Makefile:697: ginkgo-run] Error 1\nmake[1]: Leaving directory '/var/tmp/podman'\nmake: *** [Makefile:710: ginkgo-remote] Error 2"
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259260215,
+   "job": "bud local root fedora-current / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259260278,
+   "job": "sys local root fedora-current / lima",
+   "date": "2026-08-12",
+   "raw": "not ok 21 |030| podman run docker-archive in 6571ms",
+   "sig": "not ok |N| podman run docker-archive",
+   "context": "ok 14 |030| podman run --memory=0 runtime option in 1104ms\nok 15 |030| podman run --preserve-fds in 2000ms\nok 16 |030| podman run --preserve-fd in 1733ms\nok 17 |030| podman run - uidmapping has no /sys/kernel mounts in 2585ms\nok 18 |030| podman run --rm in 4192ms\nok 19 |030| podman run --name in 3580ms\nok 20 |030| podman run --conmon-pidfile --cidfile in 2666ms\n\nnot ok 21 |030| podman run docker-archive in 6571ms\n# tags: ci:parallel\n# (from function `bail-now' in file test/system/helpers.bash, line 230,\n#  from function `die' in file test/system/helpers.bash, line 958,\n#  from function `run_podman' in file test/system/helpers.bash, line 599,\n#  in test file test/system/030-run.bats, line 336)\n#   `run_podman create docker-archive:$archive' failed\n#\n# [21:12:07.448869225] # /var/tmp/podman/bin/podman  run --name c_t21-ilbrnvmd --entrypoint=[\"/bin/echo\",\"hb0kNatPgl1juQ5lJJ8S\"] quay.io/libpod/testimage:20241011\n# [21:12:08.724219970] hb0kNatPgl1juQ5lJJ8S\n#\n# [21:12:08.794403039] # /var/tmp/podman/bin/podman  commit c_t21-ilbrnvmd i_t21-ilbrnvmd\n# [21:12:09.710171041] Getting image source signatures"
+  },
+  {
+   "run_id": "31635164657",
+   "job_id": 94259260331,
+   "job": "int remote root debian-sid / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31633952968",
+   "job_id": 94239450668,
+   "job": "windows installer wsl",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31633952968",
+   "job_id": 94239450745,
+   "job": "build debian-sid / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31633952968",
+   "job_id": 94239450796,
+   "job": "windows installer hyperv",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31620875719",
+   "job_id": 94195114768,
+   "job": "Validate source code changes",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31620875719",
+   "job_id": 94195114834,
+   "job": "build fedora-current / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31620875719",
+   "job_id": 94204768222,
+   "job": "bud local root fedora-current / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31620875719",
+   "job_id": 94204768736,
+   "job": "int local rootless fedora-current / lima",
+   "date": "2026-08-12",
+   "raw": "[FAIL] Podman build [It] podman build --build-context: URL source",
+   "sig": "[FAIL] Podman build [It] podman build --build-context: URL source",
+   "context": "  < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman/test/e2e/common_test.go:237 @ 08/12/26 17:57:36.23 (3.026s)\n  << Timeline\n------------------------------\nmake[1]: *** [Makefile:697: ginkgo-run] Error 1\nmake: *** [Makefile:705: ginkgo] Error 2\n\nSummarizing 1 Failure:\n  \n[FAIL] Podman build [It] podman build --build-context: URL source\n  /var/tmp/podman/test/e2e/build_test.go:1151\n\nRan 2357 of 2548 Specs in 635.742 seconds\nFAIL! -- 2356 Passed | 1 Failed | 0 Pending | 191 Skipped\n\n\nGinkgo ran 1 suite in 10m54.909460148s\n\nTest Suite Failed\nmake[1]: Leaving directory '/var/tmp/podman'\ntime=\"2026-08-12T17:57:37Z\" level=info msg=\"Sending SIGKILL to the qemu driver process 2923\"\ntime=\"2026-08-12T17:57:37Z\" level=info msg=\"Sending SIGKILL to the host agent process 2899\""
+  },
+  {
+   "run_id": "31620875719",
+   "job_id": 94204768944,
+   "job": "int local root fedora-prior / lima",
+   "date": "2026-08-12",
+   "raw": "[FAIL] Podman build [It] podman build --build-context: URL source",
+   "sig": "[FAIL] Podman build [It] podman build --build-context: URL source",
+   "context": "  Podman events podman events --until future\t\t19.823160\n  Podman build podman build --build-context: URL source\t\t93.483017\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman/test/e2e/common_test.go:237 @ 08/12/26 17:59:09.494 (4.311s)\n  << Timeline\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] Podman build [It] podman build --build-context: URL source\n  /var/tmp/podman/test/utils/utils.go:330\n\nRan 2465 of 2548 Specs in 675.070 seconds\nFAIL! -- 2464 Passed | 1 Failed | 0 Pending | 83 Skipped\nmake[1]: *** [Makefile:697: ginkgo-run] Error 1\nmake: *** [Makefile:705: ginkgo] Error 2\n\n\nGinkgo ran 1 suite in 11m54.889819097s\n\nTest Suite Failed\nmake[1]: Leaving directory '/var/tmp/podman'"
+  },
+  {
+   "run_id": "31619674781",
+   "job_id": 94191402038,
+   "job": "windows installer hyperv",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31619674781",
+   "job_id": 94191402055,
+   "job": "Validate source code changes",
+   "date": "2026-08-12",
+   "raw": "make: *** [Makefile:775: tests-included] Error 1",
+   "sig": "make: *** [TARGET] Error 1",
+   "context": "If your change is minor, feel free to piggyback on already-written\ntests, possibly just adding a small step to a similar existing test.\nEvery second counts in CI.\n\nIf your commit really, truly does not need tests, you can proceed\nby asking a repo maintainer to set the 'No New Tests' github label.\nThis will only be done when there's no reasonable alternative.\n\nmake: *** [Makefile:775: tests-included] Error 1\n##[error]Process completed with exit code 2.\nPost job cleanup.\nSkipping cache saving\nPost job cleanup.\n[command]/usr/bin/git version\ngit version 2.54.0\nTemporarily overriding HOME='/home/ubuntu/_work/_temp/05c2cbef-49fc-4a00-8014-75968905a050' before making global git config changes\nAdding repository directory to the temporary git global config as a safe directory\n[command]/usr/bin/git config --global --add safe.directory /home/ubuntu/_work/podman/podman\nRemoving SSH command configuration\n[command]/usr/bin/git config --local --name-only --get-regexp core\\.sshCommand\n[command]/usr/bin/git submodule foreach --recursive sh -c \"git config --local --name-only --get-regexp 'core\\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+  },
+  {
+   "run_id": "31619674781",
+   "job_id": 94191402079,
+   "job": "windows installer wsl",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31619674781",
+   "job_id": 94196178564,
+   "job": "build fedora-rawhide / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31619674781",
+   "job_id": 94191402342,
+   "job": "build debian-sid / lima",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "31581038263",
+   "job_id": 94269690107,
+   "job": "windows installer wsl",
+   "date": "2026-08-12",
+   "raw": "",
+   "sig": ""
+  },
+  {
+   "run_id": "30366077024",
+   "job_id": 90301487056,
+   "job": "windows machine hyperv",
+   "date": "2026-07-28",
+   "raw": "",
+   "sig": ""
   }
  ]
 }

@@ -1,4 +1,4 @@
-# proposed issue comments - 2026-08-13
+# proposed issue comments - 2026-08-14
 
 Drafts only. Nothing below has been posted and this tool has no code path
 that can post. Matches marked needs-check failed the verbatim-error test
@@ -8,7 +8,7 @@ and must not be used without opening the logs first.
 match basis: name similarity only
 
 ```
-this is still firing - 29 times between 2026-06-02 and 2026-08-12:
+this is still firing - 32 times between 2026-06-02 and 2026-08-13:
 
     make: *** [TARGET] Error 1
 
@@ -21,7 +21,7 @@ https://github.com/podman-container-tools/podman/actions/runs/30463622001/job/90
 match basis: name similarity only
 
 ```
-this is still firing - 29 times between 2026-06-02 and 2026-07-29:
+this is still firing - 30 times between 2026-06-02 and 2026-08-13:
 
     not ok |N| podman healthcheck
 
@@ -73,6 +73,19 @@ https://github.com/podman-container-tools/podman/actions/runs/28363579941/job/84
 match basis: name similarity only
 
 ```
+this is still firing - 7 times between 2026-06-04 and 2026-08-13:
+
+    [FAIL] run basic podman commands [It] Basic ops
+
+https://github.com/podman-container-tools/podman/actions/runs/28192162202/job/83511628823
+https://github.com/podman-container-tools/podman/actions/runs/28097431667/job/83192238763
+https://github.com/podman-container-tools/podman/actions/runs/27980185311/job/82809584893
+```
+
+## draft 7: issue #26547  [needs-check]
+match basis: name similarity only
+
+```
 this is still firing - 6 times between 2026-06-04 and 2026-07-22:
 
     not ok |N| podman run --timeout - basic test
@@ -80,19 +93,6 @@ this is still firing - 6 times between 2026-06-04 and 2026-07-22:
 https://github.com/podman-container-tools/podman/actions/runs/29951636314/job/89032376797
 https://github.com/podman-container-tools/podman/actions/runs/29887045047/job/88820730114
 https://github.com/podman-container-tools/podman/actions/runs/28386372906/job/84103920728
-```
-
-## draft 7: issue #26547  [needs-check]
-match basis: name similarity only
-
-```
-this is still firing - 6 times between 2026-06-04 and 2026-06-25:
-
-    [FAIL] run basic podman commands [It] Basic ops
-
-https://github.com/podman-container-tools/podman/actions/runs/28192162202/job/83511628823
-https://github.com/podman-container-tools/podman/actions/runs/28097431667/job/83192238763
-https://github.com/podman-container-tools/podman/actions/runs/27980185311/job/82809584893
 ```
 
 ## draft 8: issue #24223  [needs-check]
