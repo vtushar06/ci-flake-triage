@@ -1,0 +1,45 @@
+name: daily triage
+
+on:
+  schedule:
+    # not on the hour - github drops on-the-hour scheduled jobs under load
+    - cron: '43 5 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: triage
+  cancel-in-progress: false
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: run tests first
+        run: python3 -m unittest discover tests
+
+      - name: scan new runs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 -m flaketriage scan podman-container-tools/podman ci.yml
+          python3 -m flaketriage extract
+          python3 -m flaketriage report
+          python3 -m flaketriage weekly
+          python3 -m flaketriage propose
+
+      - name: commit refreshed data and reports
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add data/corpus.json reports/
+          git diff --cached --quiet && exit 0
+          git commit -m "triage: daily refresh"
+          git push

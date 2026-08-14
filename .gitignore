@@ -1,0 +1,3 @@
+data/journals/
+data/*.tmp
+__pycache__/

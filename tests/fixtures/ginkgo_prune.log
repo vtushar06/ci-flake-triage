@@ -1,0 +1,3 @@
+2026-07-09T11:06:55.1165586Z   Running: podman-remote ps -aq --external
+2026-07-09T11:06:55.1166019Z   [FAILED] Expected <[]string | len:2, cap:2> to have length 3
+2026-07-09T11:06:55.1167039Z   [FAIL] Podman prune [It] podman system prune --build clean up after terminated build
