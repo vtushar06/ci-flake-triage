@@ -50,8 +50,8 @@ Design decisions and the mistakes behind them:
   to tweak both without touching code, and an eval command must tell them whether the tweak
   helped.
 - provider-agnostic model client, local default. the hosted free option evaluated for this
-  (GitHub Models) was retired mid-build - HTTP 410, "retirement brownout" - which is the
-  dependency-risk argument made real.
+  (GitHub Models) was fully retired on 2026-07-30, discovered live as an HTTP 410 mid-build -
+  the dependency-risk argument for local-first made real, with a date on it.
 
 ## Use cases
 
