@@ -5,12 +5,13 @@
   python3 -m flaketriage weekly
   python3 -m flaketriage propose            draft issue comments, never posts
   python3 -m flaketriage journal <job-id>   fetch the systemd journal artifact
+  python3 -m flaketriage diff <job-id>      lines only in the failing attempt
 
 scan is incremental - run it daily and it only touches new runs.
 """
 import sys
 
-from . import artifacts, extract, ingest, propose, report
+from . import artifacts, attemptdiff, extract, ingest, propose, report
 
 
 def main():
@@ -43,6 +44,12 @@ def main():
             print(__doc__)
             return 1
         if artifacts.fetch(args[1]) is None:
+            return 1
+    elif cmd == "diff":
+        if len(args) < 2:
+            print(__doc__)
+            return 1
+        if attemptdiff.render(args[1]) is None:
             return 1
     else:
         print(__doc__)
