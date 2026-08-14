@@ -43,3 +43,17 @@ class TestAttemptDiff(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestDecidingLine(unittest.TestCase):
+    def test_hallucinated_quote_downgrades_to_unknown(self):
+        from flaketriage.model import verify_deciding_line
+        v = {"cause": "race", "confidence": "high", "deciding_line": "made up line"}
+        out = verify_deciding_line(v, "real evidence only here")
+        self.assertEqual(out["cause"], "unknown")
+
+    def test_real_quote_passes(self):
+        from flaketriage.model import verify_deciding_line
+        v = {"cause": "race", "confidence": "high", "deciding_line": "unlinkat /x failed"}
+        out = verify_deciding_line(v, "before\nunlinkat /x failed\nafter")
+        self.assertEqual(out["cause"], "race")
