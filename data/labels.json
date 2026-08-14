@@ -1,0 +1,9 @@
+{
+  "_comment": "blind hand labels: signature -> cause. seeded from the hand-verified deep dives; the rest to be labelled by a person from evidence before seeing model output.",
+  "labels": {
+    "not ok |N| podman healthcheck": "test-bug",
+    "[FAIL] Podman prune [It] podman system prune --build clean up after terminated build": "race",
+    "[FAIL] Podman rmi [It] podman image rm - concurrent with shared layers": "race",
+    "make: *** [TARGET] Error 1": "designed"
+  }
+}
