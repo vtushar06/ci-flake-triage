@@ -48,7 +48,8 @@ MARKER = re.compile(r"not ok [0-9]+ |#\| FAIL: |\[FAIL\] |make: \*\*\* ")
 
 NOISE = re.compile(
     r"runner name|machine name|git config|##\[|hostagent|ssh local port|"
-    r"downloaded the image|decompressing|qemu|ovmf|guest agent",
+    r"downloaded the image|decompressing|qemu|ovmf|guest agent|"
+    r"removing|sigkill|deleted|github_log_summary|leaving directory",
     re.I,
 )
 
@@ -67,7 +68,7 @@ def diff(fail_text, pass_text, max_lines=40, window=400):
     passing = set(pl)
     idx = next((i for i, l in enumerate(fl) if MARKER.search(l)), None)
     if idx is not None:
-        fl = fl[max(0, idx - window): idx + 40]
+        fl = fl[max(0, idx - window): idx + 10]
     seen, only_fail = set(), []
     for l in fl:
         if l in passing or l in seen or NOISE.search(l):
