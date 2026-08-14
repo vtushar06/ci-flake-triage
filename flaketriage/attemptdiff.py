@@ -44,19 +44,38 @@ def fetch_pair(job_id):
     return fail, ok, flake
 
 
-def diff(fail_text, pass_text, max_lines=60):
-    """Lines unique to the failing run, in order, deduplicated."""
+MARKER = re.compile(r"not ok [0-9]+ |#\| FAIL: |\[FAIL\] |make: \*\*\* ")
+
+NOISE = re.compile(
+    r"runner name|machine name|git config|##\[|hostagent|ssh local port|"
+    r"downloaded the image|decompressing|qemu|ovmf|guest agent",
+    re.I,
+)
+
+
+def diff(fail_text, pass_text, max_lines=40, window=400):
+    """Lines unique to the failing run, anchored around the failure.
+
+    Diffing whole logs drowns the signal in per-machine setup noise
+    (runner names, VM boot, git plumbing) - measured on a real flake, the
+    first 60 unique lines were all setup. So: the passing log contributes
+    its full line set for membership, but candidate lines come only from a
+    window around the failure marker in the failing log, with known
+    infrastructure chatter dropped.
+    """
     fl, pl = _lines(fail_text or ""), _lines(pass_text or "")
     passing = set(pl)
+    idx = next((i for i, l in enumerate(fl) if MARKER.search(l)), None)
+    if idx is not None:
+        fl = fl[max(0, idx - window): idx + 40]
     seen, only_fail = set(), []
     for l in fl:
-        if l in passing or l in seen:
+        if l in passing or l in seen or NOISE.search(l):
             continue
         seen.add(l)
         only_fail.append(l)
-    # drop pure-noise lines that normalise could not stabilise
     only_fail = [l for l in only_fail if not re.fullmatch(r"[<>A-Z0-9_ :.\-]+", l)]
-    return only_fail[:max_lines]
+    return only_fail[-max_lines:]
 
 
 def render(job_id, log=print):
