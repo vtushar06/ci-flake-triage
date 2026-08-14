@@ -37,7 +37,17 @@ python3 -m flaketriage report
 python3 -m flaketriage weekly
 python3 -m flaketriage propose            # draft issue comments - never posts
 python3 -m flaketriage journal <job-id>   # fetch the job's systemd journal artifact
+python3 -m flaketriage diff <job-id>      # lines only in the failing attempt
+python3 -m flaketriage analyze            # model verdicts - optional, local by default
+python3 -m flaketriage eval               # measure the model against hand labels
 ```
+
+`diff` is the piece nothing else in the survey had: every confirmed flake has both a failing and
+a passing log for the same job on the same commit, so the lines unique to the failing attempt are
+the mechanism evidence - measured live, it pulled `read-only file system` straight out of a
+concurrent-rmi flake. `analyze` feeds exactly that (or the context block) to a small model and
+stores the verdict in its own field; docs/tuning.md is how a maintainer changes its behaviour and
+knows whether the change helped.
 
 Needs python3 and a logged-in `gh`, nothing else. Read-only against GitHub - there is no code
 path in this package that can post. State lives in `data/corpus.json` and scanning is
