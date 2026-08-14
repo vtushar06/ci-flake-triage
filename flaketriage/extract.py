@@ -55,6 +55,20 @@ def normalise(s):
     return s.strip()
 
 
+def _context(text, raw, before=8, after=12, width=2000):
+    """A small block around the failure line - what a model would see.
+
+    Never the whole log: the model layer only ever gets a pre-extracted
+    block, which keeps a 3B local model workable and the cost bounded.
+    """
+    i = text.find(raw)
+    if i < 0:
+        return ""
+    lines = text[:i].splitlines()[-before:] + text[i:].splitlines()[: after + 1]
+    block = "\n".join(l.split("Z ", 1)[-1] for l in lines)
+    return block[:width]
+
+
 def extract_all(log=print):
     st = load_state()
     repo = st["repo"]
@@ -84,6 +98,8 @@ def extract_all(log=print):
                     break
         f["raw"] = raw[:300]
         f["sig"] = normalise(raw) if raw else ""
+        if raw:
+            f["context"] = _context(text, raw)
         done += 1
         if done % 25 == 0:
             save_state(st)
