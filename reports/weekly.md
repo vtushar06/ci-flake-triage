@@ -1,6 +1,12 @@
-# flake report, week ending 2026-08-14
+# flake report, week ending 2026-08-15
 
-61 confirmed flakes in 23 signatures this week.
+92 confirmed flakes in 22 signatures this week.
+
+## 33x  `(no log / no marker)`
+jobs: Validate source code changes, bud local root fedora-current, compose_v2  root fedora-current, compose_v2  rootless fedora-current, int local root debian-sid, int local root fedora-rawhide, int local rootless debian-sid, int local rootless fedora-prior, int remote root fedora-prior, int remote rootless fedora-current, macos machine libkrun, sys local root debian-sid, sys local root fedora-current, sys local root fedora-rawhide, sys local rootless debian-sid, sys local rootless fedora-current, sys remote root fedora-prior, sys remote root fedora-rawhide, unit  root fedora-current, windows machine hyperv, windows machine wsl
+- https://github.com/podman-container-tools/podman/actions/runs/31635164657/job/94259259703
+- https://github.com/podman-container-tools/podman/actions/runs/31839624435/job/94893455317
+- https://github.com/podman-container-tools/podman/actions/runs/31804911176/job/94787335666
 
 ## 32x  `(no log / no marker)`
 jobs: Validate source code changes, apiv2  root fedora-current, apiv2  rootless fedora-current, bindings  root fedora-current, bud local root fedora-current, build debian-sid, build fedora-current, build fedora-rawhide, compose_v2  root fedora-current, int local root fedora-current, int local root fedora-prior, int local root fedora-rawhide, int local rootless fedora-current, int remote root debian-sid, int remote rootless fedora-current, machine linux amd64, sys local root fedora-rawhide, sys local rootless debian-sid, sys local rootless fedora-current, sys local rootless fedora-prior, unit  root fedora-current, windows installer hyperv, windows installer wsl
@@ -66,10 +72,6 @@ jobs: sys local root fedora-rawhide
 jobs: sys local rootless debian-sid
 - https://github.com/podman-container-tools/podman/actions/runs/31304615246/job/93492863484
 
-## 1x  `not ok \|N\| quadlet - image tag`
-jobs: sys local rootless fedora-current
-- https://github.com/podman-container-tools/podman/actions/runs/31171540579/job/92847046566
-
 ## 1x  `[FAIL] Podman pod stop [It] podman pod start/stop single pod via --pod-id-file`
 jobs: int local root debian-sid
 - https://github.com/podman-container-tools/podman/actions/runs/31730666358/job/94554132184
@@ -93,10 +95,6 @@ jobs: int local root debian-sid
 ## 1x  `[FAIL] podman machine proxy settings propagation [It] ssh to running machine and check proxy setting`
 jobs: macos machine applehv
 - https://github.com/podman-container-tools/podman/actions/runs/31635164657/job/94423262642
-
-## 1x  `(no log / no marker)`
-jobs: int local rootless fedora-prior
-- https://github.com/podman-container-tools/podman/actions/runs/31635164657/job/94259259703
 
 ## 1x  `not ok \|N\| podman run docker-archive`
 jobs: sys local root fedora-current
