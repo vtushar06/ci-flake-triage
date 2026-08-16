@@ -30,3 +30,23 @@ class TestClassify(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestCheck(unittest.TestCase):
+    def test_bats_paste_normalises_to_the_stored_signature(self):
+        from flaketriage.check import _norm
+        pasted = "not ok 212 |220| podman healthcheck in 15635ms"
+        stored = "not ok |N| podman healthcheck"
+        self.assertEqual(_norm(pasted), _norm(stored))
+
+    def test_unrelated_test_does_not_match(self):
+        from flaketriage.check import _norm, _score
+        self.assertLess(_score(_norm("podman network reload"),
+                               _norm("podman healthcheck")), 0.55)
+
+    def test_exact_name_scores_above_partial(self):
+        from flaketriage.check import _norm, _score
+        exact = _score(_norm("podman healthcheck"), _norm("not ok |N| podman healthcheck"))
+        partial = _score(_norm("podman healthcheck"),
+                         _norm("not ok |N| podman kube play healthcheck should wait"))
+        self.assertGreater(exact, partial)

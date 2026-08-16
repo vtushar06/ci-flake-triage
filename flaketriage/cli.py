@@ -8,13 +8,14 @@
   python3 -m flaketriage diff <job-id>      lines only in the failing attempt
   python3 -m flaketriage analyze [--limit N]  model verdicts (needs a model endpoint)
   python3 -m flaketriage eval               measure the model against hand labels
+  python3 -m flaketriage check "<test name>"  is this a known flake? (REVIEWING.md)
 
 scan is incremental - run it daily and it only touches new runs.
 """
 import sys
 
 from . import analyze as analyzecmd
-from . import artifacts, attemptdiff, evalcmd, extract, ingest, propose, report
+from . import artifacts, attemptdiff, check as checkcmd, evalcmd, extract, ingest, propose, report
 
 
 def main():
@@ -59,6 +60,11 @@ def main():
         if "--limit" in args and args.index("--limit") + 1 < len(args):
             limit = int(args[args.index("--limit") + 1])
         analyzecmd.analyze(limit=limit)
+    elif cmd == "check":
+        if len(args) < 2:
+            print('usage: check "<test name>"')
+            return 1
+        return checkcmd.check(" ".join(args[1:]))
     elif cmd == "eval":
         evalcmd.run()
     else:

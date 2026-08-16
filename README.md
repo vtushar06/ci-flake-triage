@@ -39,6 +39,7 @@ python3 -m flaketriage propose            # draft issue comments - never posts
 python3 -m flaketriage journal <job-id>   # fetch the job's systemd journal artifact
 python3 -m flaketriage diff <job-id>      # lines only in the failing attempt
 python3 -m flaketriage analyze            # model verdicts - optional, local by default
+python3 -m flaketriage check "<test name>"   is this a known flake?
 python3 -m flaketriage eval               # measure the model against hand labels
 ```
 
