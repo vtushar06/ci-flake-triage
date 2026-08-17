@@ -1,6 +1,6 @@
-# flake report, week ending 2026-08-16
+# flake report, week ending 2026-08-17
 
-92 confirmed flakes in 22 signatures this week.
+90 confirmed flakes in 21 signatures this week.
 
 ## 33x  `(no log / no marker)`
 jobs: Validate source code changes, bud local root fedora-current, compose_v2  root fedora-current, compose_v2  rootless fedora-current, int local root debian-sid, int local root fedora-rawhide, int local rootless debian-sid, int local rootless fedora-prior, int remote root fedora-prior, int remote rootless fedora-current, macos machine libkrun, sys local root debian-sid, sys local root fedora-current, sys local root fedora-rawhide, sys local rootless debian-sid, sys local rootless fedora-current, sys remote root fedora-prior, sys remote root fedora-rawhide, unit  root fedora-current, windows machine hyperv, windows machine wsl
@@ -8,11 +8,11 @@ jobs: Validate source code changes, bud local root fedora-current, compose_v2  r
 - https://github.com/podman-container-tools/podman/actions/runs/31839624435/job/94893455317
 - https://github.com/podman-container-tools/podman/actions/runs/31804911176/job/94787335666
 
-## 32x  `(no log / no marker)`
-jobs: Validate source code changes, apiv2  root fedora-current, apiv2  rootless fedora-current, bindings  root fedora-current, bud local root fedora-current, build debian-sid, build fedora-current, build fedora-rawhide, compose_v2  root fedora-current, int local root fedora-current, int local root fedora-prior, int local root fedora-rawhide, int local rootless fedora-current, int remote root debian-sid, int remote rootless fedora-current, machine linux amd64, sys local root fedora-rawhide, sys local rootless debian-sid, sys local rootless fedora-current, sys local rootless fedora-prior, unit  root fedora-current, windows installer hyperv, windows installer wsl
+## 31x  `(no log / no marker)`
+jobs: Validate source code changes, apiv2  root fedora-current, apiv2  rootless fedora-current, bindings  root fedora-current, bud local root fedora-current, build debian-sid, build fedora-current, build fedora-rawhide, compose_v2  root fedora-current, int local root fedora-current, int local root fedora-prior, int local root fedora-rawhide, int local rootless fedora-current, int remote root debian-sid, int remote rootless fedora-current, machine linux amd64, sys local root fedora-rawhide, sys local rootless debian-sid, sys local rootless fedora-prior, unit  root fedora-current, windows installer hyperv, windows installer wsl
 - https://github.com/podman-container-tools/podman/actions/runs/31508241936/job/93835206236
 - https://github.com/podman-container-tools/podman/actions/runs/31409432964/job/93527219424
-- https://github.com/podman-container-tools/podman/actions/runs/31304615246/job/93492863519
+- https://github.com/podman-container-tools/podman/actions/runs/31673722979/job/94410956845
 
 ## 4x  `make: *** [TARGET] Error 1`
 jobs: Validate source code changes
@@ -67,10 +67,6 @@ jobs: int local root fedora-current
 ## 1x  `not ok [N] podman network reload`
 jobs: sys local root fedora-rawhide
 - https://github.com/podman-container-tools/podman/actions/runs/31388391879/job/93457200292
-
-## 1x  `not ok \|N\| podman mount no-dereference`
-jobs: sys local rootless debian-sid
-- https://github.com/podman-container-tools/podman/actions/runs/31304615246/job/93492863484
 
 ## 1x  `[FAIL] Podman pod stop [It] podman pod start/stop single pod via --pod-id-file`
 jobs: int local root debian-sid
