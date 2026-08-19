@@ -1,18 +1,18 @@
-# flake report, week ending 2026-08-18
+# flake report, week ending 2026-08-19
 
-105 confirmed flakes in 18 signatures this week.
+105 confirmed flakes in 14 signatures this week.
 
-## 53x  `(no log / no marker)`
-jobs: Validate source code changes, bud local root fedora-current, compose_v2  root fedora-current, compose_v2  rootless fedora-current, int local root debian-sid, int local root fedora-rawhide, int local rootless debian-sid, int local rootless fedora-prior, int remote root fedora-prior, int remote root fedora-rawhide, int remote rootless fedora-current, macos machine applehv, macos machine libkrun, sys local root debian-sid, sys local root fedora-current, sys local root fedora-rawhide, sys local rootless debian-sid, sys local rootless fedora-current, sys remote root fedora-current, sys remote root fedora-prior, sys remote root fedora-rawhide, unit  root fedora-current, windows installer hyperv, windows installer wsl, windows machine hyperv, windows machine wsl
+## 59x  `(no log / no marker)`
+jobs: Validate source code changes, bud local root fedora-current, compose_v2  root fedora-current, compose_v2  rootless fedora-current, farm  rootless fedora-current, int local root debian-sid, int local root fedora-rawhide, int local rootless debian-sid, int local rootless fedora-prior, int remote root fedora-prior, int remote root fedora-rawhide, int remote rootless fedora-current, macos machine applehv, macos machine libkrun, sys local root debian-sid, sys local root fedora-current, sys local root fedora-rawhide, sys local rootless debian-sid, sys local rootless fedora-current, sys local rootless fedora-rawhide, sys remote root fedora-current, sys remote root fedora-prior, sys remote root fedora-rawhide, unit  root fedora-current, windows installer hyperv, windows installer wsl, windows machine hyperv, windows machine wsl
 - https://github.com/podman-container-tools/podman/actions/runs/31635164657/job/94259259703
 - https://github.com/podman-container-tools/podman/actions/runs/31839624435/job/94893455317
 - https://github.com/podman-container-tools/podman/actions/runs/31804911176/job/94787335666
 
-## 30x  `(no log / no marker)`
+## 29x  `(no log / no marker)`
 jobs: Validate source code changes, apiv2  root fedora-current, apiv2  rootless fedora-current, bindings  root fedora-current, bud local root fedora-current, build debian-sid, build fedora-current, build fedora-rawhide, compose_v2  root fedora-current, int local root fedora-current, int local root fedora-prior, int local root fedora-rawhide, int local rootless fedora-current, int remote root debian-sid, int remote rootless fedora-current, machine linux amd64, sys local root fedora-rawhide, sys local rootless debian-sid, sys local rootless fedora-prior, unit  root fedora-current, windows installer hyperv, windows installer wsl
-- https://github.com/podman-container-tools/podman/actions/runs/31508241936/job/93835206236
 - https://github.com/podman-container-tools/podman/actions/runs/31673722979/job/94410956845
 - https://github.com/podman-container-tools/podman/actions/runs/31635164657/job/94243516957
+- https://github.com/podman-container-tools/podman/actions/runs/31635164657/job/94259258667
 
 ## 4x  `make: *** [TARGET] Error 1`
 jobs: Validate source code changes
@@ -26,11 +26,6 @@ jobs: int local root fedora-prior, int local rootless fedora-current, int remote
 - https://github.com/podman-container-tools/podman/actions/runs/31620875719/job/94204768736
 - https://github.com/podman-container-tools/podman/actions/runs/31620875719/job/94204768944
 
-## 2x  `[FAIL] Podman run networking [It] podman run bridge multiple containers same network different ports`
-jobs: int local rootless debian-sid, int local rootless fedora-rawhide
-- https://github.com/podman-container-tools/podman/actions/runs/31535365546/job/94053002455
-- https://github.com/podman-container-tools/podman/actions/runs/31535365546/job/94053002734
-
 ## 1x  `[FAIL] podman machine set [It] set rootful with docker sock change`
 jobs: macos machine libkrun
 - https://github.com/podman-container-tools/podman/actions/runs/31609473874/job/94161435950
@@ -42,18 +37,6 @@ jobs: int local root fedora-rawhide
 ## 1x  `not ok \|N\| podman run --cgroups=disabled keeps the current cgroup`
 jobs: sys local root fedora-rawhide
 - https://github.com/podman-container-tools/podman/actions/runs/31583231056/job/94082573235
-
-## 1x  `make: *** [TARGET] Error 60`
-jobs: macos installer
-- https://github.com/podman-container-tools/podman/actions/runs/31535365546/job/93942837789
-
-## 1x  `[FAIL] podman machine init [It] simple init with start`
-jobs: macos machine libkrun
-- https://github.com/podman-container-tools/podman/actions/runs/31527128471/job/93903188389
-
-## 1x  `[FAIL] Podman port [It] podman port nginx by name`
-jobs: int local rootless fedora-prior
-- https://github.com/podman-container-tools/podman/actions/runs/31527128471/job/93903189328
 
 ## 1x  `[FAIL] Podman pod stop [It] podman pod start/stop single pod via --pod-id-file`
 jobs: int local root debian-sid
