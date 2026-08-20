@@ -32,5 +32,24 @@ Calibration, so nobody is surprised by the first number:
 - no published benchmark classifies flake causes from failing-vs-passing attempt diffs. Our
   input format has no prior number; the harness here is how one gets established.
 
+The strongest external support for this design is Gultekin, Berndt, Bell, Bach and Baltes,
+"How Far Are We from Detecting Flaky Tests? On the Limits of Code-Based Detection"
+(arXiv 2607.09345, 2026). Two findings land directly on choices made here:
+
+- they argue the field should ask whether **an observed failure is flaky** rather than whether a
+  test *can* be flaky. That is exactly what the rerun-history oracle answers, and it is the
+  reason this pipeline is built on observed reruns rather than on static analysis of test code.
+- across 86 end-to-end CI failures, the test code revealed the cause in only 42%; **58% needed
+  additional execution evidence**. That is the published form of what cost me a public
+  correction on podman #29353, where the job log pointed the wrong way and the systemd journal
+  artifact held the actual cause. It is why artifact fetching is part of ingestion rather than
+  an afterthought.
+
+Jonathan Bell also confirmed by email (2026-08-19) that mass reruns surface proportionally more
+infrastructure defects - transient DNS failures were his example. Our corpus is human-triggered
+rather than mass-rerun, so it is biased the other way, toward failures a maintainer thought were
+worth acting on. That is a different population, not a smaller one, and worth stating whenever
+these numbers are compared to rerun-harness studies.
+
 Sizing target from the same literature: ~30 labelled items per cause before per-class numbers
 mean anything. Until then the headline is the overall agreement plus coverage, nothing finer.
