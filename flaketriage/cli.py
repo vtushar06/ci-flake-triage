@@ -1,6 +1,6 @@
 """usage:
   python3 -m flaketriage scan <owner/repo> <workflow-file> [--limit N] [--created A..B]
-  python3 -m flaketriage extract
+  python3 -m flaketriage extract [--retry-no-log]
   python3 -m flaketriage report [--no-issues]
   python3 -m flaketriage weekly
   python3 -m flaketriage propose            draft issue comments, never posts
@@ -36,6 +36,8 @@ def main():
             created = args[args.index("--created") + 1]
         ingest.scan(pos[0], pos[1], limit=limit, created=created)
     elif cmd == "extract":
+        if "--retry-no-log" in args:
+            extract.retry_no_log()
         extract.extract_all()
     elif cmd == "report":
         report.full_report(with_issues="--no-issues" not in args)

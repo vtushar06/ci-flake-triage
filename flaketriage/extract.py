@@ -69,6 +69,25 @@ def _context(text, raw, before=8, after=12, width=2000):
     return block[:width]
 
 
+def retry_no_log(log=print):
+    """Drop the no-log marker so the next extract fetches those logs again.
+
+    The marker is terminal by design, which is right when the log is really
+    gone and wrong when the fetch failed for any other reason. Run this once
+    after fixing the reason.
+    """
+    st = load_state()
+    n = 0
+    for f in st["flakes"]:
+        if f.get("no_log"):
+            f.pop("no_log", None)
+            f.pop("sig", None)
+            n += 1
+    save_state(st)
+    log(f"done: {n} flakes queued for another attempt")
+    return n
+
+
 def extract_all(log=print):
     st = load_state()
     repo = st["repo"]
