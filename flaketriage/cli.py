@@ -15,11 +15,19 @@ scan is incremental - run it daily and it only touches new runs.
 import sys
 
 from . import analyze as analyzecmd
-from . import artifacts, attemptdiff, check as checkcmd, evalcmd, extract, ingest, propose, report
+from . import artifacts, attemptdiff, check as checkcmd, evalcmd, extract, gh, ingest, propose, report
 
 
 def main():
-    args = sys.argv[1:]
+    try:
+        return _run(sys.argv[1:])
+    except gh.ApiError as e:
+        # never a traceback for a failed request, and never a quiet skip
+        print(e)
+        return 1
+
+
+def _run(args):
     if not args:
         print(__doc__)
         return 1
