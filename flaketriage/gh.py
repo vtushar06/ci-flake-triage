@@ -37,9 +37,21 @@ def api(path, tries=3):
 
 
 def api_text(path):
-    """GET a path that returns plain text (job logs). None if the log is gone."""
+    """GET a path that returns plain text (job logs). None if the log is gone.
+
+    None means gone (404/410) - a superseded attempt genuinely has no log.
+    Anything else raises: a 403 from a token that may not read another repo's
+    logs used to return None here, so every new flake was filed as "no
+    retrievable log" and the signature list stopped growing for two weeks.
+    """
     r = subprocess.run(["gh", "api", path], capture_output=True, text=True)
-    return r.stdout if r.returncode == 0 else None
+    if r.returncode == 0:
+        return r.stdout
+    err = r.stderr.strip()
+    low = err.lower()
+    if "404" in low or "410" in low or "not found" in low or "gone" in low:
+        return None
+    raise ApiError(f"gh api {path} failed: {err.splitlines()[0] if err else 'unknown error'}")
 
 
 def api_bytes(path):
