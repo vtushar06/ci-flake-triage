@@ -20,14 +20,16 @@ STATE = os.path.join(os.path.dirname(__file__), "..", "data", "corpus.json")
 
 def load_state():
     if os.path.exists(STATE):
-        return json.load(open(STATE))
+        with open(STATE) as f:
+            return json.load(f)
     return {"repo": None, "workflow": None, "runs": {}, "flakes": []}
 
 
 def save_state(st):
     os.makedirs(os.path.dirname(STATE), exist_ok=True)
     tmp = STATE + ".tmp"
-    json.dump(st, open(tmp, "w"), indent=1)
+    with open(tmp, "w") as f:
+        json.dump(st, f, indent=1)
     os.replace(tmp, STATE)
 
 

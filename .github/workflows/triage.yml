@@ -27,7 +27,10 @@ jobs:
 
       - name: scan new runs
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # the default workflow token cannot read job logs in another
+          # repository, and that 403 used to be filed as "no retrievable log".
+          # PODMAN_READ_TOKEN is a read-only PAT with actions:read.
+          GH_TOKEN: ${{ secrets.PODMAN_READ_TOKEN || secrets.GITHUB_TOKEN }}
         run: |
           python3 -m flaketriage scan podman-container-tools/podman ci.yml
           python3 -m flaketriage extract

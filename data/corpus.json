@@ -11257,8 +11257,8 @@
    "job_id": 94259259703,
    "job": "int local rootless fedora-prior / lima",
    "date": "2026-08-12",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "31635164657",
@@ -11478,696 +11478,762 @@
    "job_id": 94893455317,
    "job": "Validate source code changes",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "make: *** [Makefile:788: tests-included] Error 1",
+   "sig": "make: *** [TARGET] Error 1",
+   "context": "If your change is minor, feel free to piggyback on already-written\ntests, possibly just adding a small step to a similar existing test.\nEvery second counts in CI.\n\nIf your commit really, truly does not need tests, you can proceed\nby asking a repo maintainer to set the 'No New Tests' github label.\nThis will only be done when there's no reasonable alternative.\n\nmake: *** [Makefile:788: tests-included] Error 1\n##[error]Process completed with exit code 2.\nPost job cleanup.\nSkipping cache saving\nPost job cleanup.\n[command]/usr/bin/git version\ngit version 2.54.0\nTemporarily overriding HOME='/home/ubuntu/_work/_temp/61bb8023-126e-44a6-b419-20a23040f0e2' before making global git config changes\nAdding repository directory to the temporary git global config as a safe directory\n[command]/usr/bin/git config --global --add safe.directory /home/ubuntu/_work/podman/podman\nRemoving SSH command configuration\n[command]/usr/bin/git config --local --name-only --get-regexp core\\.sshCommand\n[command]/usr/bin/git submodule foreach --recursive sh -c \"git config --local --name-only --get-regexp 'core\\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
   },
   {
    "run_id": "31804911176",
    "job_id": 94787335666,
    "job": "sys local rootless debian-sid / lima",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 209 |220| podman healthcheck in 3782ms",
+   "sig": "not ok |N| podman healthcheck",
+   "context": "ok 202 |200| pod exit policies in 6463ms\nok 203 |200| pod exit policies - play kube in 2815ms\nok 204 |200| pod resource limits in 959ms # skip [rootless] resource limits only work with root\nok 205 |200| podman pod create on failure in 1023ms\nok 206 |200| podman pod create restart tests in 2973ms\nok 207 |200| podman pod ps --filter in 15964ms\nok 208 |200| podman pod cleans cgroup and keeps limits in 5603ms\n\nnot ok 209 |220| podman healthcheck in 3782ms\n# tags: ci:parallel\n# (from function `bail-now' in file test/system/helpers.bash, line 230,\n#  from function `assert' in file test/system/helpers.bash, line 1113,\n#  in test file test/system/220-healthcheck.bats, line 110)\n#   `assert \"$output\" =~ \"StartLimitIntervalUSec=0\" \"The hc service has the right interval set\"' failed\n#\n# [14:08:25.752630007] $ /var/tmp/podman/bin/podman  run -d --name c-h-t209-eqp2egvg --health-cmd /home/podman/healthcheck --health-interval 1s --health-retries 3 --health-on-failure=kill --health-startup-cmd /home/podman/healthcheck --health-startup-interval 1s quay.io/libpod/testimage:20241011 /home/podman/pause\n# [14:08:26.094017576] 6070a7bbbaf9bc1b43ba56a7010191673ddf39992d59d7203e01c2152a41b688\n#\n# [14:08:26.108284434] $ /var/tmp/podman/bin/podman  inspect c-h-t209-eqp2egvg --format {{.Config.HealthcheckOnFailureAction}}\n# [14:08:26.293956074] kill\n#"
   },
   {
    "run_id": "31804911176",
    "job_id": 94787335903,
    "job": "sys local root fedora-rawhide / lima",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 209 |220| podman healthcheck in 4795ms",
+   "sig": "not ok |N| podman healthcheck",
+   "context": "ok 202 |200| pod exit policies in 4639ms\nok 203 |200| pod exit policies - play kube in 2893ms\nok 204 |200| pod resource limits in 2470ms\nok 205 |200| podman pod create on failure in 1030ms\nok 206 |200| podman pod create restart tests in 2371ms\nok 207 |200| podman pod ps --filter in 10386ms\nok 208 |200| podman pod cleans cgroup and keeps limits in 5038ms\n\nnot ok 209 |220| podman healthcheck in 4795ms\n# tags: ci:parallel\n# (from function `bail-now' in file test/system/helpers.bash, line 230,\n#  from function `assert' in file test/system/helpers.bash, line 1113,\n#  in test file test/system/220-healthcheck.bats, line 110)\n#   `assert \"$output\" =~ \"StartLimitIntervalUSec=0\" \"The hc service has the right interval set\"' failed\n#\n# [14:07:55.856079679] # /var/tmp/podman/bin/podman  run -d --name c-h-t209-b9npqf76 --health-cmd /home/podman/healthcheck --health-interval 1s --health-retries 3 --health-on-failure=kill --health-startup-cmd /home/podman/healthcheck --health-startup-interval 1s quay.io/libpod/testimage:20241011 /home/podman/pause\n# [14:07:57.015561423] 37288de764ab713979fe6408090fefe30a7fbaa5e9820c3fed0e5ebd0e7882f4\n#\n# [14:07:57.031632103] # /var/tmp/podman/bin/podman  inspect c-h-t209-b9npqf76 --format {{.Config.HealthcheckOnFailureAction}}\n# [14:07:57.223710861] kill\n#"
   },
   {
    "run_id": "31804911176",
    "job_id": 94787336127,
    "job": "sys local root debian-sid / lima",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 209 |220| podman healthcheck in 3192ms",
+   "sig": "not ok |N| podman healthcheck",
+   "context": "ok 202 |200| pod exit policies in 7369ms\nok 203 |200| pod exit policies - play kube in 3749ms\nok 204 |200| pod resource limits in 597ms # skip BFQ scheduler is not supported on the system\nok 205 |200| podman pod create on failure in 981ms\nok 206 |200| podman pod create restart tests in 3151ms\nok 207 |200| podman pod ps --filter in 17028ms\nok 208 |200| podman pod cleans cgroup and keeps limits in 6747ms\n\nnot ok 209 |220| podman healthcheck in 3192ms\n# tags: ci:parallel\n# (from function `bail-now' in file test/system/helpers.bash, line 230,\n#  from function `assert' in file test/system/helpers.bash, line 1113,\n#  in test file test/system/220-healthcheck.bats, line 110)\n#   `assert \"$output\" =~ \"StartLimitIntervalUSec=0\" \"The hc service has the right interval set\"' failed\n#\n# [14:09:39.150122363] # /var/tmp/podman/bin/podman  run -d --name c-h-t209-dch2pjgk --health-cmd /home/podman/healthcheck --health-interval 1s --health-retries 3 --health-on-failure=kill --health-startup-cmd /home/podman/healthcheck --health-startup-interval 1s quay.io/libpod/testimage:20241011 /home/podman/pause\n# [14:09:39.691704343] 0ffb47462d1126318eb9de029cd447397630f2835c7f2660659267a9449ec910\n#\n# [14:09:39.702120245] # /var/tmp/podman/bin/podman  inspect c-h-t209-dch2pjgk --format {{.Config.HealthcheckOnFailureAction}}\n# [14:09:40.049885372] kill\n#"
   },
   {
    "run_id": "31792284628",
    "job_id": 94741668163,
    "job": "Validate source code changes",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "make: *** [Makefile:788: tests-included] Error 1",
+   "sig": "make: *** [TARGET] Error 1",
+   "context": "If your change is minor, feel free to piggyback on already-written\ntests, possibly just adding a small step to a similar existing test.\nEvery second counts in CI.\n\nIf your commit really, truly does not need tests, you can proceed\nby asking a repo maintainer to set the 'No New Tests' github label.\nThis will only be done when there's no reasonable alternative.\n\nmake: *** [Makefile:788: tests-included] Error 1\n##[error]Process completed with exit code 2.\nPost job cleanup.\nSkipping cache saving\nPost job cleanup.\n[command]/usr/bin/git version\ngit version 2.54.0\nTemporarily overriding HOME='/home/ubuntu/_work/_temp/a25119c3-0927-4427-999b-41a32fac9909' before making global git config changes\nAdding repository directory to the temporary git global config as a safe directory\n[command]/usr/bin/git config --global --add safe.directory /home/ubuntu/_work/podman/podman\nRemoving SSH command configuration\n[command]/usr/bin/git config --local --name-only --get-regexp core\\.sshCommand\n[command]/usr/bin/git submodule foreach --recursive sh -c \"git config --local --name-only --get-regexp 'core\\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
   },
   {
    "run_id": "31791336061",
    "job_id": 94741858012,
    "job": "windows machine hyperv",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] podman machine rm [It] Remove machine sharing ssh key with another machine",
+   "sig": "[FAIL] podman machine rm [It] Remove machine sharing ssh key with another machine",
+   "context": "  podman machine start start simple machine\t\t133.900271 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - D:/a/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/14/26 11:20:27.214 (2ms)\n[SynchronizedAfterSuite] PASSED [0.002 seconds]\n------------------------------\n\nSummarizing 2 Failures:\n  \n[FAIL] podman machine rm [It] Remove machine sharing ssh key with another machine\n  D:/a/podman/podman/pkg/machine/e2e/rm_test.go:151\n  [TIMEDOUT] podman machine set [It] set machine cpus, disk, memory\n  D:/a/podman/podman/pkg/machine/e2e/set_test.go:31\n\nRan 61 of 88 Specs in 3011.207 seconds\nFAIL! - Suite Timeout Elapsed -- 59 Passed | 2 Failed | 0 Pending | 27 Skipped\n--- FAIL: TestMachine (3011.21s)\nFAIL\n\nGinkgo ran 1 suite in 50m30.2178307s\n\nTest Suite Failed"
   },
   {
    "run_id": "31791336061",
    "job_id": 94741859454,
    "job": "sys local root fedora-rawhide / lima",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 114 |060| podman run --mount image in 2429ms",
+   "sig": "not ok |N| podman run --mount image",
+   "context": "[+0909s] ok 107 |055| podman rm -f in 3947ms\n[+0909s] ok 108 |055| podman container rm --force bogus in 1735ms\n[+0909s] ok 109 |055| podman container rm doesn't affect stopping containers in 7116ms\n[+0909s] ok 110 |055| podman container rm --force doesn't leave running processes in 22559ms\n[+0909s] ok 111 |055| podman rm after killed conmon in 1144ms\n[+0909s] ok 112 |060| podman mount - basic test in 1247ms\n[+0909s] ok 113 |060| podman run --mount ro=false  in 4859ms\n[+0909s] \nnot ok 114 |060| podman run --mount image in 2429ms\n[+0909s] # tags: ci:parallel\n[+0909s] # (from function `bail-now' in file test/system/helpers.bash, line 230,\n[+0909s] #  from function `die' in file test/system/helpers.bash, line 958,\n[+0909s] #  from function `run_podman' in file test/system/helpers.bash, line 599,\n[+0909s] #  in test file test/system/060-mount.bats, line 128)\n[+0909s] #   `run_podman commit -q $tmpctr $iname' failed\n[+0909s] #\n[+0909s] # [10:45:31.212508164] # /var/tmp/podman-container-tools/podman/bin/podman  run --name c-t114-7b7ppxbc quay.io/libpod/testimage:20241011 true\n[+0909s] #\n[+0909s] # [10:45:31.620125959] # /var/tmp/podman-container-tools/podman/bin/podman  commit -q c-t114-7b7ppxbc i-t114-7b7ppxbc\n[+0909s] # [10:45:32.139217410] Error: copying layers and metadata for container \"108c120ef1425b3db68c7121d45c2a728045e234cf5462f5df18d2b3f4f15046\": writing blob: adding layer with blob \"sha256:a75ee27233fe46c74665c52908d76b5fbd1976897994204e24def16c1aa6e695\"/\"\"/\"sha256:a75ee27233fe46c74665c52908d76b5fbd1976897994204e24def16c1aa6e695\": unpacking failed (error: exit status 1; output: mkdir /run: no such file or directory)\n[+0909s] # [10:45:32.144199843] [ rc=125 (** EXPECTED 0 **) ]"
   },
   {
    "run_id": "31783279193",
    "job_id": 94723937243,
    "job": "windows machine hyperv",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "31783279193",
    "job_id": 94723938192,
    "job": "compose_v2  rootless fedora-current / lima",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "31761579357",
    "job_id": 94736444831,
    "job": "macos machine libkrun",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] podman machine compose [DeferCleanup (Each)] compose test environment variable setup",
+   "sig": "[FAIL] podman machine compose [DeferCleanup (Each)] compose test environment variable setup",
+   "context": "  podman machine start machine init --now with --update-connection\t\t41.118790 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - /Users/MacM1-2-worker/ci/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/14/26 10:20:55.573 (0s)\n[SynchronizedAfterSuite] PASSED [0.000 seconds]\n------------------------------\n\nSummarizing 2 Failures:\n  \n[FAIL] podman machine compose [DeferCleanup (Each)] compose test environment variable setup\n  /Users/MacM1-2-worker/ci/podman/podman/pkg/machine/e2e/config_init_test.go:111\n  [FAIL] podman machine start [It] start interrupted by SIGTERM while waiting for VM start\n  /Users/MacM1-2-worker/ci/podman/podman/pkg/machine/e2e/start_test.go:396\n\nRan 78 of 84 Specs in 1046.205 seconds\nFAIL! -- 76 Passed | 2 Failed | 0 Pending | 6 Skipped\n--- FAIL: TestMachine (1046.21s)\nFAIL\nmake[1]: *** [ginkgo-run] Error 1\nmake: *** [localmachine] Error 2\n\nGinkgo ran 1 suite in 17m37.772678s"
   },
   {
    "run_id": "31761579357",
    "job_id": 94652461198,
    "job": "sys local rootless fedora-current / lima",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 299 [500] podman networking: port with --userns=keep-id for rootless or --uidmap=* for rootful in 4348ms",
+   "sig": "not ok [N] podman networking: port with --userns=keep-id for rootless or --uidmap=* for rootful",
+   "context": "[+0495s] ok 292 [331] podman system check - storage image data missing in 1339ms\n[+0496s] ok 293 [331] podman system check - storage image data modified in 1337ms\n[+0498s] ok 294 [331] podman system check - container data missing in 1438ms\n[+0499s] ok 295 [331] podman system check - container data modified in 1451ms\n[+0500s] ok 296 [400] podman container storage is not accessible by unprivileged users in 193ms # skip [rootless] test meaningless without suid\n[+0501s] ok 297 [400] sensitive mount points are masked without --privileged in 963ms\n[+0503s] ok 298 [410] podman selinux: check relabel in 2472ms\n[+0508s] \nnot ok 299 [500] podman networking: port with --userns=keep-id for rootless or --uidmap=* for rootful in 4348ms\n[+0508s] # (from function `bail-now' in file test/system/helpers.bash, line 230,\n[+0508s] #  from function `die' in file test/system/helpers.bash, line 958,\n[+0508s] #  from function `run_podman' in file test/system/helpers.bash, line 599,\n[+0508s] #  in test file test/system/500-networking.bats, line 131)\n[+0508s] #   `run_podman run -d ${userns} $network_arg -p 127.0.0.1:$myport:$myport \\' failed\n[+0508s] #\n[+0508s] # [02:22:57.034957579] $ /var/tmp/podman-container-tools/podman/bin/podman  run -d --userns=keep-id --network bridge -p 127.0.0.1:52856:52856 quay.io/libpod/testimage:20241011 nc -l -n -v -p 52856\n[+0508s] # [02:23:00.669824216] time=\"2026-08-14T02:23:00Z\" level=error msg=\"IPAM error: failed to get ips for container ID 04fc76b79529b82e9bac632310525a10a463337831b562e2e4f35227259ee019 on network podman\"\n[+0508s] # [ERROR netavark::network::bridge] failed to parse ipam options: no static ips provided\n[+0508s] # time=\"2026-08-14T02:23:00Z\" level=error msg=\"IPAM error: failed to find ip for subnet 10.88.0.0/16 on network podman\"\n[+0508s] # time=\"2026-08-14T02:23:00Z\" level=error msg=\"Cleaning up container 04fc76b79529b82e9bac632310525a10a463337831b562e2e4f35227259ee019: removing container 04fc76b79529b82e9bac632310525a10a463337831b562e2e4f"
   },
   {
    "run_id": "31743618507",
    "job_id": 94595996066,
    "job": "sys remote root fedora-rawhide / lima",
    "date": "2026-08-13",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 209 |220| podman healthcheck in 2886ms",
+   "sig": "not ok |N| podman healthcheck",
+   "context": "ok 202 |200| pod exit policies in 4251ms\nok 203 |200| pod exit policies - play kube in 2059ms\nok 204 |200| pod resource limits in 531ms # skip resource limits only implemented on non-remote\nok 205 |200| podman pod create on failure in 1043ms\nok 206 |200| podman pod create restart tests in 1163ms\nok 207 |200| podman pod ps --filter in 6211ms\nok 208 |200| podman pod cleans cgroup and keeps limits in 489ms # skip [remote] we cannot check cgroup settings\n\nnot ok 209 |220| podman healthcheck in 2886ms\n# tags: ci:parallel\n# (from function `bail-now' in file test/system/helpers.bash, line 230,\n#  from function `assert' in file test/system/helpers.bash, line 1113,\n#  in test file test/system/220-healthcheck.bats, line 110)\n#   `assert \"$output\" =~ \"StartLimitIntervalUSec=0\" \"The hc service has the right interval set\"' failed\n#\n# [21:25:32.434542549] # /var/tmp/podman/bin/podman-remote --url=unix:///tmp/bats-run-F9og4U/suite/remotesystem.podman.mkgZoT.sock run -d --name c-h-t209-xsw43qu1 --health-cmd /home/podman/healthcheck --health-interval 1s --health-retries 3 --health-on-failure=kill --health-startup-cmd /home/podman/healthcheck --health-startup-interval 1s quay.io/libpod/testimage:20241011 /home/podman/pause\n# [21:25:32.877014252] 73b09deb4246c8f40ebce080d1a22a948dcf430cd336fbf072d04156ba3b5638\n#\n# [21:25:32.896158590] # /var/tmp/podman/bin/podman-remote --url=unix:///tmp/bats-run-F9og4U/suite/remotesystem.podman.mkgZoT.sock inspect c-h-t209-xsw43qu1 --format {{.Config.HealthcheckOnFailureAction}}\n# [21:25:32.968941242] kill\n#"
   },
   {
    "run_id": "31737992705",
    "job_id": 94578080418,
    "job": "windows machine wsl",
    "date": "2026-08-13",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] podman machine start [It] start machine already started",
+   "sig": "[FAIL] podman machine start [It] start machine already started",
+   "context": "Running platform specific cleanup\nFailed to remove  image: \"remove : The system cannot find the path specified.\"\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - D:/a/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/13/26 20:44:36.286 (1ms)\n[SynchronizedAfterSuite] PASSED [0.001 seconds]\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] podman machine start [It] start machine already started\n  D:/a/podman/podman/pkg/machine/e2e/start_test.go:78\n\nRan 68 of 88 Specs in 2163.182 seconds\nFAIL! -- 67 Passed | 1 Failed | 0 Pending | 20 Skipped\n--- FAIL: TestMachine (2163.18s)\nFAIL\n\nGinkgo ran 1 suite in 36m22.1057214s\n\nTest Suite Failed\n\u001b[31;1mException: \u001b[0mD:\\a\\podman\\podman\\hack\\ci\\win-lib.ps1:79\u001b[0m\n\u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m"
   },
   {
    "run_id": "31737992705",
    "job_id": 94578080487,
    "job": "macos machine libkrun",
    "date": "2026-08-13",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] run podman API test calls [It] client connect to machine socket",
+   "sig": "[FAIL] run podman API test calls [It] client connect to machine socket",
+   "context": "  podman machine start start simple machine\t\t39.220464 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - /Users/MacM1-3-worker/ci/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/13/26 20:35:12.487 (1ms)\n[SynchronizedAfterSuite] PASSED [0.001 seconds]\n------------------------------\n\nSummarizing 2 Failures:\n  \n[FAIL] run podman API test calls [It] client connect to machine socket\n  /Users/MacM1-3-worker/ci/podman/podman/pkg/machine/e2e/api_test.go:30\n  [FAIL] podman machine start [It] start interrupted by SIGTERM while waiting for VM start\n  /Users/MacM1-3-worker/ci/podman/podman/pkg/machine/e2e/start_test.go:396\n\nRan 78 of 84 Specs in 1132.122 seconds\nFAIL! -- 76 Passed | 2 Failed | 0 Pending | 6 Skipped\n--- FAIL: TestMachine (1132.13s)\nFAIL\nmake[1]: *** [ginkgo-run] Error 1\nmake: *** [localmachine] Error 2\n\nGinkgo ran 1 suite in 19m3.628582625s"
   },
   {
    "run_id": "31737992705",
    "job_id": 94578081847,
    "job": "sys local rootless fedora-current / lima",
    "date": "2026-08-13",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 271 |252| quadlet - image tag in 1560ms",
+   "sig": "not ok |N| quadlet - image tag",
+   "context": "[+0967s] ok 264 |252| quadlet - exit-code propagation in 26652ms\n[+0967s] ok 265 |252| quadlet kube - Working Directory in 6694ms\n[+0967s] ok 266 |252| quadlet kube - start error in 7566ms\n[+0967s] ok 267 |252| quadlet kube - pod without containers in 4926ms\n[+0967s] ok 268 |252| quadlet - image files in 20497ms\n[+0967s] ok 269 |252| quadlet - kube oneshot in 7290ms\n[+0967s] ok 270 |252| quadlet - kube down force in 6555ms\n[+0967s] \nnot ok 271 |252| quadlet - image tag in 1560ms\n[+0967s] # tags: ci:parallel\n[+0967s] # (from function `bail-now' in file test/system/helpers.bash, line 230,\n[+0967s] #  from function `die' in file test/system/helpers.bash, line 958,\n[+0967s] #  from function `run_podman' in file test/system/helpers.bash, line 599,\n[+0967s] #  in test file test/system/252-quadlet.bats, line 1732)\n[+0967s] #   `run_podman commit -q $tmpcid $image_for_test' failed\n[+0967s] #\n[+0967s] # [20:28:15.458704567] $ /var/tmp/podman-container-tools/podman/bin/podman  create -q quay.io/libpod/testimage:20241011 true\n[+0967s] # [20:28:15.719099101] 10c0892a5bd08954b21cff001d223e1dc78a09b4f159df132ab22e497c73695a\n[+0967s] #\n[+0967s] # [20:28:15.735526196] $ /var/tmp/podman-container-tools/podman/bin/podman  commit -q 10c0892a5bd08954b21cff001d223e1dc78a09b4f159df132ab22e497c73695a localhost/i-t271-949ozuzt:HyRoerEoyw\n[+0967s] # [20:28:15.982584737] Error: copying layers and metadata for container \"10c0892a5bd08954b21cff001d223e1dc78a09b4f159df132ab22e497c73695a\": committing the finished image: creating image \"fcbdcb271e5e194ec13410884753fdc9bad59a23d1853299fbf33e5f8f34ba59\": layer not known"
   },
   {
    "run_id": "31737992705",
    "job_id": 94578081890,
    "job": "int remote rootless fedora-current / lima",
    "date": "2026-08-13",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] Podman run networking [It] podman run bridge multiple containers same network different ports with pesto",
+   "sig": "[FAIL] Podman run networking [It] podman run bridge multiple containers same network different ports with pesto",
+   "context": "[+0603s]   rm: cannot remove '/tmp/podman-e2e-3305937591/subtest-4204114343/p/root/overlay': Device or resource busy\n[+0603s]   exit status 1\n[+0603s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/13/26 20:22:58.877 (2.599s)\n[+0603s]   << Timeline\n[+0603s] ------------------------------\n[+0603s] \n[+0603s] Summarizing 1 Failure:\n[+0603s]   \n[FAIL] Podman run networking [It] podman run bridge multiple containers same network different ports with pesto\n[+0603s]   /var/tmp/podman-container-tools/podman/test/e2e/run_networking_test.go:1346\n[+0603s] \n[+0603s] Ran 2217 of 2541 Specs in 580.666 seconds\n[+0603s] FAIL! -- 2216 Passed | 1 Failed | 0 Pending | 324 Skipped\n[+0603s] \n[+0603s] \n[+0603s] Ginkgo ran 1 suite in 9m56.003920593s\n[+0603s] \n[+0603s] Test Suite Failed\n[+0603s] make[1]: *** [Makefile:710: ginkgo-run] Error 1\n[+0603s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0603s] make: *** [Makefile:723: ginkgo-remote] Error 2"
   },
   {
    "run_id": "31736927193",
    "job_id": 94575465813,
    "job": "windows machine hyperv",
    "date": "2026-08-13",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] podman machine start [It] start simple machine",
+   "sig": "[FAIL] podman machine start [It] start simple machine",
+   "context": "  podman machine start start simple machine\t\t140.260808 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - D:/a/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/13/26 20:46:59.723 (2ms)\n[SynchronizedAfterSuite] PASSED [0.002 seconds]\n------------------------------\n\nSummarizing 2 Failures:\n  \n[FAIL] podman machine start [It] start simple machine\n  D:/a/podman/podman/pkg/machine/e2e/start_test.go:45\n  [FAIL] podman machine start [It] machine init --now with --import-native-ca with mounted data folder\n  D:/a/podman/podman/pkg/machine/e2e/start_test.go:323\n\nRan 79 of 88 Specs in 2855.737 seconds\nFAIL! -- 77 Passed | 2 Failed | 0 Pending | 9 Skipped\n--- FAIL: TestMachine (2855.74s)\nFAIL\n\nGinkgo ran 1 suite in 47m57.0473575s\n\nTest Suite Failed"
   },
   {
    "run_id": "31725311045",
    "job_id": 94762023288,
    "job": "int local root fedora-rawhide / lima",
    "date": "2026-08-13",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] Podman rmi [It] podman image rm - concurrent with shared layers",
+   "sig": "[FAIL] Podman rmi [It] podman image rm - concurrent with shared layers",
+   "context": "[+0587s]   Podman events podman events --until future\t\t19.668866\n[+0587s]   \"unlinkat /tmp/podman-e2e-847395872/subtest-3274102261/p/root/overlay/03901b4a2ea88eeaad62dbe59b072b28b6efa00491962b8741081c5df50c65e0/merged/var: read-only file system\"\n[+0587s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/14/26 12:29:54.336 (2.401s)\n[+0587s]   << Timeline\n[+0587s] ------------------------------\n[+0587s] \n[+0587s] Summarizing 1 Failure:\n[+0587s]   \n[FAIL] Podman rmi [It] podman image rm - concurrent with shared layers\n[+0587s]   /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:1522\n[+0587s] \n[+0587s] Ran 2478 of 2559 Specs in 531.123 seconds\n[+0587s] FAIL! -- 2477 Passed | 1 Failed | 0 Pending | 81 Skipped\n[+0587s] \n[+0587s] \n[+0587s] Ginkgo ran 1 suite in 9m29.32782679s\n[+0587s] \n[+0587s] Test Suite Failed\n[+0587s] make[1]: *** [Makefile:710: ginkgo-run] Error 1\n[+0587s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0587s] make: *** [Makefile:718: ginkgo] Error 2"
   },
   {
    "run_id": "31633952968",
    "job_id": 94260012008,
    "job": "windows machine hyperv",
    "date": "2026-08-12",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] run cp commands [DeferCleanup (Each)] podman cp",
+   "sig": "[FAIL] run cp commands [DeferCleanup (Each)] podman cp",
+   "context": "  podman machine start machine init --now with --update-connection\t\t97.086242 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - D:/a/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/12/26 21:41:15.478 (2ms)\n[SynchronizedAfterSuite] PASSED [0.002 seconds]\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] run cp commands [DeferCleanup (Each)] podman cp\n  D:/a/podman/podman/pkg/machine/e2e/config_init_test.go:111\n\nRan 79 of 88 Specs in 2633.070 seconds\nFAIL! -- 78 Passed | 1 Failed | 0 Pending | 9 Skipped\n--- FAIL: TestMachine (2633.07s)\nFAIL\n\nGinkgo ran 1 suite in 44m12.4992701s\n\nTest Suite Failed\n\u001b[31;1mException: \u001b[0mD:\\a\\podman\\podman\\hack\\ci\\win-lib.ps1:79\u001b[0m\n\u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m"
   },
   {
    "run_id": "31633952968",
    "job_id": 94260012013,
    "job": "windows machine wsl",
    "date": "2026-08-12",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "31633952968",
    "job_id": 94260013505,
    "job": "compose_v2  root fedora-current / lima",
    "date": "2026-08-12",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "31633952968",
    "job_id": 94260013526,
    "job": "compose_v2  rootless fedora-current / lima",
    "date": "2026-08-12",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "31633952968",
    "job_id": 94260013635,
    "job": "unit  root fedora-current / lima",
    "date": "2026-08-12",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "31633952968",
    "job_id": 94260013718,
    "job": "int remote rootless fedora-current / lima",
    "date": "2026-08-12",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "31633952968",
    "job_id": 94260013758,
    "job": "sys local root fedora-current / lima",
    "date": "2026-08-12",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "31633952968",
    "job_id": 94260013761,
    "job": "int local rootless fedora-prior / lima",
    "date": "2026-08-12",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "31633952968",
    "job_id": 94260013813,
    "job": "sys remote root fedora-prior / lima",
    "date": "2026-08-12",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "31633952968",
    "job_id": 94260013890,
    "job": "sys local rootless debian-sid / lima",
    "date": "2026-08-12",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 421 |505| UDP/IPv6 large transfer, tap in 4712ms",
+   "sig": "not ok |N| UDP/IPv6 large transfer, tap",
+   "context": "[+0971s] ok 414 |505| TCP/IPv6 large transfer, loopback in 3919ms\n[+0971s] ok 415 |505| UDP/IPv4 small transfer, tap in 2749ms\n[+0971s] ok 416 |505| UDP/IPv4 small transfer, loopback in 2988ms\n[+0971s] ok 417 |505| UDP/IPv4 large transfer, tap in 3027ms\n[+0971s] ok 418 |505| UDP/IPv4 large transfer, loopback in 2926ms\n[+0971s] ok 419 |505| UDP/IPv6 small transfer, tap in 4864ms\n[+0971s] ok 420 |505| UDP/IPv6 small transfer, loopback in 2707ms\n[+0971s] \nnot ok 421 |505| UDP/IPv6 large transfer, tap in 4712ms\n[+0971s] # tags: ci:parallel\n[+0971s] # (from function `bail-now' in file test/system/helpers.bash, line 230,\n[+0971s] #  from function `assert' in file test/system/helpers.bash, line 1074,\n[+0971s] #  from function `pasta_test_do' in file test/system/505-networking-pasta.bats, line 262,\n[+0971s] #  in test file test/system/505-networking-pasta.bats, line 768)\n[+0971s] #   `pasta_test_do' failed\n[+0971s] # 1+0 records in\n[+0971s] # 1+0 records out\n[+0971s] # 53248 bytes (53 kB, 52 KiB) copied, 0.000433435 s, 123 MB/s\n[+0971s] #\n[+0971s] # [21:17:39.876222530] $ /var/tmp/podman-container-tools/podman/bin/podman  run -i --rm quay.io/libpod/testimage:20241011 /home/podman/bytecheck\n[+0971s] # [21:17:40.448423032] size=53248 hash=bb3bee0b2eb44fa3830eadd6b3cd48d8 - head= a9 0a da 48 2a af 08 16 tail= e2 bb 90 31 e7 7c 91 28"
   },
   {
    "run_id": "31633952968",
    "job_id": 94260014000,
    "job": "int remote root fedora-prior / lima",
    "date": "2026-08-12",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] Podman build [It] podman build --build-context: URL source",
+   "sig": "[FAIL] Podman build [It] podman build --build-context: URL source",
+   "context": "[+0659s]   Podman events podman events --until future\t\t19.632328\n[+0659s]   Podman build podman build --build-context: URL source\t\t70.589087\n[+0659s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/12/26 21:12:46.386 (3.573s)\n[+0659s]   << Timeline\n[+0659s] ------------------------------\n[+0659s] \n[+0659s] Summarizing 1 Failure:\n[+0659s]   \n[FAIL] Podman build [It] podman build --build-context: URL source\n[+0659s]   /var/tmp/podman-container-tools/podman/test/e2e/build_test.go:1151\n[+0659s] \n[+0659s] Ran 2297 of 2541 Specs in 569.802 seconds\n[+0659s] FAIL! -- 2296 Passed | 1 Failed | 0 Pending | 244 Skipped\n[+0659s] \n[+0659s] \n[+0659s] Ginkgo ran 1 suite in 10m41.788314241s\n[+0659s] \n[+0659s] Test Suite Failed\n[+0659s] make[1]: *** [Makefile:697: ginkgo-run] Error 1\n[+0659s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0659s] make: *** [Makefile:710: ginkgo-remote] Error 2"
   },
   {
    "run_id": "31633952968",
    "job_id": 94260014053,
    "job": "int local rootless debian-sid / lima",
    "date": "2026-08-12",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "31633952968",
    "job_id": 94260014128,
    "job": "bud local root fedora-current / lima",
    "date": "2026-08-12",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "31633952968",
    "job_id": 94260014235,
    "job": "int local root debian-sid / lima",
    "date": "2026-08-12",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "32066350407",
    "job_id": 95503029355,
    "job": "windows machine hyperv",
    "date": "2026-08-17",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] podman machine set [It] set machine cpus, disk, memory",
+   "sig": "[FAIL] podman machine set [It] set machine cpus, disk, memory",
+   "context": "  podman machine set set machine cpus, disk, memory\t\t126.753826 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - D:/a/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/17/26 21:32:42.589 (2ms)\n[SynchronizedAfterSuite] PASSED [0.002 seconds]\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] podman machine set [It] set machine cpus, disk, memory\n  D:/a/podman/podman/pkg/machine/e2e/set_test.go:57\n\nRan 79 of 88 Specs in 2693.148 seconds\nFAIL! -- 78 Passed | 1 Failed | 0 Pending | 9 Skipped\n--- FAIL: TestMachine (2693.15s)\nFAIL\n\nGinkgo ran 1 suite in 45m15.8225716s\n\nTest Suite Failed\n\u001b[31;1mException: \u001b[0mD:\\a\\podman\\podman\\hack\\ci\\win-lib.ps1:79\u001b[0m\n\u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m"
   },
   {
    "run_id": "32066350407",
    "job_id": 95503029568,
    "job": "macos machine applehv",
    "date": "2026-08-17",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] podman machine rm [It] Remove running machine",
+   "sig": "[FAIL] podman machine rm [It] Remove running machine",
+   "context": "  podman machine rm Remove running machine\t\t601.005764 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - /Users/MacM1-4-worker/ci/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/17/26 21:15:38.764 (0s)\n[SynchronizedAfterSuite] PASSED [0.000 seconds]\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] podman machine rm [It] Remove running machine\n  /Users/MacM1-4-worker/ci/podman/podman/pkg/machine/e2e/config_test.go:59\n\nRan 78 of 84 Specs in 1749.335 seconds\nFAIL! -- 77 Passed | 1 Failed | 0 Pending | 6 Skipped\n--- FAIL: TestMachine (1749.34s)\nFAIL\nmake[1]: *** [ginkgo-run] Error 1\nmake: *** [localmachine] Error 2\n\nGinkgo ran 1 suite in 29m20.78358825s\n\nTest Suite Failed"
   },
   {
    "run_id": "32065520074",
    "job_id": 95499929625,
    "job": "sys local rootless debian-sid / lima",
    "date": "2026-08-17",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 317 |450| podman detects correct tty size in 2846ms",
+   "sig": "not ok |N| podman detects correct tty size",
+   "context": "[+0946s] ok 310 |410| podman selinux: containers in --no-infra pods do not share context in 1206ms # skip selinux not available\n[+0946s] ok 311 |410| podman with nonexistent labels in 517ms # skip selinux not available\n[+0946s] ok 312 |410| podman selinux nested in 479ms # skip selinux not available\n[+0946s] ok 313 |410| podman EnableLabeledUsers in 561ms # skip selinux not available\n[+0946s] ok 314 |410| podman selinux: check unsupported relabel in 634ms # skip selinux not available\n[+0946s] ok 315 |420| podman run, preserves initial --cgroup-manager in 2906ms\n[+0946s] ok 316 |420| podman run --cgroups=disabled keeps the current cgroup in 3701ms\n[+0946s] \nnot ok 317 |450| podman detects correct tty size in 2846ms\n[+0946s] # tags: ci:parallel\n[+0946s] # (from function `bail-now' in file test/system/helpers.bash, line 230,\n[+0946s] #  from function `is' in file test/system/helpers.bash, line 1124,\n[+0946s] #  in test file test/system/450-interactive.bats, line 79)\n[+0946s] #   `is \"$output\" \"$rows $cols$CR\" \"stty under podman exec reads the correct dimensions\"' failed\n[+0946s] #\n[+0946s] # [20:55:00.393747675] $ /var/tmp/podman-container-tools/podman/bin/podman  run -it --name mystty quay.io/libpod/testimage:20241011 stty size\n[+0946s] # [20:55:00.774155883] 65 24\n[+0946s] #\n[+0946s] # [20:55:00.786129137] $ /var/tmp/podman-container-tools/podman/bin/podman  rm -t 0 -f mystty\n[+0946s] # [20:55:01.038166744] mystty\n[+0946s] #"
   },
   {
    "run_id": "32065520074",
    "job_id": 95499929634,
    "job": "int local root fedora-rawhide / lima",
    "date": "2026-08-17",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] Podman rmi [It] podman image rm - concurrent with shared layers",
+   "sig": "[FAIL] Podman rmi [It] podman image rm - concurrent with shared layers",
+   "context": "[+0672s]   Podman build podman build --build-context: Mixed source\t\t22.453610\n[+0672s]   \"unlinkat /tmp/podman-e2e-104489197/subtest-3999832587/p/root/overlay/03901b4a2ea88eeaad62dbe59b072b28b6efa00491962b8741081c5df50c65e0/merged/var: read-only file system\"\n[+0672s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/17/26 20:53:54.276 (2.603s)\n[+0672s]   << Timeline\n[+0672s] ------------------------------\n[+0672s] \n[+0672s] Summarizing 1 Failure:\n[+0672s]   \n[FAIL] Podman rmi [It] podman image rm - concurrent with shared layers\n[+0672s]   /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:1523\n[+0672s] \n[+0672s] Ran 2481 of 2562 Specs in 610.493 seconds\n[+0672s] FAIL! -- 2480 Passed | 1 Failed | 0 Pending | 81 Skipped\n[+0672s] \n[+0672s] \n[+0672s] Ginkgo ran 1 suite in 10m52.225794148s\n[+0672s] \n[+0672s] Test Suite Failed\n[+0672s] make[1]: *** [Makefile:710: ginkgo-run] Error 1\n[+0672s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0672s] make: *** [Makefile:718: ginkgo] Error 2"
   },
   {
    "run_id": "32025596823",
    "job_id": 95374330627,
    "job": "Validate source code changes",
    "date": "2026-08-17",
-   "sig": null,
-   "no_log": true
+   "raw": "make: *** [Makefile:788: tests-included] Error 1",
+   "sig": "make: *** [TARGET] Error 1",
+   "context": "If your change is minor, feel free to piggyback on already-written\ntests, possibly just adding a small step to a similar existing test.\nEvery second counts in CI.\n\nIf your commit really, truly does not need tests, you can proceed\nby asking a repo maintainer to set the 'No New Tests' github label.\nThis will only be done when there's no reasonable alternative.\n\nmake: *** [Makefile:788: tests-included] Error 1\n##[error]Process completed with exit code 2.\nPost job cleanup.\nSkipping cache saving\nPost job cleanup.\n[command]/usr/bin/git version\ngit version 2.54.0\nTemporarily overriding HOME='/home/ubuntu/_work/_temp/ff9db1ca-3b76-4322-8793-3eb1b827770c' before making global git config changes\nAdding repository directory to the temporary git global config as a safe directory\n[command]/usr/bin/git config --global --add safe.directory /home/ubuntu/_work/podman/podman\nRemoving SSH command configuration\n[command]/usr/bin/git config --local --name-only --get-regexp core\\.sshCommand\n[command]/usr/bin/git submodule foreach --recursive sh -c \"git config --local --name-only --get-regexp 'core\\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
   },
   {
    "run_id": "32020151720",
    "job_id": 95360843847,
    "job": "windows machine hyperv",
    "date": "2026-08-17",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] run basic podman commands [It] Volume ops",
+   "sig": "[FAIL] run basic podman commands [It] Volume ops",
+   "context": "  run basic podman commands Volume ops\t\t119.770359 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - D:/a/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/17/26 11:26:52.657 (2ms)\n[SynchronizedAfterSuite] PASSED [0.002 seconds]\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] run basic podman commands [It] Volume ops\n  D:/a/podman/podman/pkg/machine/e2e/basic_test.go:108\n\nRan 79 of 88 Specs in 2767.891 seconds\nFAIL! -- 78 Passed | 1 Failed | 0 Pending | 9 Skipped\n--- FAIL: TestMachine (2767.89s)\nFAIL\n\nGinkgo ran 1 suite in 46m29.8918994s\n\nTest Suite Failed\n\u001b[31;1mException: \u001b[0mD:\\a\\podman\\podman\\hack\\ci\\win-lib.ps1:79\u001b[0m\n\u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m"
   },
   {
    "run_id": "32016189579",
    "job_id": 95349052633,
    "job": "windows machine hyperv",
    "date": "2026-08-17",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "32016189579",
    "job_id": 95349054265,
    "job": "int local rootless debian-sid / lima",
    "date": "2026-08-17",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] Podman cp [It] podman cp from ctr chown ",
+   "sig": "[FAIL] Podman cp [It] podman cp from ctr chown",
+   "context": "[+0583s]   Podman pull podman pull chunked images uses config-based image IDs and enforces DiffID matching\t\t17.329644\n[+0583s]   Podman events podman events --until future\t\t19.711518\n[+0583s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/17/26 10:06:46.51 (2.384s)\n[+0583s]   << Timeline\n[+0583s] ------------------------------\n[+0583s] \n[+0583s] Summarizing 1 Failure:\n[+0583s]   \n[FAIL] Podman cp [It] podman cp from ctr chown \n[+0583s]   /var/tmp/podman-container-tools/podman/test/e2e/cp_test.go:232\n[+0583s] \n[+0583s] Ran 2344 of 2561 Specs in 563.107 seconds\n[+0583s] FAIL! -- 2343 Passed | 1 Failed | 0 Pending | 217 Skipped\n[+0583s] \n[+0583s] \n[+0583s] Ginkgo ran 1 suite in 9m38.516659223s\n[+0583s] \n[+0583s] Test Suite Failed\n[+0583s] make[1]: *** [Makefile:710: ginkgo-run] Error 1\n[+0583s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0583s] make: *** [Makefile:718: ginkgo] Error 2"
   },
   {
    "run_id": "31940549513",
    "job_id": 95389967672,
    "job": "windows machine hyperv",
    "date": "2026-08-16",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] podman machine restart [It] should restart a running machine",
+   "sig": "[FAIL] podman machine restart [It] should restart a running machine",
+   "context": "  podman machine restart should restart a running machine\t\t140.705962 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - D:/a/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/17/26 13:25:43.997 (4ms)\n[SynchronizedAfterSuite] PASSED [0.004 seconds]\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] podman machine restart [It] should restart a running machine\n  D:/a/podman/podman/pkg/machine/e2e/restart_test.go:33\n\nRan 79 of 88 Specs in 2804.369 seconds\nFAIL! -- 78 Passed | 1 Failed | 0 Pending | 9 Skipped\n--- FAIL: TestMachine (2804.37s)\nFAIL\n\nGinkgo ran 1 suite in 47m8.3944272s\n\nTest Suite Failed\n\u001b[31;1mException: \u001b[0mD:\\a\\podman\\podman\\hack\\ci\\win-lib.ps1:79\u001b[0m\n\u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m"
   },
   {
    "run_id": "31918298937",
    "job_id": 95369796484,
    "job": "sys local root debian-sid / lima",
    "date": "2026-08-16",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 300 [500] podman network create in 1344ms",
+   "sig": "not ok [N] podman network create",
+   "context": "[+0527s] ok 293 [331] podman system check - storage image data modified in 1239ms\n[+0528s] ok 294 [331] podman system check - container data missing in 1300ms\n[+0529s] ok 295 [331] podman system check - container data modified in 1311ms\n[+0533s] ok 296 [400] podman container storage is not accessible by unprivileged users in 3555ms\n[+0534s] ok 297 [400] sensitive mount points are masked without --privileged in 767ms\n[+0534s] ok 298 [410] podman selinux: check relabel in 301ms # skip selinux not available\n[+0536s] ok 299 [500] podman networking: port with --userns=keep-id for rootless or --uidmap=* for rootful in 1258ms\n[+0537s] \nnot ok 300 [500] podman network create in 1344ms\n[+0537s] # (from function `bail-now' in file test/system/helpers.bash, line 230,\n[+0537s] #  from function `die' in file test/system/helpers.bash, line 958,\n[+0537s] #  from function `run_podman' in file test/system/helpers.bash, line 599,\n[+0537s] #  in test file test/system/500-networking.bats, line 262)\n[+0537s] #   `run_podman run -d --network $mynetname --name $cname -p 127.0.0.1:$myport:$myport \\' failed\n[+0537s] #\n[+0537s] # [11:31:25.444511898] # /var/tmp/podman-container-tools/podman/bin/podman  network create --subnet 172.27.59.0/24 testnet-t300-nkk0n0w9\n[+0537s] # [11:31:25.504224405] testnet-t300-nkk0n0w9\n[+0537s] #\n[+0537s] # [11:31:25.513473726] # /var/tmp/podman-container-tools/podman/bin/podman  network inspect testnet-t300-nkk0n0w9\n[+0537s] # [11:31:25.569865198] [\n[+0537s] #      {"
   },
   {
    "run_id": "31906086101",
    "job_id": 95065533541,
    "job": "int remote root fedora-prior / lima",
    "date": "2026-08-15",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] Podman build [It] podman build with a secret from file",
+   "sig": "[FAIL] Podman build [It] podman build with a secret from file",
+   "context": "[+0690s]   Podman build podman build --build-context: Mixed source\t\t20.609874\n[+0690s]   Podman events podman events --until future\t\t20.664439\n[+0690s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/15/26 20:43:56.336 (3.782s)\n[+0690s]   << Timeline\n[+0690s] ------------------------------\n[+0690s] \n[+0690s] Summarizing 1 Failure:\n[+0690s]   \n[FAIL] Podman build [It] podman build with a secret from file\n[+0690s]   /var/tmp/podman-container-tools/podman/test/e2e/build_test.go:116\n[+0690s] \n[+0690s] Ran 2297 of 2543 Specs in 597.869 seconds\n[+0690s] FAIL! -- 2296 Passed | 1 Failed | 0 Pending | 246 Skipped\n[+0690s] \n[+0690s] \n[+0690s] Ginkgo ran 1 suite in 11m12.200506871s\n[+0690s] \n[+0690s] Test Suite Failed\n[+0690s] make[1]: *** [Makefile:710: ginkgo-run] Error 1\n[+0690s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0690s] make: *** [Makefile:723: ginkgo-remote] Error 2"
   },
   {
    "run_id": "31876401828",
    "job_id": 95005229508,
    "job": "int local root fedora-rawhide / lima",
    "date": "2026-08-15",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] Podman rmi [It] podman image rm - concurrent with shared layers",
+   "sig": "[FAIL] Podman rmi [It] podman image rm - concurrent with shared layers",
+   "context": "[+0647s]   Podman events podman events --until future\t\t19.635960\n[+0647s]   \"unlinkat /tmp/podman-e2e-4221138926/subtest-560714317/p/root/overlay/03901b4a2ea88eeaad62dbe59b072b28b6efa00491962b8741081c5df50c65e0/merged/var: read-only file system\"\n[+0647s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/15/26 11:36:53.149 (2.634s)\n[+0647s]   << Timeline\n[+0647s] ------------------------------\n[+0647s] \n[+0647s] Summarizing 1 Failure:\n[+0647s]   \n[FAIL] Podman rmi [It] podman image rm - concurrent with shared layers\n[+0647s]   /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:1523\n[+0647s] \n[+0647s] Ran 2480 of 2561 Specs in 586.246 seconds\n[+0647s] FAIL! -- 2479 Passed | 1 Failed | 0 Pending | 81 Skipped\n[+0647s] \n[+0647s] \n[+0647s] Ginkgo ran 1 suite in 10m26.781878196s\n[+0647s] \n[+0647s] Test Suite Failed\n[+0647s] make[1]: *** [Makefile:710: ginkgo-run] Error 1\n[+0647s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0647s] make: *** [Makefile:718: ginkgo] Error 2"
   },
   {
    "run_id": "31869923347",
    "job_id": 94976863575,
    "job": "windows installer hyperv",
    "date": "2026-08-15",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "31869923347",
    "job_id": 94976863579,
    "job": "windows installer wsl",
    "date": "2026-08-15",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "31839624435",
    "job_id": 95379766049,
    "job": "macos machine applehv",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] podman machine reset [It] reset with running machine and other machines idle ",
+   "sig": "[FAIL] podman machine reset [It] reset with running machine and other machines idle",
+   "context": "  podman machine reset reset with running machine and other machines idle \t\t601.007728 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - /Users/MacM1-4-worker/ci/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/17/26 12:27:16.156 (0s)\n[SynchronizedAfterSuite] PASSED [0.000 seconds]\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] podman machine reset [It] reset with running machine and other machines idle \n  /Users/MacM1-4-worker/ci/podman/podman/pkg/machine/e2e/config_test.go:59\n\nRan 78 of 84 Specs in 1745.136 seconds\nFAIL! -- 77 Passed | 1 Failed | 0 Pending | 6 Skipped\n--- FAIL: TestMachine (1745.14s)\nFAIL\nmake[1]: *** [ginkgo-run] Error 1\nmake: *** [localmachine] Error 2\n\nGinkgo ran 1 suite in 29m6.8526865s\n\nTest Suite Failed"
   },
   {
    "run_id": "31839624435",
    "job_id": 94918068109,
    "job": "macos machine libkrun",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] run cp commands [It] podman machine cp",
+   "sig": "[FAIL] run cp commands [It] podman machine cp",
+   "context": "  podman machine start start simple machine\t\t40.410337 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - /Users/MacM1-1-worker/ci/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/14/26 23:06:02.84 (0s)\n[SynchronizedAfterSuite] PASSED [0.000 seconds]\n------------------------------\n\nSummarizing 2 Failures:\n  \n[FAIL] run cp commands [It] podman machine cp\n  /Users/MacM1-1-worker/ci/podman/podman/pkg/machine/e2e/cp_test.go:281\n  [FAIL] podman machine start [It] start interrupted by SIGTERM while waiting for VM start\n  /Users/MacM1-1-worker/ci/podman/podman/pkg/machine/e2e/start_test.go:396\n\nRan 78 of 84 Specs in 1125.051 seconds\nFAIL! -- 76 Passed | 2 Failed | 0 Pending | 6 Skipped\n--- FAIL: TestMachine (1125.05s)\nFAIL\n\nGinkgo ran 1 suite in 18m46.773436292s\n\nTest Suite Failed"
   },
   {
    "run_id": "31839624435",
    "job_id": 94918068148,
    "job": "windows machine hyperv",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] run cp commands [DeferCleanup (Each)] podman cp",
+   "sig": "[FAIL] run cp commands [DeferCleanup (Each)] podman cp",
+   "context": "  podman machine start start simple machine\t\t117.280760 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - D:/a/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/14/26 23:38:43.032 (2ms)\n[SynchronizedAfterSuite] PASSED [0.002 seconds]\n------------------------------\n\nSummarizing 2 Failures:\n  \n[FAIL] run cp commands [DeferCleanup (Each)] podman cp\n  D:/a/podman/podman/pkg/machine/e2e/config_init_test.go:111\n  [TIMEDOUT] podman machine restart [It] should restart a running machine\n  D:/a/podman/podman/pkg/machine/e2e/restart_test.go:23\n\nRan 68 of 88 Specs in 2983.903 seconds\nFAIL! - Suite Timeout Elapsed -- 66 Passed | 2 Failed | 0 Pending | 20 Skipped\n--- FAIL: TestMachine (2983.91s)\nFAIL\n\nGinkgo ran 1 suite in 50m3.9630914s\n\nTest Suite Failed"
   },
   {
    "run_id": "31839624435",
    "job_id": 94918069235,
    "job": "int remote root fedora-rawhide / lima",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] Podman run [It] podman run with attach stdin outputs container ID",
+   "sig": "[FAIL] Podman run [It] podman run with attach stdin outputs container ID",
+   "context": "[+0681s]   Podman events podman events --until future\t\t20.243024\n[+0681s]   \"unlinkat /tmp/podman-e2e-2496704584/subtest-3440153223/p/root/overlay: device or resource busy\"\n[+0681s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/14/26 23:05:40.448 (2.178s)\n[+0681s]   << Timeline\n[+0681s] ------------------------------\n[+0681s] \n[+0681s] Summarizing 1 Failure:\n[+0681s]   \n[FAIL] Podman run [It] podman run with attach stdin outputs container ID\n[+0681s]   /var/tmp/podman-container-tools/podman/test/e2e/run_test.go:1109\n[+0681s] \n[+0681s] Ran 2296 of 2543 Specs in 585.907 seconds\n[+0681s] FAIL! -- 2295 Passed | 1 Failed | 0 Pending | 247 Skipped\n[+0681s] \n[+0681s] \n[+0681s] Ginkgo ran 1 suite in 11m2.024945896s\n[+0681s] \n[+0681s] Test Suite Failed\n[+0681s] make[1]: *** [Makefile:710: ginkgo-run] Error 1\n[+0681s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0681s] make: *** [Makefile:723: ginkgo-remote] Error 2"
   },
   {
    "run_id": "31821560606",
    "job_id": 95364540184,
    "job": "sys remote root fedora-current / lima",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 300 [500] podman network create in 1282ms",
+   "sig": "not ok [N] podman network create",
+   "context": "[+0340s] ok 293 [331] podman system check - storage image data modified in 1206ms\n[+0341s] ok 294 [331] podman system check - container data missing in 1290ms\n[+0343s] ok 295 [331] podman system check - container data modified in 1310ms\n[+0343s] ok 296 [400] podman container storage is not accessible by unprivileged users in 174ms # skip test does not work with podman-remote\n[+0344s] ok 297 [400] sensitive mount points are masked without --privileged in 1006ms\n[+0346s] ok 298 [410] podman selinux: check relabel in 2301ms\n[+0347s] ok 299 [500] podman networking: port with --userns=keep-id for rootless or --uidmap=* for rootful in 964ms\n[+0349s] \nnot ok 300 [500] podman network create in 1282ms\n[+0349s] # (from function `bail-now' in file test/system/helpers.bash, line 230,\n[+0349s] #  from function `die' in file test/system/helpers.bash, line 958,\n[+0349s] #  from function `run_podman' in file test/system/helpers.bash, line 599,\n[+0349s] #  in test file test/system/500-networking.bats, line 262)\n[+0349s] #   `run_podman run -d --network $mynetname --name $cname -p 127.0.0.1:$myport:$myport \\' failed\n[+0349s] #\n[+0349s] # [11:06:35.197556846] # /var/tmp/podman-container-tools/podman/bin/podman-remote --url=unix:///tmp/bats-run-NOaqp0/suite/remotesystem.podman.G7s5X6.sock network create --subnet 172.20.40.0/24 testnet-t300-yebnv5kv\n[+0349s] # [11:06:35.261574235] testnet-t300-yebnv5kv\n[+0349s] #\n[+0349s] # [11:06:35.273438149] # /var/tmp/podman-container-tools/podman/bin/podman-remote --url=unix:///tmp/bats-run-NOaqp0/suite/remotesystem.podman.G7s5X6.sock network inspect testnet-t300-yebnv5kv\n[+0349s] # [11:06:35.332077588] [\n[+0349s] #      {"
   },
   {
    "run_id": "31815968757",
    "job_id": 94823541131,
    "job": "macos machine applehv",
    "date": "2026-08-14",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] podman machine start [It] start machine already started",
+   "sig": "[FAIL] podman machine start [It] start machine already started",
+   "context": "  podman machine start start simple machine\t\t43.735963 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - /Users/MacM1-1-worker/ci/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/14/26 16:25:23.107 (0s)\n[SynchronizedAfterSuite] PASSED [0.000 seconds]\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] podman machine start [It] start machine already started\n  /Users/MacM1-1-worker/ci/podman/podman/pkg/machine/e2e/start_test.go:78\n\nRan 78 of 84 Specs in 1079.934 seconds\nFAIL! -- 77 Passed | 1 Failed | 0 Pending | 6 Skipped\n--- FAIL: TestMachine (1079.94s)\nFAIL\n\nGinkgo ran 1 suite in 18m1.417799042s\n\nTest Suite Failed\nmake[1]: *** [ginkgo-run] Error 1\nmake: *** [localmachine] Error 2"
   },
   {
    "run_id": "32112890162",
    "job_id": 95696630266,
    "job": "sys local rootless fedora-current / lima",
    "date": "2026-08-18",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 21 |030| podman run docker-archive in 4408ms",
+   "sig": "not ok |N| podman run docker-archive",
+   "context": "[+1031s] ok 14 |030| podman run --memory=0 runtime option in 1987ms\n[+1031s] ok 15 |030| podman run --preserve-fds in 1379ms\n[+1031s] ok 16 |030| podman run --preserve-fd in 2098ms\n[+1031s] ok 17 |030| podman run - uidmapping has no /sys/kernel mounts in 1153ms # skip cannot umount as rootless\n[+1031s] ok 18 |030| podman run --rm in 3175ms\n[+1031s] ok 19 |030| podman run --name in 5888ms\n[+1031s] ok 20 |030| podman run --conmon-pidfile --cidfile in 3092ms\n[+1031s] \nnot ok 21 |030| podman run docker-archive in 4408ms\n[+1031s] # tags: ci:parallel\n[+1031s] # (from function `bail-now' in file test/system/helpers.bash, line 230,\n[+1031s] #  from function `die' in file test/system/helpers.bash, line 958,\n[+1031s] #  from function `run_podman' in file test/system/helpers.bash, line 599,\n[+1031s] #  in test file test/system/030-run.bats, line 324)\n[+1031s] #   `run_podman run --name ${cname}_2 docker-archive:$archive' failed\n[+1031s] #\n[+1031s] # [11:54:56.244762288] $ /var/tmp/podman-container-tools/podman/bin/podman  run --name c_t21-nzbe1tvj --entrypoint=[\"/bin/echo\",\"kqFxMWqXMvzH0MJPdDau\"] quay.io/libpod/testimage:20241011\n[+1031s] # [11:54:56.922264789] kqFxMWqXMvzH0MJPdDau\n[+1031s] #\n[+1031s] # [11:54:56.953055441] $ /var/tmp/podman-container-tools/podman/bin/podman  commit c_t21-nzbe1tvj i_t21-nzbe1tvj\n[+1031s] # [11:54:57.674292886] Getting image source signatures"
   },
   {
    "run_id": "32112890162",
    "job_id": 95696630747,
    "job": "sys local root fedora-rawhide / lima",
    "date": "2026-08-18",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 225 [253] quadlet verb - install from URL in 1511ms",
+   "sig": "not ok [N] quadlet verb - install from URL",
+   "context": "[+0353s] ok 218 [251] podman-system-service --tls-cert --tls-key --tls-client-ca refuses client untrusted cert in 2013ms\n[+0356s] ok 219 [253] quadlet verb - install, list, rm in 2716ms\n[+0359s] ok 220 [253] quadlet verb - list shows Pod column for container with Pod= in 2642ms\n[+0361s] ok 221 [253] quadlet verb - list shows empty Pod when Pod= is absent in 2015ms\n[+0366s] ok 222 [253] quadlet verb - install, list, print, rm - template in 4739ms\n[+0369s] ok 223 [253] quadlet verb - install multiple files from directory and remove by app name in 2674ms\n[+0371s] ok 224 [253] quadlet verb - install multiple files from directory and remove by file in 2782ms\n[+0373s] \nnot ok 225 [253] quadlet verb - install from URL in 1511ms\n[+0373s] # (from function `bail-now' in file test/system/helpers.bash, line 230,\n[+0373s] #  from function `die' in file test/system/helpers.bash, line 958,\n[+0373s] #  from function `run_podman' in file test/system/helpers.bash, line 599,\n[+0373s] #  in test file test/system/253-podman-quadlet.bats, line 410)\n[+0373s] #   `run_podman run -d --name $serverctr -p \"$HOST_PORT:80\" \\' failed\n[+0373s] # /var/tmp/podman-container-tools/podman/test/system/253-podman-quadlet.bats: line 398: safe_name: command not found\n[+0373s] #\n[+0373s] # [11:49:23.262477381] # /var/tmp/podman-container-tools/podman/bin/podman  run -d --name quadletserver-t225-jc1qnuox -p 5820:80 -v /tmp/podman_bats.cauzA2/quadlet_diri_/basic.container:/var/www/basic.container:Z -v /tmp/podman_bats.cauzA2/ready:/var/www/ready:Z -w /var/www quay.io/libpod/testimage:20241011 /bin/busybox-extras httpd -f -p 80\n[+0373s] # [11:49:23.343368065] Error: cannot bind tcp port :5820: address already in use\n[+0373s] # [11:49:23.347581148] [ rc=126 (** EXPECTED 0 **) ]\n[+0373s] # #/vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv\n[+0373s] # #| FAIL: exit code is 126; expected 0"
   },
   {
    "run_id": "32112652038",
    "job_id": 95638383947,
    "job": "int local rootless fedora-prior / lima",
    "date": "2026-08-18",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] Podman run networking [It] podman run bridge network same port different HostIPs routes to correct container",
+   "sig": "[FAIL] Podman run networking [It] podman run bridge network same port different HostIPs routes to correct container",
+   "context": "[+0654s]   Podman build podman build --build-context: Mixed source\t\t18.388252\n[+0654s]   Podman events podman events --until future\t\t19.928172\n[+0654s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/18/26 08:11:54.461 (4.426s)\n[+0654s]   << Timeline\n[+0654s] ------------------------------\n[+0654s] \n[+0654s] Summarizing 1 Failure:\n[+0654s]   \n[FAIL] Podman run networking [It] podman run bridge network same port different HostIPs routes to correct container\n[+0654s]   /var/tmp/podman-container-tools/podman/test/e2e/run_networking_test.go:1297\n[+0654s] \n[+0654s] Ran 2381 of 2562 Specs in 628.921 seconds\n[+0654s] FAIL! -- 2380 Passed | 1 Failed | 0 Pending | 181 Skipped\n[+0654s] \n[+0654s] \n[+0654s] Ginkgo ran 1 suite in 10m47.71073456s\n[+0654s] \n[+0654s] Test Suite Failed\n[+0654s] make[1]: *** [Makefile:710: ginkgo-run] Error 1\n[+0654s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0654s] make: *** [Makefile:718: ginkgo] Error 2"
   },
   {
    "run_id": "32064146201",
    "job_id": 95495972930,
    "job": "sys local rootless fedora-rawhide / lima",
    "date": "2026-08-17",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 212 |220| podman healthcheck in 8534ms",
+   "sig": "not ok |N| podman healthcheck",
+   "context": "[+0954s] ok 205 |200| pod exit policies in 13128ms\n[+0954s] ok 206 |200| pod exit policies - play kube in 3264ms\n[+0954s] ok 207 |200| pod resource limits in 446ms # skip [rootless] resource limits only work with root\n[+0954s] ok 208 |200| podman pod create on failure in 1594ms\n[+0954s] ok 209 |200| podman pod create restart tests in 2994ms\n[+0954s] ok 210 |200| podman pod ps --filter in 26529ms\n[+0954s] ok 211 |200| podman pod cleans cgroup and keeps limits in 10095ms\n[+0954s] \nnot ok 212 |220| podman healthcheck in 8534ms\n[+0954s] # tags: ci:parallel\n[+0954s] # (in test file test/system/220-healthcheck.bats, line 102)\n[+0954s] #   `cidmatch=$(grep \"$cid\" <<<\"$output\")' failed\n[+0954s] #\n[+0954s] # [20:40:16.023310467] $ /var/tmp/podman-container-tools/podman/bin/podman  run -d --name c-h-t212-rhyfnyr2 --health-cmd /home/podman/healthcheck --health-interval 1s --health-retries 3 --health-on-failure=kill --health-startup-cmd /home/podman/healthcheck --health-startup-interval 1s quay.io/libpod/testimage:20241011 /home/podman/pause\n[+0954s] # [20:40:16.736388324] 6aaddddedee5243b0021efae387e17138919b45c6d76ea929777372a94d6e0f1\n[+0954s] #\n[+0954s] # [20:40:16.756910005] $ /var/tmp/podman-container-tools/podman/bin/podman  inspect c-h-t212-rhyfnyr2 --format {{.Config.HealthcheckOnFailureAction}}\n[+0954s] # [20:40:17.273952432] kill\n[+0954s] #\n[+0954s] # [20:40:17.296177432] $ /var/tmp/podman-container-tools/podman/bin/podman  inspect c-h-t212-rhyfnyr2 --format {{.Config.StartupHealthCheck.Test}}\n[+0954s] # [20:40:17.906641475] [CMD-SHELL /home/podman/healthcheck]"
   },
   {
    "run_id": "32064146201",
    "job_id": 95495973174,
    "job": "int local rootless debian-sid / lima",
    "date": "2026-08-17",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] Podman run networking [It] podman run bridge network same port different HostIPs routes to correct container",
+   "sig": "[FAIL] Podman run networking [It] podman run bridge network same port different HostIPs routes to correct container",
+   "context": "[+0543s]   Podman pull podman pull chunked images uses config-based image IDs and enforces DiffID matching\t\t15.727279\n[+0543s]   Podman events podman events --until future\t\t19.841329\n[+0543s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/17/26 20:37:20.584 (2.249s)\n[+0543s]   << Timeline\n[+0543s] ------------------------------\n[+0543s] \n[+0543s] Summarizing 1 Failure:\n[+0543s]   \n[FAIL] Podman run networking [It] podman run bridge network same port different HostIPs routes to correct container\n[+0543s]   /var/tmp/podman-container-tools/podman/test/e2e/run_networking_test.go:1296\n[+0543s] \n[+0543s] Ran 2344 of 2561 Specs in 523.694 seconds\n[+0543s] FAIL! -- 2343 Passed | 1 Failed | 0 Pending | 217 Skipped\n[+0543s] \n[+0543s] \n[+0543s] Ginkgo ran 1 suite in 8m58.178802869s\n[+0543s] \n[+0543s] Test Suite Failed\n[+0543s] make[1]: *** [Makefile:710: ginkgo-run] Error 1\n[+0543s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0543s] make: *** [Makefile:718: ginkgo] Error 2"
   },
   {
    "run_id": "31911449880",
    "job_id": 95398591212,
    "job": "farm  rootless fedora-current / lima",
    "date": "2026-08-15",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "32268275524",
    "job_id": 96122412766,
    "job": "int local root fedora-rawhide / lima",
    "date": "2026-08-19",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] Podman run memory [It] podman run memory test on oomkilled container",
+   "sig": "[FAIL] Podman run memory [It] podman run memory test on oomkilled container",
+   "context": "[+0605s]   Podman events podman events --until future\t\t19.885225\n[+0605s]   \"unlinkat /tmp/podman-e2e-3189935051/subtest-2018031327/p/root/overlay/03901b4a2ea88eeaad62dbe59b072b28b6efa00491962b8741081c5df50c65e0/merged/var: read-only file system\"\n[+0605s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/19/26 15:37:44.995 (2.469s)\n[+0605s]   << Timeline\n[+0605s] ------------------------------\n[+0605s] \n[+0605s] Summarizing 1 Failure:\n[+0605s]   \n[FAIL] Podman run memory [It] podman run memory test on oomkilled container\n[+0605s]   /var/tmp/podman-container-tools/podman/test/e2e/run_memory_test.go:56\n[+0605s] \n[+0605s] Ran 2481 of 2562 Specs in 548.861 seconds\n[+0605s] FAIL! -- 2480 Passed | 1 Failed | 0 Pending | 81 Skipped\n[+0605s] \n[+0605s] \n[+0605s] Ginkgo ran 1 suite in 9m47.127425024s\n[+0605s] \n[+0605s] Test Suite Failed\n[+0605s] make[1]: *** [Makefile:710: ginkgo-run] Error 1\n[+0605s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0605s] make: *** [Makefile:718: ginkgo] Error 2"
   },
   {
    "run_id": "32245859403",
    "job_id": 96063462505,
    "job": "sys local rootless fedora-prior / lima",
    "date": "2026-08-19",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 5 |012| podman images - bare manifest list in 2645ms",
+   "sig": "not ok |N| podman images - bare manifest list",
+   "context": "[+0730s] ok 345 [950] podman preexec hook in 389ms\n[+0731s] PODMAN=/var/tmp/podman-container-tools/podman/bin/podman QUADLET=/var/tmp/podman-container-tools/podman/bin/quadlet bats -T --filter-tags ci:parallel -j $(nproc) test/system/\n[+0744s] 1..470\n[+0770s] ok 1 |010| podman rmi --ignore in 1029ms\n[+0770s] ok 2 |010| podman image rm --force bogus in 1780ms\n[+0770s] ok 3 |010| podman images - commit docker with comment in 5302ms\n[+0770s] ok 4 |010| podman images with concurrent removal in 14311ms\n[+0839s] \nnot ok 5 |012| podman images - bare manifest list in 2645ms\n[+0839s] # tags: ci:parallel\n[+0839s] # (from function `bail-now' in file test/system/helpers.bash, line 230,\n[+0839s] #  from function `die' in file test/system/helpers.bash, line 958,\n[+0839s] #  from function `run_podman' in file test/system/helpers.bash, line 599,\n[+0839s] #  in test file test/system/012-manifest.bats, line 80)\n[+0839s] #   `run_podman images --format '{{.ID}}' --no-trunc' failed\n[+0839s] #\n[+0839s] # [12:34:03.264238321] $ /var/tmp/podman-container-tools/podman/bin/podman  inspect --format {{.ID}} quay.io/libpod/testimage:20241011\n[+0839s] # [12:34:03.421822305] b82e560ed57b77a897379e160371adcf1b000ca885e69c62cbec674777a83850\n[+0839s] #\n[+0839s] # [12:34:03.457044151] $ /var/tmp/podman-container-tools/podman/bin/podman  manifest create m-t5-asytvvyo:1.0\n[+0839s] # [12:34:03.708901433] bda522c7454db928871f5a3a7d0fd3f3ae60b99cca64bc53c164fbac2ec973f7"
   },
   {
    "run_id": "32242921790",
    "job_id": 96097816847,
    "job": "windows machine hyperv",
    "date": "2026-08-19",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] run cp commands [DeferCleanup (Each)] podman cp",
+   "sig": "[FAIL] run cp commands [DeferCleanup (Each)] podman cp",
+   "context": "  podman machine start machine init --now with --update-connection\t\t96.471197 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - D:/a/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/19/26 14:55:17.709 (2ms)\n[SynchronizedAfterSuite] PASSED [0.003 seconds]\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] run cp commands [DeferCleanup (Each)] podman cp\n  D:/a/podman/podman/pkg/machine/e2e/config_init_test.go:111\n\nRan 79 of 88 Specs in 2724.452 seconds\nFAIL! -- 78 Passed | 1 Failed | 0 Pending | 9 Skipped\n--- FAIL: TestMachine (2724.46s)\nFAIL\n\nGinkgo ran 1 suite in 45m45.4268634s\n\nTest Suite Failed\n\u001b[31;1mException: \u001b[0mD:\\a\\podman\\podman\\hack\\ci\\win-lib.ps1:79\u001b[0m\n\u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m"
   },
   {
    "run_id": "32236534665",
    "job_id": 96020936932,
    "job": "macos machine libkrun",
    "date": "2026-08-19",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] podman machine start [DeferCleanup (Each)] machine start with --update-connection",
+   "sig": "[FAIL] podman machine start [DeferCleanup (Each)] machine start with --update-connection",
+   "context": "  podman machine start start simple machine\t\t40.013688 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - /Users/MacM1-3-worker/ci/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/19/26 09:44:27.116 (1ms)\n[SynchronizedAfterSuite] PASSED [0.001 seconds]\n------------------------------\n\nSummarizing 2 Failures:\n  \n[FAIL] podman machine start [DeferCleanup (Each)] machine start with --update-connection\n  /Users/MacM1-3-worker/ci/podman/podman/pkg/machine/e2e/config_init_test.go:111\n  [FAIL] podman machine start [It] start interrupted by SIGTERM while waiting for VM start\n  /Users/MacM1-3-worker/ci/podman/podman/pkg/machine/e2e/start_test.go:396\n\nRan 78 of 84 Specs in 1051.490 seconds\nFAIL! -- 76 Passed | 2 Failed | 0 Pending | 6 Skipped\n--- FAIL: TestMachine (1051.49s)\nFAIL\nmake[1]: *** [ginkgo-run] Error 1\nmake: *** [localmachine] Error 2\n\nGinkgo ran 1 suite in 17m43.103641s"
   },
   {
    "run_id": "32230273467",
    "job_id": 96001346466,
    "job": "windows machine hyperv",
    "date": "2026-08-19",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] run basic podman commands [It] Volume ops",
+   "sig": "[FAIL] run basic podman commands [It] Volume ops",
+   "context": "  run basic podman commands Volume ops\t\t128.747582 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - D:/a/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/19/26 09:02:06.787 (1ms)\n[SynchronizedAfterSuite] PASSED [0.002 seconds]\n------------------------------\n\nSummarizing 2 Failures:\n  \n[FAIL] run basic podman commands [It] Volume ops\n  D:/a/podman/podman/pkg/machine/e2e/basic_test.go:108\n  [TIMEDOUT] podman machine init [It] machine init with volume\n  D:/a/podman/podman/pkg/machine/e2e/init_test.go:356\n\nRan 67 of 88 Specs in 2993.633 seconds\nFAIL! - Suite Timeout Elapsed -- 65 Passed | 2 Failed | 0 Pending | 21 Skipped\n--- FAIL: TestMachine (2993.63s)\nFAIL\n\nGinkgo ran 1 suite in 50m14.2170388s\n\nTest Suite Failed"
   },
   {
    "run_id": "32230273467",
    "job_id": 96001348677,
    "job": "int local root fedora-rawhide / lima",
    "date": "2026-08-19",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] Podman run networking [It] podman run container with two static IPs one per subnet",
+   "sig": "[FAIL] Podman run networking [It] podman run container with two static IPs one per subnet",
+   "context": "[+0609s]   Podman events podman events --until future\t\t19.427164\n[+0609s]   \"unlinkat /tmp/podman-e2e-1223290952/subtest-2860710543/p/root/overlay/03901b4a2ea88eeaad62dbe59b072b28b6efa00491962b8741081c5df50c65e0/merged/var: read-only file system\"\n[+0609s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/19/26 08:26:08.77 (2.419s)\n[+0609s]   << Timeline\n[+0609s] ------------------------------\n[+0609s] \n[+0609s] Summarizing 1 Failure:\n[+0609s]   \n[FAIL] Podman run networking [It] podman run container with two static IPs one per subnet\n[+0609s]   /var/tmp/podman-container-tools/podman/test/e2e/run_networking_test.go:1770\n[+0609s] \n[+0609s] Ran 2481 of 2562 Specs in 552.393 seconds\n[+0609s] FAIL! -- 2480 Passed | 1 Failed | 0 Pending | 81 Skipped\n[+0609s] \n[+0609s] \n[+0609s] Ginkgo ran 1 suite in 9m50.821614618s\n[+0609s] \n[+0609s] Test Suite Failed\n[+0609s] make[1]: *** [Makefile:710: ginkgo-run] Error 1\n[+0609s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0609s] make: *** [Makefile:718: ginkgo] Error 2"
   },
   {
    "run_id": "32224226724",
    "job_id": 95982967246,
    "job": "windows machine hyperv",
    "date": "2026-08-19",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] run podman API test calls [It] client connect to machine named pipe",
+   "sig": "[FAIL] run podman API test calls [It] client connect to machine named pipe",
+   "context": "  run podman API test calls client connect to machine named pipe\t\t115.488195 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - D:/a/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/19/26 07:36:30.712 (1ms)\n[SynchronizedAfterSuite] PASSED [0.001 seconds]\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] run podman API test calls [It] client connect to machine named pipe\n  D:/a/podman/podman/pkg/machine/e2e/api_test.go:56\n\nRan 79 of 88 Specs in 2710.234 seconds\nFAIL! -- 78 Passed | 1 Failed | 0 Pending | 9 Skipped\n--- FAIL: TestMachine (2710.24s)\nFAIL\n\nGinkgo ran 1 suite in 45m30.4684547s\n\nTest Suite Failed\n\u001b[31;1mException: \u001b[0mD:\\a\\podman\\podman\\hack\\ci\\win-lib.ps1:79\u001b[0m\n\u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m"
   },
   {
    "run_id": "32201573147",
    "job_id": 95918650271,
    "job": "macos machine libkrun",
    "date": "2026-08-19",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] podman machine init [It] machine init with cpus, disk size, memory, timezone",
+   "sig": "[FAIL] podman machine init [It] machine init with cpus, disk size, memory, timezone",
+   "context": "  podman machine start start simple machine\t\t39.935438 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - /Users/MacM1-4-worker/ci/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/19/26 01:04:01.372 (1ms)\n[SynchronizedAfterSuite] PASSED [0.001 seconds]\n------------------------------\n\nSummarizing 2 Failures:\n  \n[FAIL] podman machine init [It] machine init with cpus, disk size, memory, timezone\n  /Users/MacM1-4-worker/ci/podman/podman/pkg/machine/e2e/init_test.go:303\n  [FAIL] podman machine start [It] start interrupted by SIGTERM while waiting for VM start\n  /Users/MacM1-4-worker/ci/podman/podman/pkg/machine/e2e/start_test.go:396\n\nRan 78 of 84 Specs in 1140.988 seconds\nFAIL! -- 76 Passed | 2 Failed | 0 Pending | 6 Skipped\n--- FAIL: TestMachine (1140.99s)\nFAIL\nmake[1]: *** [ginkgo-run] Error 1\nmake: *** [localmachine] Error 2\n\nGinkgo ran 1 suite in 19m12.477650875s"
   },
   {
    "run_id": "32201573147",
    "job_id": 95918651934,
    "job": "sys local rootless fedora-rawhide / lima",
    "date": "2026-08-19",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 271 |252| quadlet - image tag in 5539ms",
+   "sig": "not ok |N| quadlet - image tag",
+   "context": "[+1014s] ok 264 |252| quadlet - exit-code propagation in 29025ms\n[+1014s] ok 265 |252| quadlet kube - Working Directory in 6867ms\n[+1014s] ok 266 |252| quadlet kube - start error in 8464ms\n[+1014s] ok 267 |252| quadlet kube - pod without containers in 5338ms\n[+1014s] ok 268 |252| quadlet - image files in 20708ms\n[+1014s] ok 269 |252| quadlet - kube oneshot in 7222ms\n[+1014s] ok 270 |252| quadlet - kube down force in 6895ms\n[+1014s] \nnot ok 271 |252| quadlet - image tag in 5539ms\n[+1014s] # tags: ci:parallel\n[+1014s] # (from function `systemctl_start' in file test/system/helpers.systemd.bash, line 91,\n[+1014s] #  from function `service_setup' in file test/system/252-quadlet.bats, line 117,\n[+1014s] #  in test file test/system/252-quadlet.bats, line 1760)\n[+1014s] #   `service_setup $container_service' failed\n[+1014s] #\n[+1014s] # [01:07:09.639982978] $ /var/tmp/podman-container-tools/podman/bin/podman  create -q quay.io/libpod/testimage:20241011 true\n[+1014s] # [01:07:09.864111455] 6c522aa752fe83ce6b6823811274e41b12fd4fb1728da7f5c9abb1148fc233f0\n[+1014s] #\n[+1014s] # [01:07:09.878162456] $ /var/tmp/podman-container-tools/podman/bin/podman  commit -q 6c522aa752fe83ce6b6823811274e41b12fd4fb1728da7f5c9abb1148fc233f0 localhost/i-t271-pmlfsbja:u8Gd2lvFJS\n[+1014s] # [01:07:10.252644212] ff60a444060e08d1b6d5b356e1a23e946e27abc2632d005d92fc4c41d288f56f\n[+1014s] #"
   },
   {
    "run_id": "32201573147",
    "job_id": 95918652323,
    "job": "int local root fedora-rawhide / lima",
    "date": "2026-08-19",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] Podman run networking [It] podman run container with two static IPs one per subnet",
+   "sig": "[FAIL] Podman run networking [It] podman run container with two static IPs one per subnet",
+   "context": "[+0612s]   Podman events podman events --until future\t\t20.181028\n[+0612s]   \"unlinkat /tmp/podman-e2e-1278146828/subtest-2219134269/p/root/overlay/03901b4a2ea88eeaad62dbe59b072b28b6efa00491962b8741081c5df50c65e0/merged/var: read-only file system\"\n[+0612s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/19/26 01:00:52.015 (2.429s)\n[+0612s]   << Timeline\n[+0612s] ------------------------------\n[+0612s] \n[+0612s] Summarizing 1 Failure:\n[+0612s]   \n[FAIL] Podman run networking [It] podman run container with two static IPs one per subnet\n[+0612s]   /var/tmp/podman-container-tools/podman/test/e2e/run_networking_test.go:1770\n[+0612s] \n[+0612s] Ran 2481 of 2562 Specs in 553.848 seconds\n[+0612s] FAIL! -- 2480 Passed | 1 Failed | 0 Pending | 81 Skipped\n[+0612s] \n[+0612s] \n[+0612s] Ginkgo ran 1 suite in 9m53.112367464s\n[+0612s] \n[+0612s] Test Suite Failed\n[+0612s] make[1]: *** [Makefile:710: ginkgo-run] Error 1\n[+0612s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0612s] make: *** [Makefile:718: ginkgo] Error 2"
   },
   {
    "run_id": "32112652038",
    "job_id": 95694175563,
    "job": "macos machine applehv",
    "date": "2026-08-18",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] podman machine start [It] machine start with --update-connection",
+   "sig": "[FAIL] podman machine start [It] machine start with --update-connection",
+   "context": "  podman machine start machine start with --update-connection\t\t621.964439 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - /Users/MacM1-2-worker/ci/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/18/26 11:54:44.283 (0s)\n[SynchronizedAfterSuite] PASSED [0.000 seconds]\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] podman machine start [It] machine start with --update-connection\n  /Users/MacM1-2-worker/ci/podman/podman/pkg/machine/e2e/config_test.go:59\n\nRan 78 of 84 Specs in 1668.621 seconds\nFAIL! -- 77 Passed | 1 Failed | 0 Pending | 6 Skipped\n--- FAIL: TestMachine (1668.62s)\nFAIL\nmake[1]: *** [ginkgo-run] Error 1\nmake: *** [localmachine] Error 2\n\nGinkgo ran 1 suite in 27m50.108709625s\n\nTest Suite Failed"
   },
   {
    "run_id": "32030751328",
    "job_id": 95718879646,
    "job": "sys local rootless fedora-current / lima",
    "date": "2026-08-17",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 176 |126| podman commit --pause default in 2378ms",
+   "sig": "not ok |N| podman commit --pause default",
+   "context": "[+0996s] ok 169 |090| events - pod labels in event attributes in 1808ms\n[+0996s] ok 170 |110| podman history - basic tests in 2355ms\n[+0996s] ok 171 |110| podman history - custom format in 1636ms\n[+0996s] ok 172 |110| podman history - json in 1664ms\n[+0996s] ok 173 |110| podman image history Created in 1318ms\n[+0996s] ok 174 |125| podman import in 12868ms\n[+0996s] ok 175 |125| podman export, alter tarball, re-import in 8947ms\n[+0996s] \nnot ok 176 |126| podman commit --pause default in 2378ms\n[+0996s] # tags: ci:parallel\n[+0996s] # (from function `bail-now' in file test/system/helpers.bash, line 230,\n[+0996s] #  from function `die' in file test/system/helpers.bash, line 958,\n[+0996s] #  from function `run_podman' in file test/system/helpers.bash, line 599,\n[+0996s] #  in test file test/system/126-commit.bats, line 57)\n[+0996s] #   `run_podman commit -q $cname $imgname' failed\n[+0996s] #\n[+0996s] # [13:16:31.381109747] $ /var/tmp/podman-container-tools/podman/bin/podman  run -d --name c-t176-3sjkoohe quay.io/libpod/testimage:20241011 sleep infinity\n[+0996s] # [13:16:31.811013439] d3092a9f720e0e615b587e0fc68950b250d6ed1e0292a0f0bb5bb3792e51d8d4\n[+0996s] #\n[+0996s] # [13:16:31.826445050] $ /var/tmp/podman-container-tools/podman/bin/podman  inspect --format {{.State.Pid}} c-t176-3sjkoohe\n[+0996s] # [13:16:32.087079224] 163479"
   },
   {
    "run_id": "31581038263",
    "job_id": 94391005025,
    "job": "macos machine applehv",
    "date": "2026-08-12",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] podman machine init [It] machine init with rosetta=false",
+   "sig": "[FAIL] podman machine init [It] machine init with rosetta=false",
+   "context": "  podman machine init machine init with rosetta=false\t\t608.478641 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - /Users/MacM1-3-worker/ci/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/13/26 09:03:15.298 (0s)\n[SynchronizedAfterSuite] PASSED [0.000 seconds]\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] podman machine init [It] machine init with rosetta=false\n  /Users/MacM1-3-worker/ci/podman/podman/pkg/machine/e2e/config_test.go:59\n\nRan 79 of 84 Specs in 1808.549 seconds\nFAIL! -- 78 Passed | 1 Failed | 0 Pending | 5 Skipped\nmake[1]: *** [ginkgo-run] Error 1\nmake: *** [localmachine] Error 2\n--- FAIL: TestMachine (1808.55s)\nFAIL\n\nGinkgo ran 1 suite in 30m10.538596875s\n\nTest Suite Failed"
   },
   {
    "run_id": "32385406313",
    "job_id": 96483112238,
    "job": "sys local rootless debian-sid / lima",
    "date": "2026-08-20",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 165 |090| events - container inspect data - journald in 1452ms",
+   "sig": "not ok |N| events - container inspect data - journald",
+   "context": "[+0949s] ok 158 |090| events with a filter by label and --no-trunc option in 2895ms\n[+0949s] ok 159 |090| events with disjunctive filters - journald in 1982ms\n[+0949s] ok 160 |090| events with disjunctive filters - default in 2515ms\n[+0949s] ok 161 |090| events with events_logfile_path in containers.conf in 924ms\n[+0949s] ok 162 |090| events log-file rotation in 2466ms\n[+0949s] ok 163 |090| events log-file no duplicates in 2984ms\n[+0949s] ok 164 |090| events - backend none should error in 2349ms\n[+0949s] \nnot ok 165 |090| events - container inspect data - journald in 1452ms\n[+0949s] # tags: ci:parallel\n[+0949s] # (from function `bail-now' in file test/system/helpers.bash, line 230,\n[+0949s] #  from function `die' in file test/system/helpers.bash, line 958,\n[+0949s] #  from function `run_podman' in file test/system/helpers.bash, line 599,\n[+0949s] #  from function `_events_container_create_inspect_data' in file test/system/090-events.bats, line 385,\n[+0949s] #  in test file test/system/090-events.bats, line 420)\n[+0949s] #   `_events_container_create_inspect_data journald' failed\n[+0949s] #\n[+0949s] # [15:51:31.703258065] $ /var/tmp/podman-container-tools/podman/bin/podman  create -q quay.io/libpod/testimage:20241011 true\n[+0949s] # [15:51:31.940997993] f9f15542e32fcf05ee4d2d1a570cecebaf4e2c091add3a84f575af264e715d79\n[+0949s] #\n[+0949s] # [15:51:31.976691783] $ /var/tmp/podman-container-tools/podman/bin/podman  commit -q f9f15542e32fcf05ee4d2d1a570cecebaf4e2c091add3a84f575af264e715d79 i-journald-t165-pwdgctkg"
   },
   {
    "run_id": "32359929867",
    "job_id": 96397157179,
    "job": "build fedora-rawhide / lima",
    "date": "2026-08-20",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "32286196688",
    "job_id": 96176191113,
    "job": "Validate source code changes",
    "date": "2026-08-19",
-   "sig": null,
-   "no_log": true
+   "raw": "make: *** [Makefile:788: tests-included] Error 1",
+   "sig": "make: *** [TARGET] Error 1",
+   "context": "If your change is minor, feel free to piggyback on already-written\ntests, possibly just adding a small step to a similar existing test.\nEvery second counts in CI.\n\nIf your commit really, truly does not need tests, you can proceed\nby asking a repo maintainer to set the 'No New Tests' github label.\nThis will only be done when there's no reasonable alternative.\n\nmake: *** [Makefile:788: tests-included] Error 1\n##[error]Process completed with exit code 2.\nPost job cleanup.\nSkipping cache saving\nPost job cleanup.\n[command]/usr/bin/git version\ngit version 2.54.0\nTemporarily overriding HOME='/home/ubuntu/_work/_temp/bf8daaea-311c-4508-9168-a588eaa1563c' before making global git config changes\nAdding repository directory to the temporary git global config as a safe directory\n[command]/usr/bin/git config --global --add safe.directory /home/ubuntu/_work/podman/podman\nRemoving SSH command configuration\n[command]/usr/bin/git config --local --name-only --get-regexp core\\.sshCommand\n[command]/usr/bin/git submodule foreach --recursive sh -c \"git config --local --name-only --get-regexp 'core\\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
   },
   {
    "run_id": "32255747675",
    "job_id": 96076919257,
    "job": "Validate source code changes",
    "date": "2026-08-19",
-   "sig": null,
-   "no_log": true
+   "raw": "make: *** [Makefile:788: tests-included] Error 1",
+   "sig": "make: *** [TARGET] Error 1",
+   "context": "If your change is minor, feel free to piggyback on already-written\ntests, possibly just adding a small step to a similar existing test.\nEvery second counts in CI.\n\nIf your commit really, truly does not need tests, you can proceed\nby asking a repo maintainer to set the 'No New Tests' github label.\nThis will only be done when there's no reasonable alternative.\n\nmake: *** [Makefile:788: tests-included] Error 1\n##[error]Process completed with exit code 2.\nPost job cleanup.\nSkipping cache saving\nPost job cleanup.\n[command]/usr/bin/git version\ngit version 2.54.0\nTemporarily overriding HOME='/home/ubuntu/_work/_temp/2cf991eb-ade6-40d3-9a53-ca7350ef78b9' before making global git config changes\nAdding repository directory to the temporary git global config as a safe directory\n[command]/usr/bin/git config --global --add safe.directory /home/ubuntu/_work/podman/podman\nRemoving SSH command configuration\n[command]/usr/bin/git config --local --name-only --get-regexp core\\.sshCommand\n[command]/usr/bin/git submodule foreach --recursive sh -c \"git config --local --name-only --get-regexp 'core\\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
   },
   {
    "run_id": "32255747675",
    "job_id": 96409299879,
    "job": "int remote rootless fedora-current / lima",
    "date": "2026-08-19",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] Podman run networking [It] podman run bridge multiple containers same network different ports with pesto",
+   "sig": "[FAIL] Podman run networking [It] podman run bridge multiple containers same network different ports with pesto",
+   "context": "[+0586s]   rm: cannot remove '/tmp/podman-e2e-1627368081/subtest-2641143613/p/root/overlay': Device or resource busy\n[+0586s]   exit status 1\n[+0586s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/20/26 11:44:39.581 (2.657s)\n[+0586s]   << Timeline\n[+0586s] ------------------------------\n[+0586s] \n[+0586s] Summarizing 1 Failure:\n[+0586s]   \n[FAIL] Podman run networking [It] podman run bridge multiple containers same network different ports with pesto\n[+0586s]   /var/tmp/podman-container-tools/podman/test/e2e/run_networking_test.go:1346\n[+0586s] \n[+0586s] Ran 2218 of 2544 Specs in 565.389 seconds\n[+0586s] FAIL! -- 2217 Passed | 1 Failed | 0 Pending | 326 Skipped\n[+0586s] \n[+0586s] \n[+0586s] Ginkgo ran 1 suite in 9m40.635005079s\n[+0586s] \n[+0586s] Test Suite Failed\n[+0586s] make[1]: *** [Makefile:710: ginkgo-run] Error 1\n[+0586s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0586s] make: *** [Makefile:723: ginkgo-remote] Error 2"
   },
   {
    "run_id": "32467088866",
    "job_id": 96725869195,
    "job": "Validate source code changes",
    "date": "2026-08-21",
-   "sig": null,
-   "no_log": true
+   "raw": "make: *** [Makefile:789: tests-included] Error 1",
+   "sig": "make: *** [TARGET] Error 1",
+   "context": "If your change is minor, feel free to piggyback on already-written\ntests, possibly just adding a small step to a similar existing test.\nEvery second counts in CI.\n\nIf your commit really, truly does not need tests, you can proceed\nby asking a repo maintainer to set the 'No New Tests' github label.\nThis will only be done when there's no reasonable alternative.\n\nmake: *** [Makefile:789: tests-included] Error 1\n##[error]Process completed with exit code 2.\nPost job cleanup.\nSkipping cache saving\nPost job cleanup.\n[command]/usr/bin/git version\ngit version 2.54.0\nTemporarily overriding HOME='/home/ubuntu/_work/_temp/e3b0321a-a13f-4742-9896-90f5cbd3e8fa' before making global git config changes\nAdding repository directory to the temporary git global config as a safe directory\n[command]/usr/bin/git config --global --add safe.directory /home/ubuntu/_work/podman/podman\nRemoving SSH command configuration\n[command]/usr/bin/git config --local --name-only --get-regexp core\\.sshCommand\n[command]/usr/bin/git submodule foreach --recursive sh -c \"git config --local --name-only --get-regexp 'core\\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
   },
   {
    "run_id": "32443031466",
    "job_id": 96659416664,
    "job": "sys local root fedora-rawhide / lima",
    "date": "2026-08-21",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 92 |035| podman logs - --since --follow journald in 5625ms",
+   "sig": "not ok |N| podman logs - --since --follow journald",
+   "context": "[+0874s] ok 85 |035| podman logs - basic test in 2772ms\n[+0874s] ok 86 |035| podman logs - tail test, journald in 2988ms\n[+0874s] ok 87 |035| podman logs - multi journald in 2019ms\n[+0874s] ok 88 |035| podman logs restarted journald in 1817ms\n[+0874s] ok 89 |035| podman logs - since journald in 2775ms\n[+0874s] ok 90 |035| podman logs - until journald in 3824ms\n[+0874s] ok 91 |035| podman logs - --follow journald in 1337ms\n[+0874s] \nnot ok 92 |035| podman logs - --since --follow journald in 5625ms\n[+0874s] # tags: ci:parallel\n[+0874s] # (from function `bail-now' in file test/system/helpers.bash, line 230,\n[+0874s] #  from function `assert' in file test/system/helpers.bash, line 1074,\n[+0874s] #  from function `_log_test_follow_since' in file test/system/035-logs.bats, line 339,\n[+0874s] #  in test file test/system/035-logs.bats, line 355)\n[+0874s] #   `_log_test_follow_since journald' failed\n[+0874s] #\n[+0874s] # [03:49:47.733798365] # /var/tmp/podman-container-tools/podman/bin/podman  run --log-driver=journald --name c-ltfs-t92-nid7guvi quay.io/libpod/testimage:20241011 echo SO2HNbQvvW\n[+0874s] # [03:49:48.107879048] SO2HNbQvvW\n[+0874s] #\n[+0874s] # [03:49:48.140153043] # /var/tmp/podman-container-tools/podman/bin/podman  logs --since -1s -f c-ltfs-t92-nid7guvi\n[+0874s] #"
   },
   {
    "run_id": "32739675019",
    "job_id": 97474966110,
    "job": "windows machine hyperv",
    "date": "2026-08-24",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] run cp commands [DeferCleanup (Each)] podman cp",
+   "sig": "[FAIL] run cp commands [DeferCleanup (Each)] podman cp",
+   "context": "  podman machine start machine init --now with --update-connection\t\t90.992482 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - D:/a/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/24/26 15:34:45.867 (3ms)\n[SynchronizedAfterSuite] PASSED [0.003 seconds]\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] run cp commands [DeferCleanup (Each)] podman cp\n  D:/a/podman/podman/pkg/machine/e2e/config_init_test.go:111\n\nRan 80 of 89 Specs in 2687.924 seconds\nFAIL! -- 79 Passed | 1 Failed | 0 Pending | 9 Skipped\n--- FAIL: TestMachine (2687.93s)\nFAIL\n\nGinkgo ran 1 suite in 45m7.4447915s\n\nTest Suite Failed\n\u001b[31;1mException: \u001b[0mD:\\a\\podman\\podman\\hack\\ci\\win-lib.ps1:79\u001b[0m\n\u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m"
   },
   {
    "run_id": "32739675019",
    "job_id": 97474968998,
    "job": "upgrade v5.6.2 root fedora-current / lima",
    "date": "2026-08-24",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "32739675019",
    "job_id": 97474969872,
    "job": "sys local root fedora-current / lima",
    "date": "2026-08-24",
-   "sig": null,
-   "no_log": true
+   "raw": "not ok 341 |500| podman run - test force_port_listen containers.conf option in 1121ms",
+   "sig": "not ok |N| podman run - test force_port_listen containers.conf option",
+   "context": "[+0965s] ok 334 |500| podman network rm --ignore bogus in 3009ms\n[+0965s] ok 335 |500| podman network rm --dns-option  in 4820ms\n[+0965s] ok 336 |500| podman rootless netns works when XDG_RUNTIME_DIR includes symlinks in 927ms # skip only meaningful for rootless\n[+0965s] ok 337 |500| podman inspect list networks  in 4877ms\n[+0965s] ok 338 |500| podman --uts=host must use 'uname -n' for /etc/hostname in 2832ms\n[+0965s] ok 339 |500| podman run - dual-stack conflicts with explicit wildcards in 2600ms\n[+0965s] ok 340 |500| podman run - verify dual-stack port binds in 3008ms\n[+0965s] \nnot ok 341 |500| podman run - test force_port_listen containers.conf option in 1121ms\n[+0965s] # tags: ci:parallel\n[+0965s] # (from function `bail-now' in file test/system/helpers.bash, line 230,\n[+0965s] #  from function `assert' in file test/system/helpers.bash, line 1074,\n[+0965s] #  in test file test/system/500-networking.bats, line 1307)\n[+0965s] #   `assert \"$output\" =~ \"tcp[[:blank:]]LISTEN.*\\*:$myport\" \"tcp port should be in LISTEN state\"' failed\n[+0965s] #\n[+0965s] # [15:09:08.563053274] # /var/tmp/podman-container-tools/podman/bin/podman  run -d --name c1-t341-cqb1h6wj -p 5434:8080 quay.io/libpod/testimage:20241011 sleep inf\n[+0965s] # [15:09:09.079343888] b46bc5e52ead38856a14c1fd7d1d93f828fcae8cea8e9bda6a3c63d416e4624c\n[+0965s] # #/vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv\n[+0965s] # #|     FAIL: tcp port should be in LISTEN state\n[+0965s] # #| expected: =~ tcp\\[\\[:blank:\\]\\]LISTEN.\\*\\\\\\*:5434\n[+0965s] # #|   actual:    RTNETLINK answers: Invalid argument"
   },
   {
    "run_id": "32713247992",
    "job_id": 97392458581,
    "job": "windows machine hyperv",
    "date": "2026-08-24",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] podman machine reset [It] reset with running machine and other machines idle ",
+   "sig": "[FAIL] podman machine reset [It] reset with running machine and other machines idle",
+   "context": "  run podman API test calls client connect to machine named pipe\t\t171.239261 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - D:/a/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/24/26 10:50:34.677 (176ms)\n[SynchronizedAfterSuite] PASSED [0.176 seconds]\n------------------------------\n\nSummarizing 13 Failures:\n  \n[FAIL] podman machine reset [It] reset with running machine and other machines idle \n  D:/a/podman/podman/pkg/machine/e2e/reset_test.go:46\n  [FAIL] podman machine list [It] list machine: check if running while starting\n  D:/a/podman/podman/pkg/machine/e2e/list_test.go:102\n  [FAIL] podman machine start [It] start machine already started\n  D:/a/podman/podman/pkg/machine/e2e/start_test.go:78\n  [FAIL] podman machine start [It] start machine with conflict on SSH port\n  D:/a/podman/podman/pkg/machine/e2e/start_test.go:120\n  [FAIL] podman machine start [It] start only starts specified machine\n  D:/a/podman/podman/pkg/machine/e2e/start_test.go:159\n  [FAIL] podman machine start [It] start two machines in parallel\n  D:/a/podman/podman/pkg/machine/e2e/start_test.go:229\n  [FAIL] podman machine start [It] machine start with --update-connection"
   },
   {
    "run_id": "32713247992",
    "job_id": 97392458613,
    "job": "macos machine applehv",
    "date": "2026-08-24",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] run basic podman commands [It] podman volume on non-standard path",
+   "sig": "[FAIL] run basic podman commands [It] podman volume on non-standard path",
+   "context": "  run basic podman commands podman volume on non-standard path\t\t601.009236 seconds\nRunning platform specific cleanup\n  < Exit [SynchronizedAfterSuite] TOP-LEVEL - /Users/MacM1-1-worker/ci/podman/podman/pkg/machine/e2e/machine_test.go:95 @ 08/24/26 10:29:53.661 (1ms)\n[SynchronizedAfterSuite] PASSED [0.001 seconds]\n------------------------------\n\nSummarizing 1 Failure:\n  \n[FAIL] run basic podman commands [It] podman volume on non-standard path\n  /Users/MacM1-1-worker/ci/podman/podman/pkg/machine/e2e/config_test.go:59\n\nRan 78 of 84 Specs in 1837.649 seconds\nFAIL! -- 77 Passed | 1 Failed | 0 Pending | 6 Skipped\n--- FAIL: TestMachine (1837.65s)\nFAIL\n\nGinkgo ran 1 suite in 30m39.115185042s\n\nTest Suite Failed\n##[error]Process completed with exit code 2.\n##[group]Run ./hack/ci/gha_mac_cleanup.sh"
   },
   {
    "run_id": "32710555733",
    "job_id": 97380826034,
    "job": "Validate source code changes",
    "date": "2026-08-24",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "32710555733",
    "job_id": 97380826237,
    "job": "build fedora-prior / lima",
    "date": "2026-08-24",
-   "sig": null,
-   "no_log": true
+   "raw": "",
+   "sig": ""
   },
   {
    "run_id": "32645208815",
    "job_id": 97376135371,
    "job": "int remote rootless fedora-current / lima",
    "date": "2026-08-23",
-   "sig": null,
-   "no_log": true
+   "raw": "[FAIL] Podman run networking [It] podman run bridge network same port different HostIPs routes to correct container",
+   "sig": "[FAIL] Podman run networking [It] podman run bridge network same port different HostIPs routes to correct container",
+   "context": "[+0617s]   rm: cannot remove '/tmp/podman-e2e-1033563334/subtest-1425703164/p/root/overlay': Device or resource busy\n[+0617s]   exit status 1\n[+0617s]   < Exit [SynchronizedAfterSuite] TOP-LEVEL - /var/tmp/podman-container-tools/podman/test/e2e/common_test.go:237 @ 08/24/26 09:14:37.935 (2.659s)\n[+0617s]   << Timeline\n[+0617s] ------------------------------\n[+0617s] \n[+0617s] Summarizing 1 Failure:\n[+0617s]   \n[FAIL] Podman run networking [It] podman run bridge network same port different HostIPs routes to correct container\n[+0617s]   /var/tmp/podman-container-tools/podman/test/e2e/run_networking_test.go:1297\n[+0617s] \n[+0617s] Ran 2219 of 2545 Specs in 594.764 seconds\n[+0617s] FAIL! -- 2218 Passed | 1 Failed | 0 Pending | 326 Skipped\n[+0617s] \n[+0617s] \n[+0617s] Ginkgo ran 1 suite in 10m10.898390234s\n[+0617s] \n[+0617s] Test Suite Failed\n[+0617s] make[1]: *** [Makefile:711: ginkgo-run] Error 1\n[+0617s] make[1]: Leaving directory '/var/tmp/podman-container-tools/podman'\n[+0617s] make: *** [Makefile:724: ginkgo-remote] Error 2"
   },
   {
    "run_id": "32756268546",
    "job_id": 97524428528,
    "job": "Validate source code changes",
    "date": "2026-08-24",
-   "sig": null,
-   "no_log": true
+   "raw": "make: *** [Makefile:789: tests-included] Error 1",
+   "sig": "make: *** [TARGET] Error 1",
+   "context": "If your change is minor, feel free to piggyback on already-written\ntests, possibly just adding a small step to a similar existing test.\nEvery second counts in CI.\n\nIf your commit really, truly does not need tests, you can proceed\nby asking a repo maintainer to set the 'No New Tests' github label.\nThis will only be done when there's no reasonable alternative.\n\nmake: *** [Makefile:789: tests-included] Error 1\n##[error]Process completed with exit code 2.\nPost job cleanup.\nSkipping cache saving\nPost job cleanup.\n[command]/usr/bin/git version\ngit version 2.54.0\nTemporarily overriding HOME='/home/ubuntu/_work/_temp/32f62a87-ef6a-4621-8fbe-19ca07d90896' before making global git config changes\nAdding repository directory to the temporary git global config as a safe directory\n[command]/usr/bin/git config --global --add safe.directory /home/ubuntu/_work/podman/podman\nRemoving SSH command configuration\n[command]/usr/bin/git config --local --name-only --get-regexp core\\.sshCommand\n[command]/usr/bin/git submodule foreach --recursive sh -c \"git config --local --name-only --get-regexp 'core\\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
   }
  ]
 }
