@@ -1,6 +1,6 @@
 # known flakes - podman-container-tools/podman
 
-Generated 2026-08-27 from the rerun history. 1719 completed runs (2026-06-01 to 2026-08-27), 478 re-run by hand, 683 confirmed flakes - 428 of them in 166 signatures, the rest with no marker or no log.
+Generated 2026-08-28 from the rerun history. 1727 completed runs (2026-06-01 to 2026-08-28), 479 re-run by hand, 683 confirmed flakes - 428 of them in 166 signatures, the rest with no marker or no log.
 
 A confirmed flake failed on one attempt and passed on a later attempt of the same run, so the commit never changed. Issue matches below are candidates, not verdicts - in the study this tool grew out of, 6 of 16 name-based matches moved once the logs were opened (docs/verification.md). Anything marked needs-check requires a human before it is used.
 
