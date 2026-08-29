@@ -1,6 +1,8 @@
 """usage:
   python3 -m flaketriage scan <owner/repo> <workflow-file> [--limit N] [--created A..B]
   python3 -m flaketriage extract
+  python3 -m flaketriage corroborate [--limit N] [--created A..B] [--min-runs N]
+                                            second oracle: known flakes in runs nobody re-ran
   python3 -m flaketriage report [--no-issues]
   python3 -m flaketriage weekly
   python3 -m flaketriage propose            draft issue comments, never posts
@@ -15,7 +17,8 @@ scan is incremental - run it daily and it only touches new runs.
 import sys
 
 from . import analyze as analyzecmd
-from . import artifacts, attemptdiff, check as checkcmd, evalcmd, extract, ingest, propose, report
+from . import artifacts, attemptdiff, check as checkcmd, corroborate as corroboratecmd
+from . import evalcmd, extract, ingest, propose, report
 
 
 def main():
@@ -37,6 +40,16 @@ def main():
         ingest.scan(pos[0], pos[1], limit=limit, created=created)
     elif cmd == "extract":
         extract.extract_all()
+    elif cmd == "corroborate":
+        limit = created = None
+        min_runs = 1
+        if "--limit" in args and args.index("--limit") + 1 < len(args):
+            limit = int(args[args.index("--limit") + 1])
+        if "--created" in args and args.index("--created") + 1 < len(args):
+            created = args[args.index("--created") + 1]
+        if "--min-runs" in args and args.index("--min-runs") + 1 < len(args):
+            min_runs = int(args[args.index("--min-runs") + 1])
+        corroboratecmd.corroborate(limit=limit, created=created, min_runs=min_runs)
     elif cmd == "report":
         report.full_report(with_issues="--no-issues" not in args)
     elif cmd == "weekly":

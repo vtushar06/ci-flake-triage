@@ -14,6 +14,7 @@ import difflib
 import os
 
 from .classify import classify_all
+from . import corroborate
 from .ingest import STATE, load_state
 from . import match as matcher
 
@@ -84,13 +85,26 @@ def full_report(with_issues=True, log=print):
     L.append(f"# known flakes - {repo}")
     L.append("")
     sigged = sum(len(v) for sig, v in g.items() if sig)
-    L.append(f"Generated {_today()} from the rerun history. "
+    by_oracle = corroborate.summary(st)
+    n_rerun = by_oracle.get(corroborate.RERUN, 0)
+    n_corr = by_oracle.get(corroborate.CORROBORATED, 0)
+    L.append(f"Generated {_today()}. "
              f"{len(runs)} completed runs ({days[0]} to {days[-1]}), {rerun} re-run by hand, "
-             f"{len(st['flakes'])} confirmed flakes - {sigged} of them in "
+             f"{len(st['flakes'])} flakes - {sigged} of them in "
              f"{len([s for s in g if s])} signatures, the rest with no marker or no log.")
     L.append("")
-    L.append("A confirmed flake failed on one attempt and passed on a later attempt of the "
-             "same run, so the commit never changed. Issue matches below are candidates, "
+    L.append("The two oracles are counted separately on purpose, because the evidence behind "
+             "them is not equally strong:")
+    L.append("")
+    L.append(f"- **{n_rerun} rerun-confirmed** - failed on one attempt and passed on a later "
+             "attempt of the same run, so the commit never changed and there is a passing "
+             "twin of that exact job to diff against.")
+    L.append(f"- **{n_corr} corroborated** - a run nobody re-ran, whose failure signature was "
+             "already proven flaky by a maintainer's own re-run elsewhere. There is no passing "
+             "twin here, so this is the weaker of the two. Signatures that fail by design, such "
+             "as the tests-included gate, are excluded from seeding it.")
+    L.append("")
+    L.append("Issue matches below are candidates, "
              "not verdicts - in the study this tool grew out of, 6 of 16 name-based matches "
              "moved once the logs were opened (docs/verification.md). Anything marked "
              "needs-check requires a human before it is used.")
