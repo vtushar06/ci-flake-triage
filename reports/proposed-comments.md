@@ -1,10 +1,23 @@
-# proposed issue comments - 2026-08-29
+# proposed issue comments - 2026-08-30
 
 Drafts only. Nothing below has been posted and this tool has no code path
 that can post. Matches marked needs-check failed the verbatim-error test
 and must not be used without opening the logs first.
 
-## draft 1: issue #20332  [needs-check]
+## draft 1: issue #23871  [needs-check]
+match basis: name similarity only
+
+```
+this is still firing - 34 times between 2026-06-02 and 2026-08-13:
+
+    not ok |N| podman healthcheck
+
+https://github.com/podman-container-tools/podman/actions/runs/30463622001/job/91203565547
+https://github.com/podman-container-tools/podman/actions/runs/29951636314/job/89032377003
+https://github.com/podman-container-tools/podman/actions/runs/29844369873/job/88684738266
+```
+
+## draft 2: issue #20332  [needs-check]
 match basis: name similarity only
 
 ```
@@ -15,19 +28,6 @@ this is still firing - 32 times between 2026-06-02 and 2026-08-13:
 https://github.com/podman-container-tools/podman/actions/runs/31594925821/job/94108049621
 https://github.com/podman-container-tools/podman/actions/runs/30473552461/job/90649483650
 https://github.com/podman-container-tools/podman/actions/runs/30463622001/job/90615769638
-```
-
-## draft 2: issue #23871  [needs-check]
-match basis: name similarity only
-
-```
-this is still firing - 30 times between 2026-06-02 and 2026-08-13:
-
-    not ok |N| podman healthcheck
-
-https://github.com/podman-container-tools/podman/actions/runs/30463622001/job/91203565547
-https://github.com/podman-container-tools/podman/actions/runs/29951636314/job/89032377003
-https://github.com/podman-container-tools/podman/actions/runs/29844369873/job/88684738266
 ```
 
 ## draft 3: issue #28868  [needs-check]
@@ -60,7 +60,7 @@ https://github.com/podman-container-tools/podman/actions/runs/30610210248/job/91
 match basis: name similarity only
 
 ```
-this is still firing - 8 times between 2026-06-04 and 2026-07-07:
+this is still firing - 9 times between 2026-06-04 and 2026-08-03:
 
     not ok |N| podman kube play --wait with siginterrupt
 
@@ -73,7 +73,7 @@ https://github.com/podman-container-tools/podman/actions/runs/28363579941/job/84
 match basis: name similarity only
 
 ```
-this is still firing - 7 times between 2026-06-04 and 2026-08-13:
+this is still firing - 9 times between 2026-06-04 and 2026-08-13:
 
     [FAIL] run basic podman commands [It] Basic ops
 
@@ -82,7 +82,20 @@ https://github.com/podman-container-tools/podman/actions/runs/28097431667/job/83
 https://github.com/podman-container-tools/podman/actions/runs/27980185311/job/82809584893
 ```
 
-## draft 7: issue #26547  [needs-check]
+## draft 7: issue #17288  [needs-check]
+match basis: name similarity only
+
+```
+this is still firing - 8 times between 2026-06-05 and 2026-08-21:
+
+    not ok [N] podman network reload
+
+https://github.com/podman-container-tools/podman/actions/runs/31388391879/job/93457200292
+https://github.com/podman-container-tools/podman/actions/runs/27965018014/job/82758145151
+https://github.com/podman-container-tools/podman/actions/runs/27403499553/job/81377284649
+```
+
+## draft 8: issue #26547  [needs-check]
 match basis: name similarity only
 
 ```
@@ -95,11 +108,11 @@ https://github.com/podman-container-tools/podman/actions/runs/29887045047/job/88
 https://github.com/podman-container-tools/podman/actions/runs/28386372906/job/84103920728
 ```
 
-## draft 8: issue #24223  [needs-check]
+## draft 9: issue #24223  [needs-check]
 match basis: name similarity only
 
 ```
-this is still firing - 5 times between 2026-06-11 and 2026-07-14:
+this is still firing - 6 times between 2026-06-11 and 2026-07-29:
 
     not ok |N| podman mount - basic test
 
@@ -108,11 +121,11 @@ https://github.com/podman-container-tools/podman/actions/runs/28453915123/job/84
 https://github.com/podman-container-tools/podman/actions/runs/27822932548/job/82341310601
 ```
 
-## draft 9: issue #26547  [needs-check]
+## draft 10: issue #26547  [needs-check]
 match basis: name similarity only
 
 ```
-this is still firing - 4 times between 2026-06-15 and 2026-08-11:
+this is still firing - 5 times between 2026-06-15 and 2026-08-11:
 
     [FAIL] podman machine init [It] simple init with start
 
@@ -121,20 +134,46 @@ https://github.com/podman-container-tools/podman/actions/runs/29864837683/job/88
 https://github.com/podman-container-tools/podman/actions/runs/29322360978/job/87052208963
 ```
 
-## draft 10: issue #17288  [needs-check]
+## draft 11: issue #26547  [needs-check]
 match basis: name similarity only
 
 ```
-this is still firing - 4 times between 2026-06-05 and 2026-08-10:
+this is still firing - 5 times between 2026-07-08 and 2026-08-21:
 
-    not ok [N] podman network reload
+    [FAIL] podman machine start [It] start simple machine
 
-https://github.com/podman-container-tools/podman/actions/runs/31388391879/job/93457200292
-https://github.com/podman-container-tools/podman/actions/runs/27965018014/job/82758145151
-https://github.com/podman-container-tools/podman/actions/runs/27403499553/job/81377284649
+https://github.com/podman-container-tools/podman/actions/runs/30294022591/job/90075648807
+https://github.com/podman-container-tools/podman/actions/runs/28935304775/job/85882475776
+https://github.com/podman-container-tools/podman/actions/runs/32499170869/job/96827744784
 ```
 
-## draft 11: issue #24571  [needs-check]
+## draft 12: issue #26547  [needs-check]
+match basis: name similarity only
+
+```
+this is still firing - 4 times between 2026-06-24 and 2026-08-18:
+
+    [FAIL] podman machine start [It] machine init --now with --update-connection
+
+https://github.com/podman-container-tools/podman/actions/runs/29750005422/job/88393962328
+https://github.com/podman-container-tools/podman/actions/runs/28097431667/job/83192238766
+https://github.com/podman-container-tools/podman/actions/runs/32176110300/job/95842744429
+```
+
+## draft 13: issue #26547  [needs-check]
+match basis: name similarity only
+
+```
+this is still firing - 4 times between 2026-06-12 and 2026-08-27:
+
+    [FAIL] run cp commands [It] podman machine cp
+
+https://github.com/podman-container-tools/podman/actions/runs/28935304775/job/85921826248
+https://github.com/podman-container-tools/podman/actions/runs/27567168948/job/81496155203
+https://github.com/podman-container-tools/podman/actions/runs/27428574380/job/81074086854
+```
+
+## draft 14: issue #24571  [needs-check]
 match basis: name similarity only
 
 ```
@@ -147,7 +186,33 @@ https://github.com/podman-container-tools/podman/actions/runs/27968347032/job/82
 https://github.com/podman-container-tools/podman/actions/runs/27511610790/job/81313178888
 ```
 
-## draft 12: issue #22551  [needs-check]
+## draft 15: issue #17288  [needs-check]
+match basis: name similarity only
+
+```
+this is still firing - 4 times between 2026-06-01 and 2026-08-24:
+
+    not ok [N] podman network create
+
+https://github.com/podman-container-tools/podman/actions/runs/28431195811/job/84326181569
+https://github.com/podman-container-tools/podman/actions/runs/27280502311/job/80575834470
+https://github.com/podman-container-tools/podman/actions/runs/26775909220/job/78928713659
+```
+
+## draft 16: issue #26547  [needs-check]
+match basis: name similarity only
+
+```
+this is still firing - 4 times between 2026-06-10 and 2026-08-06:
+
+    not ok |N| podman import
+
+https://github.com/podman-container-tools/podman/actions/runs/28235515272/job/83650468565
+https://github.com/podman-container-tools/podman/actions/runs/27280502311/job/80575834218
+https://github.com/podman-container-tools/podman/actions/runs/31074585833/job/92531282514
+```
+
+## draft 17: issue #22551  [needs-check]
 match basis: name similarity only
 
 ```
@@ -160,7 +225,7 @@ https://github.com/podman-container-tools/podman/actions/runs/30453491397/job/92
 https://github.com/podman-container-tools/podman/actions/runs/28945086379/job/85878537653
 ```
 
-## draft 13: issue #24598  [needs-check]
+## draft 18: issue #24598  [needs-check]
 match basis: name similarity only
 
 ```
@@ -173,33 +238,33 @@ https://github.com/podman-container-tools/podman/actions/runs/29722815042/job/88
 https://github.com/podman-container-tools/podman/actions/runs/27540733322/job/81402849121
 ```
 
-## draft 14: issue #26547  [needs-check]
+## draft 19: issue #26547  [needs-check]
 match basis: name similarity only
 
 ```
-this is still firing - 3 times between 2026-06-12 and 2026-07-08:
+this is still firing - 3 times between 2026-06-12 and 2026-08-24:
 
-    [FAIL] run cp commands [It] podman machine cp
+    [FAIL] podman machine start [It] start machine already started
 
-https://github.com/podman-container-tools/podman/actions/runs/28935304775/job/85921826248
-https://github.com/podman-container-tools/podman/actions/runs/27567168948/job/81496155203
-https://github.com/podman-container-tools/podman/actions/runs/27428574380/job/81074086854
+https://github.com/podman-container-tools/podman/actions/runs/29472563213/job/87539614431
+https://github.com/podman-container-tools/podman/actions/runs/27403499553/job/80988140391
+https://github.com/podman-container-tools/podman/actions/runs/32766359585/job/97560430153
 ```
 
-## draft 15: issue #17288  [needs-check]
+## draft 20: issue #26547  [needs-check]
 match basis: name similarity only
 
 ```
-this is still firing - 3 times between 2026-06-01 and 2026-06-30:
+this is still firing - 3 times between 2026-06-26 and 2026-08-19:
 
-    not ok [N] podman network create
+    [FAIL] podman machine init [It] machine init with volume
 
-https://github.com/podman-container-tools/podman/actions/runs/28431195811/job/84326181569
-https://github.com/podman-container-tools/podman/actions/runs/27280502311/job/80575834470
-https://github.com/podman-container-tools/podman/actions/runs/26775909220/job/78928713659
+https://github.com/podman-container-tools/podman/actions/runs/29251782488/job/86823930848
+https://github.com/podman-container-tools/podman/actions/runs/28243007515/job/83676802337
+https://github.com/podman-container-tools/podman/actions/runs/32247003769/job/96052522896
 ```
 
-## draft 16: issue #23871  [needs-check]
+## draft 21: issue #23871  [needs-check]
 match basis: name similarity only
 
 ```
@@ -212,7 +277,7 @@ https://github.com/podman-container-tools/podman/actions/runs/27761210888/job/82
 https://github.com/podman-container-tools/podman/actions/runs/26838861389/job/79141912830
 ```
 
-## draft 17: issue #26547  [needs-check]
+## draft 22: issue #26547  [needs-check]
 match basis: name similarity only
 
 ```
