@@ -1,10 +1,10 @@
 # known flakes - podman-container-tools/podman
 
-Generated 2026-08-31. 1765 completed runs (2026-06-01 to 2026-08-31), 483 re-run by hand, 749 flakes - 493 of them in 166 signatures, the rest with no marker or no log.
+Generated 2026-09-01. 1804 completed runs (2026-06-01 to 2026-09-01), 500 re-run by hand, 761 flakes - 493 of them in 166 signatures, the rest with no marker or no log.
 
 The two oracles are counted separately on purpose, because the evidence behind them is not equally strong:
 
-- **684 rerun-confirmed** - failed on one attempt and passed on a later attempt of the same run, so the commit never changed and there is a passing twin of that exact job to diff against.
+- **696 rerun-confirmed** - failed on one attempt and passed on a later attempt of the same run, so the commit never changed and there is a passing twin of that exact job to diff against.
 - **65 corroborated** - a run nobody re-ran, whose failure signature was already proven flaky by a maintainer's own re-run elsewhere. There is no passing twin here, so this is the weaker of the two. Signatures that fail by design, such as the tests-included gate, are excluded from seeding it.
 
 Issue matches below are candidates, not verdicts - in the study this tool grew out of, 6 of 16 name-based matches moved once the logs were opened (docs/verification.md). Anything marked needs-check requires a human before it is used.
@@ -225,8 +225,8 @@ top signature occurrences:
 |---|---|---|---|
 | 118 | `(none)` | 2026-06-04 to 2026-08-13 |  |
 
-## no retrievable log (138 flakes)
+## no retrievable log (150 flakes)
 
 | n | signature | window | issue candidate |
 |---|---|---|---|
-| 138 | `(none)` | 2026-06-17 to 2026-08-27 |  |
+| 150 | `(none)` | 2026-06-17 to 2026-08-31 |  |
