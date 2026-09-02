@@ -7135,7 +7135,7 @@
    "created": "2026-08-31"
   },
   "33381297682": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-08-31"
   },
   "33378561598": {
@@ -7147,7 +7147,7 @@
    "created": "2026-08-31"
   },
   "33376249353": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-08-31"
   },
   "33372459533": {
@@ -7211,7 +7211,7 @@
    "created": "2026-08-30"
   },
   "33495844852": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-09-01"
   },
   "33495371379": {
@@ -7327,7 +7327,7 @@
    "created": "2026-08-31"
   },
   "33400059511": {
-   "attempts": 1,
+   "attempts": 3,
    "created": "2026-08-31"
   },
   "33400052700": {
@@ -7364,6 +7364,154 @@
   },
   "33387604440": {
    "attempts": 2,
+   "created": "2026-08-31"
+  },
+  "33616106937": {
+   "attempts": 1,
+   "created": "2026-09-02"
+  },
+  "33615975366": {
+   "attempts": 1,
+   "created": "2026-09-02"
+  },
+  "33609278081": {
+   "attempts": 1,
+   "created": "2026-09-02"
+  },
+  "33607821641": {
+   "attempts": 1,
+   "created": "2026-09-02"
+  },
+  "33607775208": {
+   "attempts": 1,
+   "created": "2026-09-02"
+  },
+  "33603874355": {
+   "attempts": 1,
+   "created": "2026-09-02"
+  },
+  "33603867442": {
+   "attempts": 1,
+   "created": "2026-09-02"
+  },
+  "33603716964": {
+   "attempts": 1,
+   "created": "2026-09-02"
+  },
+  "33599026252": {
+   "attempts": 1,
+   "created": "2026-09-02"
+  },
+  "33593514322": {
+   "attempts": 1,
+   "created": "2026-09-02"
+  },
+  "33574507651": {
+   "attempts": 1,
+   "created": "2026-09-02"
+  },
+  "33564524348": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33546393356": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33546166338": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33539685710": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33537774417": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33537371954": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33533161302": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33530274461": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33526218663": {
+   "attempts": 3,
+   "created": "2026-09-01"
+  },
+  "33524719203": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33523671332": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33521011199": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33519490116": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33514603025": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33513992785": {
+   "attempts": 2,
+   "created": "2026-09-01"
+  },
+  "33512777950": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33509507196": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33504941213": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33503985821": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33503886959": {
+   "attempts": 2,
+   "created": "2026-09-01"
+  },
+  "33500927338": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33500155792": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33498243234": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33493751435": {
+   "attempts": 1,
+   "created": "2026-09-01"
+  },
+  "33462115775": {
+   "attempts": 2,
+   "created": "2026-09-01"
+  },
+  "33425695546": {
+   "attempts": 3,
    "created": "2026-08-31"
   }
  },
@@ -13596,6 +13744,94 @@
    "job_id": 97996913695,
    "job": "windows machine hyperv",
    "date": "2026-08-25",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "33526218663",
+   "job_id": 99922197417,
+   "job": "macos machine applehv",
+   "date": "2026-09-01",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "33526218663",
+   "job_id": 99922199431,
+   "job": "sys remote root fedora-current / lima",
+   "date": "2026-09-01",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "33503886959",
+   "job_id": 99846830762,
+   "job": "sys remote root fedora-prior / lima",
+   "date": "2026-09-01",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "33462115775",
+   "job_id": 99716532131,
+   "job": "sys local rootless fedora-prior / lima",
+   "date": "2026-09-01",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "33425695546",
+   "job_id": 99778453546,
+   "job": "int remote root fedora-prior / lima",
+   "date": "2026-08-31",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "33425695546",
+   "job_id": 99778453737,
+   "job": "int remote rootless fedora-current / lima",
+   "date": "2026-08-31",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "33400059511",
+   "job_id": 99831184574,
+   "job": "windows machine hyperv",
+   "date": "2026-08-31",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "33381297682",
+   "job_id": 99456991920,
+   "job": "unit  root fedora-current / lima",
+   "date": "2026-08-31",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "33376249353",
+   "job_id": 99441320022,
+   "job": "windows machine wsl",
+   "date": "2026-08-31",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "33376249353",
+   "job_id": 99441320681,
+   "job": "bindings  root fedora-current / lima",
+   "date": "2026-08-31",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "33376249353",
+   "job_id": 99441321720,
+   "job": "int remote root fedora-rawhide / lima",
+   "date": "2026-08-31",
    "sig": null,
    "no_log": true
   }
