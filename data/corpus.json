@@ -7690,7 +7690,7 @@
    "created": "2026-09-04"
   },
   "33889872120": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-09-04"
   },
   "33889291079": {
@@ -7762,6 +7762,14 @@
    "created": "2026-09-03"
   },
   "34023178078": {
+   "attempts": 1,
+   "created": "2026-09-06"
+  },
+  "34101125617": {
+   "attempts": 1,
+   "created": "2026-09-07"
+  },
+  "34061359490": {
    "attempts": 1,
    "created": "2026-09-06"
   }
@@ -14291,6 +14299,14 @@
    "job_id": 96693408631,
    "job": "sys local root fedora-current / lima",
    "date": "2026-08-21",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "33889872120",
+   "job_id": 101082912262,
+   "job": "windows machine wsl",
+   "date": "2026-09-04",
    "sig": null,
    "no_log": true
   }
