@@ -7654,7 +7654,7 @@
    "created": "2026-09-05"
   },
   "33945466542": {
-   "attempts": 1,
+   "attempts": 3,
    "created": "2026-09-05"
   },
   "33944240949": {
@@ -7772,6 +7772,54 @@
   "34061359490": {
    "attempts": 1,
    "created": "2026-09-06"
+  },
+  "34213358555": {
+   "attempts": 1,
+   "created": "2026-09-08"
+  },
+  "34172086090": {
+   "attempts": 1,
+   "created": "2026-09-08"
+  },
+  "34146238887": {
+   "attempts": 1,
+   "created": "2026-09-07"
+  },
+  "34144025281": {
+   "attempts": 1,
+   "created": "2026-09-07"
+  },
+  "34138652080": {
+   "attempts": 1,
+   "created": "2026-09-07"
+  },
+  "34136123836": {
+   "attempts": 1,
+   "created": "2026-09-07"
+  },
+  "34128052914": {
+   "attempts": 1,
+   "created": "2026-09-07"
+  },
+  "34127662276": {
+   "attempts": 1,
+   "created": "2026-09-07"
+  },
+  "34115580099": {
+   "attempts": 1,
+   "created": "2026-09-07"
+  },
+  "34115569936": {
+   "attempts": 2,
+   "created": "2026-09-07"
+  },
+  "34115392096": {
+   "attempts": 1,
+   "created": "2026-09-07"
+  },
+  "34114030278": {
+   "attempts": 1,
+   "created": "2026-09-07"
   }
  },
  "flakes": [
@@ -14307,6 +14355,22 @@
    "job_id": 101082912262,
    "job": "windows machine wsl",
    "date": "2026-09-04",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "34115569936",
+   "job_id": 101724927765,
+   "job": "windows machine hyperv",
+   "date": "2026-09-07",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "33945466542",
+   "job_id": 101722552944,
+   "job": "macos machine applehv",
+   "date": "2026-09-05",
    "sig": null,
    "no_log": true
   }
