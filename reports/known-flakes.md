@@ -1,6 +1,6 @@
 # known flakes - podman-container-tools/podman
 
-Generated 2026-10-03. 2365 completed runs (2026-06-01 to 2026-10-02), 688 re-run by hand, 930 flakes - 493 of them in 166 signatures, the rest with no marker or no log.
+Generated 2026-10-04. 2367 completed runs (2026-06-01 to 2026-10-03), 688 re-run by hand, 930 flakes - 493 of them in 166 signatures, the rest with no marker or no log.
 
 The two oracles are counted separately on purpose, because the evidence behind them is not equally strong:
 
