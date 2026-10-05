@@ -1,4 +1,4 @@
-# flake report, week ending 2026-10-04
+# flake report, week ending 2026-10-05
 
 22 confirmed flakes in 1 signatures this week.
 
