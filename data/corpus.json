@@ -9442,7 +9442,7 @@
    "created": "2026-09-30"
   },
   "36709494888": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-09-30"
   },
   "36709143342": {
@@ -9518,7 +9518,7 @@
    "created": "2026-10-01"
   },
   "36845544319": {
-   "attempts": 2,
+   "attempts": 3,
    "created": "2026-10-01"
   },
   "36717931146": {
@@ -17194,6 +17194,30 @@
    "run_id": "36719640464",
    "job_id": 109969190609,
    "job": "int local root fedora-rawhide / lima",
+   "date": "2026-09-30",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "36845544319",
+   "job_id": 110343952373,
+   "job": "int remote root fedora-current / lima",
+   "date": "2026-10-01",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "36845544319",
+   "job_id": 110343952812,
+   "job": "sys local root debian-sid / lima",
+   "date": "2026-10-01",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "36709494888",
+   "job_id": 109871798058,
+   "job": "macos machine applehv",
    "date": "2026-09-30",
    "sig": null,
    "no_log": true
