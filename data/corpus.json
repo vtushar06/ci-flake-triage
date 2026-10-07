@@ -9442,7 +9442,7 @@
    "created": "2026-09-30"
   },
   "36709494888": {
-   "attempts": 2,
+   "attempts": 3,
    "created": "2026-09-30"
   },
   "36709143342": {
@@ -9490,7 +9490,7 @@
    "created": "2026-10-01"
   },
   "36883360902": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-01"
   },
   "36874211952": {
@@ -9506,7 +9506,7 @@
    "created": "2026-10-01"
   },
   "36858171475": {
-   "attempts": 1,
+   "attempts": 3,
    "created": "2026-10-01"
   },
   "36857968368": {
@@ -17218,6 +17218,30 @@
    "run_id": "36709494888",
    "job_id": 109871798058,
    "job": "macos machine applehv",
+   "date": "2026-09-30",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "36883360902",
+   "job_id": 110446245739,
+   "job": "apiv2  root fedora-current / lima",
+   "date": "2026-10-01",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "36858171475",
+   "job_id": 111765083565,
+   "job": "macos machine applehv",
+   "date": "2026-10-01",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "36709494888",
+   "job_id": 111918063463,
+   "job": "windows machine wsl",
    "date": "2026-09-30",
    "sig": null,
    "no_log": true
