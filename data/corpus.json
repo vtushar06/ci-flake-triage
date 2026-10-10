@@ -9386,7 +9386,7 @@
    "created": "2026-09-28"
   },
   "36829291072": {
-   "attempts": 2,
+   "attempts": 3,
    "created": "2026-10-01"
   },
   "36826579404": {
@@ -10170,7 +10170,7 @@
    "created": "2026-10-08"
   },
   "37788594401": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-08"
   },
   "37780115903": {
@@ -10187,6 +10187,102 @@
   },
   "37771946429": {
    "attempts": 1,
+   "created": "2026-10-08"
+  },
+  "38030093131": {
+   "attempts": 1,
+   "created": "2026-10-10"
+  },
+  "38023890753": {
+   "attempts": 1,
+   "created": "2026-10-10"
+  },
+  "38018081988": {
+   "attempts": 1,
+   "created": "2026-10-10"
+  },
+  "38017449884": {
+   "attempts": 1,
+   "created": "2026-10-10"
+  },
+  "38017338042": {
+   "attempts": 1,
+   "created": "2026-10-10"
+  },
+  "38008799200": {
+   "attempts": 1,
+   "created": "2026-10-10"
+  },
+  "37967522026": {
+   "attempts": 1,
+   "created": "2026-10-09"
+  },
+  "37964637267": {
+   "attempts": 1,
+   "created": "2026-10-09"
+  },
+  "37961693595": {
+   "attempts": 1,
+   "created": "2026-10-09"
+  },
+  "37959524899": {
+   "attempts": 1,
+   "created": "2026-10-09"
+  },
+  "37959277538": {
+   "attempts": 1,
+   "created": "2026-10-09"
+  },
+  "37955120311": {
+   "attempts": 2,
+   "created": "2026-10-09"
+  },
+  "37945947050": {
+   "attempts": 1,
+   "created": "2026-10-09"
+  },
+  "37945795052": {
+   "attempts": 1,
+   "created": "2026-10-09"
+  },
+  "37945112784": {
+   "attempts": 1,
+   "created": "2026-10-09"
+  },
+  "37944824126": {
+   "attempts": 1,
+   "created": "2026-10-09"
+  },
+  "37943281618": {
+   "attempts": 1,
+   "created": "2026-10-09"
+  },
+  "37934873870": {
+   "attempts": 1,
+   "created": "2026-10-09"
+  },
+  "37932500227": {
+   "attempts": 1,
+   "created": "2026-10-09"
+  },
+  "37929937251": {
+   "attempts": 1,
+   "created": "2026-10-09"
+  },
+  "37927405399": {
+   "attempts": 1,
+   "created": "2026-10-09"
+  },
+  "37926054403": {
+   "attempts": 3,
+   "created": "2026-10-09"
+  },
+  "37883667171": {
+   "attempts": 2,
+   "created": "2026-10-09"
+  },
+  "37816056580": {
+   "attempts": 5,
    "created": "2026-10-08"
   }
  },
@@ -18147,6 +18243,54 @@
    "job_id": 112401688124,
    "job": "macos machine applehv",
    "date": "2026-10-06",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "37955120311",
+   "job_id": 113911322647,
+   "job": "macos machine applehv",
+   "date": "2026-10-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "37926054403",
+   "job_id": 113809968458,
+   "job": "sys local root fedora-current / lima",
+   "date": "2026-10-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "37926054403",
+   "job_id": 113830071635,
+   "job": "sys local rootless fedora-current / lima",
+   "date": "2026-10-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "37816056580",
+   "job_id": 113827785696,
+   "job": "windows machine hyperv",
+   "date": "2026-10-08",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "37788594401",
+   "job_id": 113355317592,
+   "job": "sys local root fedora-prior / lima",
+   "date": "2026-10-08",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "37788594401",
+   "job_id": 113355317649,
+   "job": "int local root fedora-rawhide / lima",
+   "date": "2026-10-08",
    "sig": null,
    "no_log": true
   }
