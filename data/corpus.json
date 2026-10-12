@@ -9866,7 +9866,7 @@
    "created": "2026-10-06"
   },
   "37457174704": {
-   "attempts": 2,
+   "attempts": 3,
    "created": "2026-10-06"
   },
   "37456535785": {
@@ -10146,7 +10146,7 @@
    "created": "2026-10-09"
   },
   "37847476727": {
-   "attempts": 2,
+   "attempts": 3,
    "created": "2026-10-08"
   },
   "37846452527": {
@@ -10194,7 +10194,7 @@
    "created": "2026-10-10"
   },
   "38023890753": {
-   "attempts": 1,
+   "attempts": 3,
    "created": "2026-10-10"
   },
   "38018081988": {
@@ -10202,7 +10202,7 @@
    "created": "2026-10-10"
   },
   "38017449884": {
-   "attempts": 1,
+   "attempts": 4,
    "created": "2026-10-10"
   },
   "38017338042": {
@@ -10214,7 +10214,7 @@
    "created": "2026-10-10"
   },
   "37967522026": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-09"
   },
   "37964637267": {
@@ -10246,7 +10246,7 @@
    "created": "2026-10-09"
   },
   "37945112784": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-09"
   },
   "37944824126": {
@@ -10254,7 +10254,7 @@
    "created": "2026-10-09"
   },
   "37943281618": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-09"
   },
   "37934873870": {
@@ -10266,7 +10266,7 @@
    "created": "2026-10-09"
   },
   "37929937251": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-09"
   },
   "37927405399": {
@@ -10278,7 +10278,7 @@
    "created": "2026-10-09"
   },
   "37883667171": {
-   "attempts": 2,
+   "attempts": 4,
    "created": "2026-10-09"
   },
   "37816056580": {
@@ -10288,6 +10288,74 @@
   "38073440878": {
    "attempts": 1,
    "created": "2026-10-10"
+  },
+  "38249700163": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38248264867": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38243484017": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38240157895": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38238479280": {
+   "attempts": 2,
+   "created": "2026-10-12"
+  },
+  "38238194428": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38235479079": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38233973469": {
+   "attempts": 2,
+   "created": "2026-10-12"
+  },
+  "38232872984": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38224922643": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38224638218": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38223525654": {
+   "attempts": 2,
+   "created": "2026-10-12"
+  },
+  "38223495167": {
+   "attempts": 2,
+   "created": "2026-10-12"
+  },
+  "38223138310": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38221502019": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38221343155": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38186722007": {
+   "attempts": 2,
+   "created": "2026-10-12"
   }
  },
  "flakes": [
@@ -18294,6 +18362,94 @@
    "run_id": "37788594401",
    "job_id": 113355317649,
    "job": "int local root fedora-rawhide / lima",
+   "date": "2026-10-08",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38233973469",
+   "job_id": 114764511606,
+   "job": "windows machine hyperv",
+   "date": "2026-10-12",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38233973469",
+   "job_id": 114764513444,
+   "job": "sys local root debian-sid / lima",
+   "date": "2026-10-12",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38233973469",
+   "job_id": 114764513453,
+   "job": "sys local rootless fedora-current / lima",
+   "date": "2026-10-12",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38233973469",
+   "job_id": 114764513711,
+   "job": "sys remote root fedora-prior / lima",
+   "date": "2026-10-12",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38223525654",
+   "job_id": 114729186521,
+   "job": "macos machine libkrun",
+   "date": "2026-10-12",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38223495167",
+   "job_id": 114729660212,
+   "job": "windows machine hyperv",
+   "date": "2026-10-12",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38186722007",
+   "job_id": 114612852403,
+   "job": "int local root debian-sid / lima",
+   "date": "2026-10-12",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "37943281618",
+   "job_id": 113869716123,
+   "job": "sys local root fedora-current / lima",
+   "date": "2026-10-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "37943281618",
+   "job_id": 113869716373,
+   "job": "int local rootless fedora-current / lima",
+   "date": "2026-10-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "37929937251",
+   "job_id": 113822396278,
+   "job": "macos machine applehv",
+   "date": "2026-10-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "37847476727",
+   "job_id": 113782726954,
+   "job": "sys remote root fedora-rawhide / lima",
    "date": "2026-10-08",
    "sig": null,
    "no_log": true
