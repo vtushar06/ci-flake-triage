@@ -10126,7 +10126,7 @@
    "created": "2026-10-09"
   },
   "37911510878": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-09"
   },
   "37904587067": {
@@ -10306,7 +10306,7 @@
    "created": "2026-10-12"
   },
   "38238479280": {
-   "attempts": 2,
+   "attempts": 5,
    "created": "2026-10-12"
   },
   "38238194428": {
@@ -10355,6 +10355,62 @@
   },
   "38186722007": {
    "attempts": 2,
+   "created": "2026-10-12"
+  },
+  "38356996977": {
+   "attempts": 1,
+   "created": "2026-10-13"
+  },
+  "38352143750": {
+   "attempts": 1,
+   "created": "2026-10-13"
+  },
+  "38326864708": {
+   "attempts": 1,
+   "created": "2026-10-13"
+  },
+  "38309406799": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38306942576": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38306899761": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38304388239": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38304210113": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38304157835": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38283734641": {
+   "attempts": 3,
+   "created": "2026-10-12"
+  },
+  "38282365192": {
+   "attempts": 4,
+   "created": "2026-10-12"
+  },
+  "38278767521": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38254691585": {
+   "attempts": 1,
+   "created": "2026-10-12"
+  },
+  "38254610330": {
+   "attempts": 1,
    "created": "2026-10-12"
   }
  },
@@ -18451,6 +18507,30 @@
    "job_id": 113782726954,
    "job": "sys remote root fedora-rawhide / lima",
    "date": "2026-10-08",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38283734641",
+   "job_id": 114955413463,
+   "job": "windows machine hyperv",
+   "date": "2026-10-12",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38282365192",
+   "job_id": 114962980902,
+   "job": "windows machine hyperv",
+   "date": "2026-10-12",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38238479280",
+   "job_id": 114853862649,
+   "job": "windows machine hyperv",
+   "date": "2026-10-12",
    "sig": null,
    "no_log": true
   }
