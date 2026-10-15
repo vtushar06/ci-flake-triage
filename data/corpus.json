@@ -10358,7 +10358,7 @@
    "created": "2026-10-12"
   },
   "38356996977": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-13"
   },
   "38352143750": {
@@ -10460,6 +10460,50 @@
   "38399708079": {
    "attempts": 1,
    "created": "2026-10-13"
+  },
+  "38709119156": {
+   "attempts": 1,
+   "created": "2026-10-15"
+  },
+  "38705230679": {
+   "attempts": 1,
+   "created": "2026-10-15"
+  },
+  "38688181205": {
+   "attempts": 1,
+   "created": "2026-10-15"
+  },
+  "38638321584": {
+   "attempts": 1,
+   "created": "2026-10-14"
+  },
+  "38594158661": {
+   "attempts": 1,
+   "created": "2026-10-14"
+  },
+  "38592585393": {
+   "attempts": 1,
+   "created": "2026-10-14"
+  },
+  "38574125978": {
+   "attempts": 1,
+   "created": "2026-10-14"
+  },
+  "38568519312": {
+   "attempts": 6,
+   "created": "2026-10-14"
+  },
+  "38558286835": {
+   "attempts": 4,
+   "created": "2026-10-14"
+  },
+  "38552842613": {
+   "attempts": 1,
+   "created": "2026-10-14"
+  },
+  "38489872323": {
+   "attempts": 2,
+   "created": "2026-10-14"
   }
  },
  "flakes": [
@@ -18594,6 +18638,46 @@
    "run_id": "38404384082",
    "job_id": 115438953046,
    "job": "windows machine hyperv",
+   "date": "2026-10-13",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38568519312",
+   "job_id": 115911840803,
+   "job": "Validate source code changes",
+   "date": "2026-10-14",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38558286835",
+   "job_id": 115904221992,
+   "job": "windows machine hyperv",
+   "date": "2026-10-14",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38558286835",
+   "job_id": 115904221993,
+   "job": "macos machine applehv",
+   "date": "2026-10-14",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38489872323",
+   "job_id": 115615871320,
+   "job": "windows machine wsl",
+   "date": "2026-10-14",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38356996977",
+   "job_id": 115165623801,
+   "job": "int local rootless fedora-current / lima",
    "date": "2026-10-13",
    "sig": null,
    "no_log": true
