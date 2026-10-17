@@ -10568,6 +10568,34 @@
   "38719503129": {
    "attempts": 1,
    "created": "2026-10-15"
+  },
+  "38986106233": {
+   "attempts": 1,
+   "created": "2026-10-17"
+  },
+  "38948859776": {
+   "attempts": 1,
+   "created": "2026-10-16"
+  },
+  "38939336364": {
+   "attempts": 1,
+   "created": "2026-10-16"
+  },
+  "38915273330": {
+   "attempts": 1,
+   "created": "2026-10-16"
+  },
+  "38903778765": {
+   "attempts": 3,
+   "created": "2026-10-16"
+  },
+  "38899744631": {
+   "attempts": 1,
+   "created": "2026-10-16"
+  },
+  "38899595543": {
+   "attempts": 1,
+   "created": "2026-10-16"
   }
  },
  "flakes": [
@@ -18783,6 +18811,22 @@
    "job_id": 116379562901,
    "job": "macos machine applehv",
    "date": "2026-10-15",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38903778765",
+   "job_id": 116982168652,
+   "job": "Validate source code changes",
+   "date": "2026-10-16",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "38903778765",
+   "job_id": 116993545845,
+   "job": "macos machine libkrun",
+   "date": "2026-10-16",
    "sig": null,
    "no_log": true
   }
