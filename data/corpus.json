@@ -11022,7 +11022,7 @@
    "created": "2026-10-23"
   },
   "39849558624": {
-   "attempts": 1,
+   "attempts": 3,
    "created": "2026-10-22"
   },
   "39847042677": {
@@ -11046,7 +11046,7 @@
    "created": "2026-10-22"
   },
   "39809519374": {
-   "attempts": 2,
+   "attempts": 4,
    "created": "2026-10-22"
   },
   "39809312935": {
@@ -11068,6 +11068,38 @@
   "39756516589": {
    "attempts": 1,
    "created": "2026-10-22"
+  },
+  "40080358893": {
+   "attempts": 1,
+   "created": "2026-10-24"
+  },
+  "40076537232": {
+   "attempts": 1,
+   "created": "2026-10-24"
+  },
+  "40071052356": {
+   "attempts": 1,
+   "created": "2026-10-24"
+  },
+  "39992342159": {
+   "attempts": 1,
+   "created": "2026-10-23"
+  },
+  "39987899546": {
+   "attempts": 4,
+   "created": "2026-10-23"
+  },
+  "39947298833": {
+   "attempts": 2,
+   "created": "2026-10-23"
+  },
+  "39937686241": {
+   "attempts": 1,
+   "created": "2026-10-23"
+  },
+  "39936258960": {
+   "attempts": 1,
+   "created": "2026-10-23"
   }
  },
  "flakes": [
@@ -19555,6 +19587,30 @@
    "job_id": 119955425312,
    "job": "sys remote root fedora-rawhide / lima",
    "date": "2026-10-06",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "39987899546",
+   "job_id": 120540815968,
+   "job": "macos machine applehv",
+   "date": "2026-10-23",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "39849558624",
+   "job_id": 120071751227,
+   "job": "Validate source code changes",
+   "date": "2026-10-22",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "39849558624",
+   "job_id": 120455737049,
+   "job": "macos machine applehv",
+   "date": "2026-10-22",
    "sig": null,
    "no_log": true
   }
