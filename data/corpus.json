@@ -11100,6 +11100,18 @@
   "39936258960": {
    "attempts": 1,
    "created": "2026-10-23"
+  },
+  "40136016049": {
+   "attempts": 2,
+   "created": "2026-10-24"
+  },
+  "40109305713": {
+   "attempts": 1,
+   "created": "2026-10-24"
+  },
+  "40086757272": {
+   "attempts": 1,
+   "created": "2026-10-24"
   }
  },
  "flakes": [
@@ -19611,6 +19623,14 @@
    "job_id": 120455737049,
    "job": "macos machine applehv",
    "date": "2026-10-22",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "40136016049",
+   "job_id": 121000938844,
+   "job": "macos machine libkrun",
+   "date": "2026-10-24",
    "sig": null,
    "no_log": true
   }
