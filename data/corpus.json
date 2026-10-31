@@ -11398,7 +11398,7 @@
    "created": "2026-10-30"
   },
   "41046352898": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-30"
   },
   "41044355809": {
@@ -11410,7 +11410,7 @@
    "created": "2026-10-30"
   },
   "41042355743": {
-   "attempts": 1,
+   "attempts": 3,
    "created": "2026-10-30"
   },
   "41041372562": {
@@ -11450,7 +11450,7 @@
    "created": "2026-10-29"
   },
   "40937410499": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-29"
   },
   "40935267040": {
@@ -11462,7 +11462,7 @@
    "created": "2026-10-29"
   },
   "40920090090": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-29"
   },
   "40913712513": {
@@ -11520,6 +11520,62 @@
   "40866225881": {
    "attempts": 1,
    "created": "2026-10-29"
+  },
+  "41188140197": {
+   "attempts": 1,
+   "created": "2026-10-31"
+  },
+  "41187714145": {
+   "attempts": 1,
+   "created": "2026-10-31"
+  },
+  "41169580379": {
+   "attempts": 1,
+   "created": "2026-10-31"
+  },
+  "41147930399": {
+   "attempts": 2,
+   "created": "2026-10-31"
+  },
+  "41121052086": {
+   "attempts": 1,
+   "created": "2026-10-30"
+  },
+  "41109251579": {
+   "attempts": 1,
+   "created": "2026-10-30"
+  },
+  "41100549385": {
+   "attempts": 1,
+   "created": "2026-10-30"
+  },
+  "41095635505": {
+   "attempts": 2,
+   "created": "2026-10-30"
+  },
+  "41093901671": {
+   "attempts": 1,
+   "created": "2026-10-30"
+  },
+  "41092552867": {
+   "attempts": 1,
+   "created": "2026-10-30"
+  },
+  "41092067376": {
+   "attempts": 1,
+   "created": "2026-10-30"
+  },
+  "41081532682": {
+   "attempts": 1,
+   "created": "2026-10-30"
+  },
+  "41078810317": {
+   "attempts": 1,
+   "created": "2026-10-30"
+  },
+  "41064240074": {
+   "attempts": 1,
+   "created": "2026-10-30"
   }
  },
  "flakes": [
@@ -20191,6 +20247,38 @@
    "job_id": 122151149993,
    "job": "int local root fedora-rawhide / lima",
    "date": "2026-10-27",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41147930399",
+   "job_id": 124381210600,
+   "job": "bindings  root fedora-current / lima",
+   "date": "2026-10-31",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41095635505",
+   "job_id": 124206563862,
+   "job": "sys local rootless debian-sid / lima",
+   "date": "2026-10-30",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41042355743",
+   "job_id": 124123661467,
+   "job": "sys remote root fedora-prior / lima",
+   "date": "2026-10-30",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "40937410499",
+   "job_id": 123678701008,
+   "job": "sys local rootless fedora-prior / lima",
+   "date": "2026-10-29",
    "sig": null,
    "no_log": true
   }
