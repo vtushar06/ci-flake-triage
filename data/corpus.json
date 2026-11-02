@@ -11498,7 +11498,7 @@
    "created": "2026-10-29"
   },
   "40873943218": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-29"
   },
   "40871994948": {
@@ -11526,7 +11526,7 @@
    "created": "2026-10-31"
   },
   "41187714145": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-31"
   },
   "41169580379": {
@@ -11534,7 +11534,7 @@
    "created": "2026-10-31"
   },
   "41147930399": {
-   "attempts": 2,
+   "attempts": 3,
    "created": "2026-10-31"
   },
   "41121052086": {
@@ -11586,7 +11586,7 @@
    "created": "2026-11-01"
   },
   "41279546251": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-11-01"
   },
   "41265446181": {
@@ -11594,11 +11594,11 @@
    "created": "2026-11-01"
   },
   "41249574845": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-31"
   },
   "41240241724": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-31"
   },
   "41239080639": {
@@ -11610,7 +11610,7 @@
    "created": "2026-10-31"
   },
   "41213122260": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-31"
   },
   "41208399135": {
@@ -11624,6 +11624,86 @@
   "41200670258": {
    "attempts": 1,
    "created": "2026-10-31"
+  },
+  "41448030044": {
+   "attempts": 2,
+   "created": "2026-11-02"
+  },
+  "41426944000": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41426303160": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41426048031": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41425716139": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41423500047": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41422864266": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41422597113": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41422490870": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41420246160": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41419498053": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41419425017": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41415767999": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41415136353": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41414749530": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41378543643": {
+   "attempts": 2,
+   "created": "2026-11-02"
+  },
+  "41357209133": {
+   "attempts": 1,
+   "created": "2026-11-01"
+  },
+  "41341480535": {
+   "attempts": 1,
+   "created": "2026-11-01"
+  },
+  "41337455631": {
+   "attempts": 1,
+   "created": "2026-11-01"
+  },
+  "41317049864": {
+   "attempts": 1,
+   "created": "2026-11-01"
   }
  },
  "flakes": [
@@ -20326,6 +20406,62 @@
    "run_id": "40937410499",
    "job_id": 123678701008,
    "job": "sys local rootless fedora-prior / lima",
+   "date": "2026-10-29",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41378543643",
+   "job_id": 125067243659,
+   "job": "upgrade v5.6.2 root fedora-current / lima",
+   "date": "2026-11-02",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41279546251",
+   "job_id": 124770833905,
+   "job": "macos machine applehv",
+   "date": "2026-11-01",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41249574845",
+   "job_id": 124682631135,
+   "job": "int local rootless fedora-rawhide / lima",
+   "date": "2026-10-31",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41213122260",
+   "job_id": 124574903680,
+   "job": "upgrade v5.3.1 root fedora-current / lima",
+   "date": "2026-10-31",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41187714145",
+   "job_id": 124500377003,
+   "job": "int local root fedora-prior / lima",
+   "date": "2026-10-31",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41147930399",
+   "job_id": 124396043956,
+   "job": "windows machine hyperv",
+   "date": "2026-10-31",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "40873943218",
+   "job_id": 123453484258,
+   "job": "sys local root fedora-current / lima",
    "date": "2026-10-29",
    "sig": null,
    "no_log": true
