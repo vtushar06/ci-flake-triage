@@ -11582,7 +11582,7 @@
    "created": "2026-11-01"
   },
   "41290848792": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-11-01"
   },
   "41279546251": {
@@ -11618,7 +11618,7 @@
    "created": "2026-10-31"
   },
   "41201937499": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-10-31"
   },
   "41200670258": {
@@ -11704,6 +11704,102 @@
   "41317049864": {
    "attempts": 1,
    "created": "2026-11-01"
+  },
+  "41632947809": {
+   "attempts": 1,
+   "created": "2026-11-03"
+  },
+  "41628316391": {
+   "attempts": 1,
+   "created": "2026-11-03"
+  },
+  "41621570300": {
+   "attempts": 1,
+   "created": "2026-11-03"
+  },
+  "41617909853": {
+   "attempts": 1,
+   "created": "2026-11-03"
+  },
+  "41617133809": {
+   "attempts": 1,
+   "created": "2026-11-03"
+  },
+  "41611306848": {
+   "attempts": 1,
+   "created": "2026-11-03"
+  },
+  "41604314863": {
+   "attempts": 2,
+   "created": "2026-11-03"
+  },
+  "41603467995": {
+   "attempts": 1,
+   "created": "2026-11-03"
+  },
+  "41598639547": {
+   "attempts": 1,
+   "created": "2026-11-03"
+  },
+  "41596967972": {
+   "attempts": 1,
+   "created": "2026-11-03"
+  },
+  "41573447151": {
+   "attempts": 1,
+   "created": "2026-11-03"
+  },
+  "41557452526": {
+   "attempts": 1,
+   "created": "2026-11-03"
+  },
+  "41550636791": {
+   "attempts": 2,
+   "created": "2026-11-03"
+  },
+  "41536300657": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41529041443": {
+   "attempts": 3,
+   "created": "2026-11-02"
+  },
+  "41528669262": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41520608130": {
+   "attempts": 2,
+   "created": "2026-11-02"
+  },
+  "41499608918": {
+   "attempts": 2,
+   "created": "2026-11-02"
+  },
+  "41492492888": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41484169774": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41479724315": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41468591708": {
+   "attempts": 2,
+   "created": "2026-11-02"
+  },
+  "41467988264": {
+   "attempts": 1,
+   "created": "2026-11-02"
+  },
+  "41464132746": {
+   "attempts": 1,
+   "created": "2026-11-02"
   }
  },
  "flakes": [
@@ -20463,6 +20559,102 @@
    "job_id": 123453484258,
    "job": "sys local root fedora-current / lima",
    "date": "2026-10-29",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41604314863",
+   "job_id": 125814381915,
+   "job": "macos machine applehv",
+   "date": "2026-11-03",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41604314863",
+   "job_id": 125814383850,
+   "job": "int local rootless fedora-rawhide / lima",
+   "date": "2026-11-03",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41604314863",
+   "job_id": 125814383860,
+   "job": "apiv2  rootless fedora-current / lima",
+   "date": "2026-11-03",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41604314863",
+   "job_id": 125814384238,
+   "job": "sys local rootless fedora-rawhide / lima",
+   "date": "2026-11-03",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41529041443",
+   "job_id": 125787057980,
+   "job": "macos machine applehv",
+   "date": "2026-11-02",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41520608130",
+   "job_id": 125541564071,
+   "job": "windows machine hyperv",
+   "date": "2026-11-02",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41520608130",
+   "job_id": 125541568108,
+   "job": "compose_v2  root fedora-current / lima",
+   "date": "2026-11-02",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41499608918",
+   "job_id": 125469377977,
+   "job": "sys remote root fedora-current / lima",
+   "date": "2026-11-02",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41499608918",
+   "job_id": 125469378007,
+   "job": "int remote root fedora-rawhide / lima",
+   "date": "2026-11-02",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41290848792",
+   "job_id": 124804176496,
+   "job": "int remote root fedora-current / lima",
+   "date": "2026-11-01",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41201937499",
+   "job_id": 124541783242,
+   "job": "int local root fedora-rawhide / lima",
+   "date": "2026-10-31",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41201937499",
+   "job_id": 124541783338,
+   "job": "int remote root fedora-rawhide / lima",
+   "date": "2026-10-31",
    "sig": null,
    "no_log": true
   }
