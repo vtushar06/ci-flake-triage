@@ -1,4 +1,4 @@
-# proposed issue comments - 2026-11-06
+# proposed issue comments - 2026-11-07
 
 Drafts only. Nothing below has been posted and this tool has no code path
 that can post. Matches marked needs-check failed the verbatim-error test
@@ -43,7 +43,20 @@ https://github.com/podman-container-tools/podman/actions/runs/29804524375/job/88
 https://github.com/podman-container-tools/podman/actions/runs/28935304775/job/85845987196
 ```
 
-## draft 4: issue #24598  [needs-check]
+## draft 4: issue #29641  [needs-check]
+match basis: name similarity only
+
+```
+this is still firing - 12 times between 2026-06-08 and 2026-08-26:
+
+    [FAIL] Podman rmi [It] podman image rm - concurrent with shared layers
+
+https://github.com/podman-container-tools/podman/actions/runs/31594925821/job/94130233395
+https://github.com/podman-container-tools/podman/actions/runs/30453491397/job/90583475284
+https://github.com/podman-container-tools/podman/actions/runs/30361788682/job/90286320550
+```
+
+## draft 5: issue #24598  [needs-check]
 match basis: name similarity only
 
 ```
@@ -56,7 +69,7 @@ https://github.com/podman-container-tools/podman/actions/runs/30849692281/job/91
 https://github.com/podman-container-tools/podman/actions/runs/30610210248/job/91092604568
 ```
 
-## draft 5: issue #21560  [needs-check]
+## draft 6: issue #21560  [needs-check]
 match basis: name similarity only
 
 ```
@@ -69,7 +82,7 @@ https://github.com/podman-container-tools/podman/actions/runs/28393177956/job/84
 https://github.com/podman-container-tools/podman/actions/runs/28363579941/job/84025561475
 ```
 
-## draft 6: issue #26547  [needs-check]
+## draft 7: issue #26547  [needs-check]
 match basis: name similarity only
 
 ```
@@ -82,7 +95,7 @@ https://github.com/podman-container-tools/podman/actions/runs/28097431667/job/83
 https://github.com/podman-container-tools/podman/actions/runs/27980185311/job/82809584893
 ```
 
-## draft 7: issue #17288  [needs-check]
+## draft 8: issue #17288  [needs-check]
 match basis: name similarity only
 
 ```
@@ -95,7 +108,7 @@ https://github.com/podman-container-tools/podman/actions/runs/27965018014/job/82
 https://github.com/podman-container-tools/podman/actions/runs/27403499553/job/81377284649
 ```
 
-## draft 8: issue #26547  [needs-check]
+## draft 9: issue #26547  [needs-check]
 match basis: name similarity only
 
 ```
@@ -108,7 +121,7 @@ https://github.com/podman-container-tools/podman/actions/runs/29887045047/job/88
 https://github.com/podman-container-tools/podman/actions/runs/28386372906/job/84103920728
 ```
 
-## draft 9: issue #24223  [needs-check]
+## draft 10: issue #24223  [needs-check]
 match basis: name similarity only
 
 ```
@@ -121,7 +134,7 @@ https://github.com/podman-container-tools/podman/actions/runs/28453915123/job/84
 https://github.com/podman-container-tools/podman/actions/runs/27822932548/job/82341310601
 ```
 
-## draft 10: issue #26547  [needs-check]
+## draft 11: issue #26547  [needs-check]
 match basis: name similarity only
 
 ```
@@ -134,7 +147,7 @@ https://github.com/podman-container-tools/podman/actions/runs/29864837683/job/88
 https://github.com/podman-container-tools/podman/actions/runs/29322360978/job/87052208963
 ```
 
-## draft 11: issue #26547  [needs-check]
+## draft 12: issue #26547  [needs-check]
 match basis: name similarity only
 
 ```
@@ -147,7 +160,7 @@ https://github.com/podman-container-tools/podman/actions/runs/28935304775/job/85
 https://github.com/podman-container-tools/podman/actions/runs/32499170869/job/96827744784
 ```
 
-## draft 12: issue #26547  [needs-check]
+## draft 13: issue #26547  [needs-check]
 match basis: name similarity only
 
 ```
@@ -160,7 +173,7 @@ https://github.com/podman-container-tools/podman/actions/runs/28097431667/job/83
 https://github.com/podman-container-tools/podman/actions/runs/32176110300/job/95842744429
 ```
 
-## draft 13: issue #26547  [needs-check]
+## draft 14: issue #26547  [needs-check]
 match basis: name similarity only
 
 ```
@@ -173,7 +186,7 @@ https://github.com/podman-container-tools/podman/actions/runs/27567168948/job/81
 https://github.com/podman-container-tools/podman/actions/runs/27428574380/job/81074086854
 ```
 
-## draft 14: issue #24571  [needs-check]
+## draft 15: issue #24571  [needs-check]
 match basis: name similarity only
 
 ```
@@ -186,7 +199,7 @@ https://github.com/podman-container-tools/podman/actions/runs/27968347032/job/82
 https://github.com/podman-container-tools/podman/actions/runs/27511610790/job/81313178888
 ```
 
-## draft 15: issue #17288  [needs-check]
+## draft 16: issue #17288  [needs-check]
 match basis: name similarity only
 
 ```
@@ -199,7 +212,7 @@ https://github.com/podman-container-tools/podman/actions/runs/27280502311/job/80
 https://github.com/podman-container-tools/podman/actions/runs/26775909220/job/78928713659
 ```
 
-## draft 16: issue #26547  [needs-check]
+## draft 17: issue #26547  [needs-check]
 match basis: name similarity only
 
 ```
@@ -212,7 +225,7 @@ https://github.com/podman-container-tools/podman/actions/runs/27280502311/job/80
 https://github.com/podman-container-tools/podman/actions/runs/31074585833/job/92531282514
 ```
 
-## draft 17: issue #22551  [needs-check]
+## draft 18: issue #22551  [needs-check]
 match basis: name similarity only
 
 ```
@@ -225,7 +238,7 @@ https://github.com/podman-container-tools/podman/actions/runs/30453491397/job/92
 https://github.com/podman-container-tools/podman/actions/runs/28945086379/job/85878537653
 ```
 
-## draft 18: issue #24598  [needs-check]
+## draft 19: issue #24598  [needs-check]
 match basis: name similarity only
 
 ```
@@ -238,7 +251,7 @@ https://github.com/podman-container-tools/podman/actions/runs/29722815042/job/88
 https://github.com/podman-container-tools/podman/actions/runs/27540733322/job/81402849121
 ```
 
-## draft 19: issue #26547  [needs-check]
+## draft 20: issue #26547  [needs-check]
 match basis: name similarity only
 
 ```
@@ -251,7 +264,7 @@ https://github.com/podman-container-tools/podman/actions/runs/27403499553/job/80
 https://github.com/podman-container-tools/podman/actions/runs/32766359585/job/97560430153
 ```
 
-## draft 20: issue #26547  [needs-check]
+## draft 21: issue #26547  [needs-check]
 match basis: name similarity only
 
 ```
@@ -264,7 +277,7 @@ https://github.com/podman-container-tools/podman/actions/runs/28243007515/job/83
 https://github.com/podman-container-tools/podman/actions/runs/32247003769/job/96052522896
 ```
 
-## draft 21: issue #23871  [needs-check]
+## draft 22: issue #23871  [needs-check]
 match basis: name similarity only
 
 ```
@@ -277,7 +290,7 @@ https://github.com/podman-container-tools/podman/actions/runs/27761210888/job/82
 https://github.com/podman-container-tools/podman/actions/runs/26838861389/job/79141912830
 ```
 
-## draft 22: issue #26547  [needs-check]
+## draft 23: issue #26547  [needs-check]
 match basis: name similarity only
 
 ```

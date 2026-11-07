@@ -1,10 +1,10 @@
 # known flakes - podman-container-tools/podman
 
-Generated 2026-11-06. 3005 completed runs (2026-06-01 to 2026-11-06), 857 re-run by hand, 1107 flakes - 493 of them in 166 signatures, the rest with no marker or no log.
+Generated 2026-11-07. 3028 completed runs (2026-06-01 to 2026-11-07), 868 re-run by hand, 1120 flakes - 493 of them in 166 signatures, the rest with no marker or no log.
 
 The two oracles are counted separately on purpose, because the evidence behind them is not equally strong:
 
-- **1042 rerun-confirmed** - failed on one attempt and passed on a later attempt of the same run, so the commit never changed and there is a passing twin of that exact job to diff against.
+- **1055 rerun-confirmed** - failed on one attempt and passed on a later attempt of the same run, so the commit never changed and there is a passing twin of that exact job to diff against.
 - **65 corroborated** - a run nobody re-ran, whose failure signature was already proven flaky by a maintainer's own re-run elsewhere. There is no passing twin here, so this is the weaker of the two. Signatures that fail by design, such as the tests-included gate, are excluded from seeding it.
 
 Issue matches below are candidates, not verdicts - in the study this tool grew out of, 6 of 16 name-based matches moved once the logs were opened (docs/verification.md). Anything marked needs-check requires a human before it is used.
@@ -18,7 +18,7 @@ Issue matches below are candidates, not verdicts - in the study this tool grew o
 | 14 | `[FAIL] podman machine init [It] machine init with cpus, disk size, memory, timezone` | 2026-06-02 to 2026-08-27 |  |
 | 14 | `[FAIL] Podman prune [It] podman system prune --build clean up after terminated build` | 2026-06-02 to 2026-07-21 | #28868 needs-check |
 | 13 | `[FAIL] Podman run networking [It] podman run container with two static IPs one per subnet` | 2026-06-04 to 2026-08-19 |  |
-| 12 | `[FAIL] Podman rmi [It] podman image rm - concurrent with shared layers` | 2026-06-08 to 2026-08-26 |  |
+| 12 | `[FAIL] Podman rmi [It] podman image rm - concurrent with shared layers` | 2026-06-08 to 2026-08-26 | #29641 needs-check |
 | 9 | `not ok \|N\| quadlet - image tag` | 2026-06-02 to 2026-08-07 | #24598 needs-check |
 | 9 | `not ok \|N\| podman kube play --wait with siginterrupt` | 2026-06-04 to 2026-08-03 | #21560 needs-check |
 | 9 | `[FAIL] podman machine set [It] set machine cpus, disk, memory` | 2026-06-19 to 2026-08-27 |  |
@@ -70,7 +70,7 @@ Issue matches below are candidates, not verdicts - in the study this tool grew o
 | 2 | `not ok \|N\| podman logs - --since --follow journald` | 2026-06-19 to 2026-07-26 | #23682 needs-check |
 | 2 | `[FAIL] podman machine init [It] machine init with rosetta=false` | 2026-06-16 to 2026-07-13 | #26547 needs-check |
 | 2 | `[FAIL] Podman port [It] podman port multiple ports` | 2026-06-30 to 2026-07-13 | #19048 needs-check |
-| 2 | `not ok \|N\| podman images with concurrent removal` | 2026-06-24 to 2026-07-08 | #24800 needs-check |
+| 2 | `not ok \|N\| podman images with concurrent removal` | 2026-06-24 to 2026-07-08 | #29641 needs-check |
 | 2 | `[FAIL] podman machine init [It] machine init rootful with docker.sock check` | 2026-06-16 to 2026-07-07 | #28873 needs-check |
 | 2 | `not ok \|N\| podman network - basic tests` | 2026-06-24 to 2026-07-07 | #17288 needs-check |
 | 2 | `[FAIL] podman machine init [It] machine init rootless docker.sock check` | 2026-07-02 to 2026-07-06 | #28873 needs-check |
@@ -225,8 +225,8 @@ top signature occurrences:
 |---|---|---|---|
 | 118 | `(none)` | 2026-06-04 to 2026-08-13 |  |
 
-## no retrievable log (496 flakes)
+## no retrievable log (509 flakes)
 
 | n | signature | window | issue candidate |
 |---|---|---|---|
-| 496 | `(none)` | 2026-06-17 to 2026-11-05 |  |
+| 509 | `(none)` | 2026-06-17 to 2026-11-06 |  |
