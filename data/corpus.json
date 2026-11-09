@@ -11598,7 +11598,7 @@
    "created": "2026-10-31"
   },
   "41240241724": {
-   "attempts": 2,
+   "attempts": 3,
    "created": "2026-10-31"
   },
   "41239080639": {
@@ -12282,7 +12282,7 @@
    "created": "2026-11-07"
   },
   "42417051982": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-11-07"
   },
   "42416838084": {
@@ -12332,6 +12332,74 @@
   "42382555596": {
    "attempts": 1,
    "created": "2026-11-07"
+  },
+  "42619454516": {
+   "attempts": 1,
+   "created": "2026-11-09"
+  },
+  "42619261652": {
+   "attempts": 1,
+   "created": "2026-11-09"
+  },
+  "42616634260": {
+   "attempts": 2,
+   "created": "2026-11-09"
+  },
+  "42611559322": {
+   "attempts": 1,
+   "created": "2026-11-09"
+  },
+  "42610761394": {
+   "attempts": 4,
+   "created": "2026-11-09"
+  },
+  "42610341870": {
+   "attempts": 2,
+   "created": "2026-11-09"
+  },
+  "42610032193": {
+   "attempts": 1,
+   "created": "2026-11-09"
+  },
+  "42609898906": {
+   "attempts": 1,
+   "created": "2026-11-09"
+  },
+  "42585184755": {
+   "attempts": 2,
+   "created": "2026-11-09"
+  },
+  "42584192039": {
+   "attempts": 4,
+   "created": "2026-11-09"
+  },
+  "42573361879": {
+   "attempts": 2,
+   "created": "2026-11-09"
+  },
+  "42572157991": {
+   "attempts": 1,
+   "created": "2026-11-09"
+  },
+  "42549406967": {
+   "attempts": 1,
+   "created": "2026-11-09"
+  },
+  "42534528580": {
+   "attempts": 1,
+   "created": "2026-11-08"
+  },
+  "42520458338": {
+   "attempts": 1,
+   "created": "2026-11-08"
+  },
+  "42499243053": {
+   "attempts": 2,
+   "created": "2026-11-08"
+  },
+  "42492089228": {
+   "attempts": 1,
+   "created": "2026-11-08"
   }
  },
  "flakes": [
@@ -21435,6 +21503,142 @@
    "job_id": 125287200420,
    "job": "Validate source code changes",
    "date": "2026-11-02",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "42616634260",
+   "job_id": 129163730572,
+   "job": "macos machine applehv",
+   "date": "2026-11-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "42616634260",
+   "job_id": 129163730808,
+   "job": "windows machine hyperv",
+   "date": "2026-11-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "42610761394",
+   "job_id": 129143679751,
+   "job": "windows machine hyperv",
+   "date": "2026-11-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "42610761394",
+   "job_id": 129185127643,
+   "job": "macos machine applehv",
+   "date": "2026-11-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "42610761394",
+   "job_id": 129143682226,
+   "job": "sys local rootless fedora-current / lima",
+   "date": "2026-11-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "42610761394",
+   "job_id": 129143682719,
+   "job": "int local root fedora-prior / lima",
+   "date": "2026-11-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "42610761394",
+   "job_id": 129143683746,
+   "job": "farm  rootless fedora-current / lima",
+   "date": "2026-11-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "42610341870",
+   "job_id": 129141924179,
+   "job": "int local rootless fedora-rawhide / lima",
+   "date": "2026-11-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "42585184755",
+   "job_id": 129058271086,
+   "job": "windows machine hyperv",
+   "date": "2026-11-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "42584192039",
+   "job_id": 129049939032,
+   "job": "build fedora-prior / lima",
+   "date": "2026-11-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "42584192039",
+   "job_id": 129053341598,
+   "job": "Validate source code changes",
+   "date": "2026-11-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "42584192039",
+   "job_id": 129049939248,
+   "job": "macos installer",
+   "date": "2026-11-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "42584192039",
+   "job_id": 129049939252,
+   "job": "build fedora-current / lima",
+   "date": "2026-11-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "42584192039",
+   "job_id": 129065821721,
+   "job": "sys local root fedora-rawhide / lima",
+   "date": "2026-11-09",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "42499243053",
+   "job_id": 128791277051,
+   "job": "sys remote rootless fedora-current / lima",
+   "date": "2026-11-08",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "42417051982",
+   "job_id": 128540488349,
+   "job": "bindings  root fedora-current / lima",
+   "date": "2026-11-07",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41240241724",
+   "job_id": 125204255160,
+   "job": "windows machine hyperv",
+   "date": "2026-10-31",
    "sig": null,
    "no_log": true
   }
