@@ -11626,7 +11626,7 @@
    "created": "2026-10-31"
   },
   "41448030044": {
-   "attempts": 3,
+   "attempts": 4,
    "created": "2026-11-02"
   },
   "41426944000": {
@@ -12804,6 +12804,154 @@
   "42637284461": {
    "attempts": 2,
    "created": "2026-11-09"
+  },
+  "43229601161": {
+   "attempts": 1,
+   "created": "2026-11-12"
+  },
+  "43228691798": {
+   "attempts": 1,
+   "created": "2026-11-12"
+  },
+  "43225726851": {
+   "attempts": 1,
+   "created": "2026-11-12"
+  },
+  "43212026571": {
+   "attempts": 1,
+   "created": "2026-11-12"
+  },
+  "43202490659": {
+   "attempts": 1,
+   "created": "2026-11-12"
+  },
+  "43201339805": {
+   "attempts": 1,
+   "created": "2026-11-12"
+  },
+  "43197475706": {
+   "attempts": 1,
+   "created": "2026-11-12"
+  },
+  "43194230936": {
+   "attempts": 1,
+   "created": "2026-11-12"
+  },
+  "43187186385": {
+   "attempts": 1,
+   "created": "2026-11-12"
+  },
+  "43180639884": {
+   "attempts": 1,
+   "created": "2026-11-12"
+  },
+  "43153000159": {
+   "attempts": 1,
+   "created": "2026-11-12"
+  },
+  "43094461138": {
+   "attempts": 2,
+   "created": "2026-11-11"
+  },
+  "43079092227": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43076905489": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43074749228": {
+   "attempts": 2,
+   "created": "2026-11-11"
+  },
+  "43073155735": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43072625317": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43067574029": {
+   "attempts": 2,
+   "created": "2026-11-11"
+  },
+  "43067039453": {
+   "attempts": 2,
+   "created": "2026-11-11"
+  },
+  "43066552005": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43065542230": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43065011030": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43064913557": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43064496413": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43061671415": {
+   "attempts": 2,
+   "created": "2026-11-11"
+  },
+  "43060739680": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43055933676": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43055644294": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43046251716": {
+   "attempts": 2,
+   "created": "2026-11-11"
+  },
+  "43045590501": {
+   "attempts": 2,
+   "created": "2026-11-11"
+  },
+  "43042857312": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43032804388": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43029812834": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43025624479": {
+   "attempts": 2,
+   "created": "2026-11-11"
+  },
+  "43024885231": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43024332115": {
+   "attempts": 1,
+   "created": "2026-11-11"
+  },
+  "43017936281": {
+   "attempts": 2,
+   "created": "2026-11-11"
   }
  },
  "flakes": [
@@ -22195,6 +22343,78 @@
    "job_id": 129276179312,
    "job": "int remote rootless fedora-current / lima",
    "date": "2026-11-03",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "43094461138",
+   "job_id": 130779600880,
+   "job": "windows installer wsl",
+   "date": "2026-11-11",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "43094461138",
+   "job_id": 130779600943,
+   "job": "Validate source code changes",
+   "date": "2026-11-11",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "43094461138",
+   "job_id": 130779601087,
+   "job": "build debian-sid / lima",
+   "date": "2026-11-11",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "43094461138",
+   "job_id": 130779601158,
+   "job": "build fedora-current / lima",
+   "date": "2026-11-11",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "43094461138",
+   "job_id": 130779601196,
+   "job": "build fedora-rawhide / lima",
+   "date": "2026-11-11",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "43094461138",
+   "job_id": 130779601201,
+   "job": "windows installer hyperv",
+   "date": "2026-11-11",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "43061671415",
+   "job_id": 130665597915,
+   "job": "Validate source code changes",
+   "date": "2026-11-11",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "43046251716",
+   "job_id": 130610853848,
+   "job": "Validate source code changes",
+   "date": "2026-11-11",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "41448030044",
+   "job_id": 128274186307,
+   "job": "int remote root fedora-rawhide / lima",
+   "date": "2026-11-02",
    "sig": null,
    "no_log": true
   }

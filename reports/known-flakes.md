@@ -1,10 +1,10 @@
 # known flakes - podman-container-tools/podman
 
-Generated 2026-11-11. 3165 completed runs (2026-06-01 to 2026-11-11), 910 re-run by hand, 1156 flakes - 493 of them in 166 signatures, the rest with no marker or no log.
+Generated 2026-11-12. 3202 completed runs (2026-06-01 to 2026-11-12), 919 re-run by hand, 1165 flakes - 493 of them in 166 signatures, the rest with no marker or no log.
 
 The two oracles are counted separately on purpose, because the evidence behind them is not equally strong:
 
-- **1091 rerun-confirmed** - failed on one attempt and passed on a later attempt of the same run, so the commit never changed and there is a passing twin of that exact job to diff against.
+- **1100 rerun-confirmed** - failed on one attempt and passed on a later attempt of the same run, so the commit never changed and there is a passing twin of that exact job to diff against.
 - **65 corroborated** - a run nobody re-ran, whose failure signature was already proven flaky by a maintainer's own re-run elsewhere. There is no passing twin here, so this is the weaker of the two. Signatures that fail by design, such as the tests-included gate, are excluded from seeding it.
 
 Issue matches below are candidates, not verdicts - in the study this tool grew out of, 6 of 16 name-based matches moved once the logs were opened (docs/verification.md). Anything marked needs-check requires a human before it is used.
@@ -71,9 +71,9 @@ Issue matches below are candidates, not verdicts - in the study this tool grew o
 | 2 | `[FAIL] podman machine init [It] machine init with rosetta=false` | 2026-06-16 to 2026-07-13 | #26547 needs-check |
 | 2 | `[FAIL] Podman port [It] podman port multiple ports` | 2026-06-30 to 2026-07-13 | #19048 needs-check |
 | 2 | `not ok \|N\| podman images with concurrent removal` | 2026-06-24 to 2026-07-08 | #29641 needs-check |
-| 2 | `[FAIL] podman machine init [It] machine init rootful with docker.sock check` | 2026-06-16 to 2026-07-07 | #28873 needs-check |
+| 2 | `[FAIL] podman machine init [It] machine init rootful with docker.sock check` | 2026-06-16 to 2026-07-07 |  |
 | 2 | `not ok \|N\| podman network - basic tests` | 2026-06-24 to 2026-07-07 | #17288 needs-check |
-| 2 | `[FAIL] podman machine init [It] machine init rootless docker.sock check` | 2026-07-02 to 2026-07-06 | #28873 needs-check |
+| 2 | `[FAIL] podman machine init [It] machine init rootless docker.sock check` | 2026-07-02 to 2026-07-06 |  |
 | 2 | `[FAIL] podman machine start [It] machine init --now with --import-native-ca with SCP file ` | 2026-06-01 to 2026-07-02 |  |
 | 2 | `[FAIL] podman machine compose [It] compose test environment variable setup` | 2026-06-12 to 2026-06-29 |  |
 | 2 | `not ok \|N\| Interface-bound TCP port forwarding, IPv6, loopback` | 2026-06-23 to 2026-06-29 |  |
@@ -137,7 +137,7 @@ Issue matches below are candidates, not verdicts - in the study this tool grew o
 | 1 | `[FAIL] Podman port [It] podman port -a nginx` | 2026-06-19 | #19048 needs-check |
 | 1 | `not ok \|N\| Address-bound TCP port forwarding, IPv4, loopback` | 2026-06-18 |  |
 | 1 | `not ok \|N\| Translated UDP port forwarding, IPv6, tap` | 2026-06-18 |  |
-| 1 | `[FAIL] podman machine list [It] list machine: check if running while starting` | 2026-06-17 | #28873 |
+| 1 | `[FAIL] podman machine list [It] list machine: check if running while starting` | 2026-06-17 |  |
 | 1 | `[FAIL] run podman API test calls [It] client connect to machine socket` | 2026-06-17 | #22843 needs-check |
 | 1 | `[FAIL] podman machine ssh [It] ssh to running machine and check os-type` | 2026-06-17 |  |
 | 1 | `not ok \|N\| Translated TCP port forwarding, IPv4, loopback` | 2026-06-17 |  |
@@ -225,8 +225,8 @@ top signature occurrences:
 |---|---|---|---|
 | 118 | `(none)` | 2026-06-04 to 2026-08-13 |  |
 
-## no retrievable log (545 flakes)
+## no retrievable log (554 flakes)
 
 | n | signature | window | issue candidate |
 |---|---|---|---|
-| 545 | `(none)` | 2026-06-17 to 2026-11-10 |  |
+| 554 | `(none)` | 2026-06-17 to 2026-11-11 |  |
