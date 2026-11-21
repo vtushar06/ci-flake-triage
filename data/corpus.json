@@ -13362,11 +13362,11 @@
    "created": "2026-11-08"
   },
   "44744472524": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-11-20"
   },
   "44732928221": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-11-20"
   },
   "44698162811": {
@@ -13378,7 +13378,7 @@
    "created": "2026-11-20"
   },
   "44688160950": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-11-20"
   },
   "44602649926": {
@@ -13394,7 +13394,7 @@
    "created": "2026-11-19"
   },
   "44577027098": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-11-19"
   },
   "44563511854": {
@@ -13406,7 +13406,7 @@
    "created": "2026-11-19"
   },
   "44559461198": {
-   "attempts": 1,
+   "attempts": 2,
    "created": "2026-11-19"
   },
   "44557935701": {
@@ -13624,6 +13624,58 @@
   "44194461034": {
    "attempts": 2,
    "created": "2026-11-17"
+  },
+  "44875285402": {
+   "attempts": 1,
+   "created": "2026-11-21"
+  },
+  "44874931861": {
+   "attempts": 1,
+   "created": "2026-11-21"
+  },
+  "44863645560": {
+   "attempts": 1,
+   "created": "2026-11-21"
+  },
+  "44847380963": {
+   "attempts": 1,
+   "created": "2026-11-21"
+  },
+  "44813846782": {
+   "attempts": 1,
+   "created": "2026-11-20"
+  },
+  "44782093149": {
+   "attempts": 1,
+   "created": "2026-11-20"
+  },
+  "44781906986": {
+   "attempts": 1,
+   "created": "2026-11-20"
+  },
+  "44781203391": {
+   "attempts": 1,
+   "created": "2026-11-20"
+  },
+  "44779138999": {
+   "attempts": 1,
+   "created": "2026-11-20"
+  },
+  "44775644719": {
+   "attempts": 2,
+   "created": "2026-11-20"
+  },
+  "44770762721": {
+   "attempts": 1,
+   "created": "2026-11-20"
+  },
+  "44765856774": {
+   "attempts": 2,
+   "created": "2026-11-20"
+  },
+  "44751434885": {
+   "attempts": 1,
+   "created": "2026-11-20"
   }
  },
  "flakes": [
@@ -23447,6 +23499,46 @@
    "job_id": 134683999574,
    "job": "int local root fedora-prior / lima",
    "date": "2026-11-17",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "44744472524",
+   "job_id": 136322298883,
+   "job": "macos machine applehv",
+   "date": "2026-11-20",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "44732928221",
+   "job_id": 136282775103,
+   "job": "int local root fedora-rawhide / lima",
+   "date": "2026-11-20",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "44577027098",
+   "job_id": 135755747409,
+   "job": "bud remote root fedora-current / lima",
+   "date": "2026-11-19",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "44577027098",
+   "job_id": 135755747858,
+   "job": "bud local root fedora-current / lima",
+   "date": "2026-11-19",
+   "sig": null,
+   "no_log": true
+  },
+  {
+   "run_id": "44559461198",
+   "job_id": 135695081562,
+   "job": "int local rootless fedora-rawhide / lima",
+   "date": "2026-11-19",
    "sig": null,
    "no_log": true
   }
